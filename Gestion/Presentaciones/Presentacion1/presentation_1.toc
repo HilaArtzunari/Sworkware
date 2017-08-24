@@ -1,0 +1,5 @@
+\beamer@endinputifotherversion {3.36pt}
+\select@language {USenglish}
+\beamer@sectionintoc {1}{Contexto del problema}{3}{0}{1}
+\beamer@sectionintoc {2}{Problem\IeC {\'a}tica}{5}{0}{2}
+\beamer@sectionintoc {3}{Propuesta de soluci\IeC {\'o}n}{7}{0}{3}
