@@ -1,0 +1,31 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%    Roberto Mendoza Saavedra     %%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%   TIPO DE DOCUMENTO: Artículo   %%%%%%
+\documentclass[letterpaper,11pt]{article}
+
+%%%%%%%  ESPECIFICACION DE PAQUETES   %%%%%
+\usepackage[spanish]{babel} %Lenguaje: Español
+\usepackage{graphicx} %Manejo de imagenes
+\usepackage[utf8]{inputenc} %Conjunto de caracteres: UTF8
+\usepackage{amssymb} %Conjunto de caracteres: UTF8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%    INICIO DEL CUERPO DEL DOCUMENTO    %%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+    %Escribe "Tabla" en lugar de "Cuadro"
+    \renewcommand{\tablename}{Tabla}
+
+    %%%%%%%   INCLUYE PORTADA   %%%%%%%
+    \include{portada}
+
+    %%%%%%%   INCLUYE SECCIONES   %%%%%%%
+    \input{./contenidoPropuesta} %Sección 1
+    
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%    FIN DEL CUERPO DEL DOCUMENTO    %%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
