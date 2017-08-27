@@ -1,0 +1,7 @@
+\select@language {spanish}
+\contentsline {section}{\numberline {1}Datos de la reuni\IeC {\'o}n}{1}
+\contentsline {section}{\numberline {2}Desarrollo de la reuni\IeC {\'o}n}{1}
+\contentsline {subsection}{\numberline {2.1}Orden del d\IeC {\'\i }a:}{1}
+\contentsline {subsection}{\numberline {2.2}Desarrollo:}{2}
+\contentsline {section}{\numberline {3}Acuerdos}{3}
+\contentsline {section}{\numberline {4}Lista de asistencia}{3}
