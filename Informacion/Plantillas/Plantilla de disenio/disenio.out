@@ -1,0 +1,19 @@
+\BOOKMARK [0][-]{chapter.1}{Introducci\363n}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Alcance}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Notaciones, est\341ndares y UML.}{chapter.1}% 3
+\BOOKMARK [0][-]{chapter.2}{Modelo est\341tico}{}% 4
+\BOOKMARK [1][-]{section.2.1}{Modelo l\363gico del sistema}{chapter.2}% 5
+\BOOKMARK [2][-]{subsection.2.1.1}{Modelo l\363gico de subsistemas}{section.2.1}% 6
+\BOOKMARK [1][-]{section.2.2}{Diagramas de despliegue}{chapter.2}% 7
+\BOOKMARK [2][-]{subsection.2.2.1}{Diagrama de despliegue de la clase 'Usuario'}{section.2.2}% 8
+\BOOKMARK [2][-]{subsection.2.2.2}{Diagrama de despliegue de la clase 'Direcci\363n'}{section.2.2}% 9
+\BOOKMARK [1][-]{section.2.3}{Diagramas de clases}{chapter.2}% 10
+\BOOKMARK [0][-]{chapter.3}{Modelo din\341mico}{}% 11
+\BOOKMARK [1][-]{section.3.1}{Diagramas de estados}{chapter.3}% 12
+\BOOKMARK [1][-]{section.3.2}{Diagramas de secuencia}{chapter.3}% 13
+\BOOKMARK [0][-]{chapter.4}{Modelo del dominio del problema}{}% 14
+\BOOKMARK [1][-]{section.4.1}{Modelo de datos \(MDL\)}{chapter.4}% 15
+\BOOKMARK [2][-]{subsection.4.1.1}{Modelo Entidad - Relaci\363n}{section.4.1}% 16
+\BOOKMARK [2][-]{subsection.4.1.2}{Diccionario de datos}{section.4.1}% 17
+\BOOKMARK [1][-]{section.4.2}{Modelo de acceso a datos}{chapter.4}% 18
+\BOOKMARK [2][-]{subsection.4.2.1}{Queries en SQL}{section.4.2}% 19
