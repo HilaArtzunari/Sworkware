@@ -1,0 +1,30 @@
+CASOS DE USO
+
+==================================================
+ANGEL ELIZALDE:
++Login
++Alta de usuario
++Añadir Componente
++Eliminar Componente
+
+Gabriela
++Editar Componente
++Calificar Usuario
++Consultar Componente
++Buscar Componente
+
+Angel
++Ver perfil de usuario
++Modificar Perfil de usuario
++Bloquear perfil de usuario
++Eliminar perfil de usuario
+
+Roberto
++Añadir comentario a componente
++Editar comentario a componente
++Eliminar comentario a componente
+
+Diana
++Verificar estado de componente
++Cambiar contraseña
++Confirmar perfil
