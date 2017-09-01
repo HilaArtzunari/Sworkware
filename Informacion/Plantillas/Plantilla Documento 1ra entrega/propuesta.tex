@@ -1,0 +1,65 @@
+\documentclass[10pt]{book}
+\usepackage{cdt/cdtAnalisis}
+\usepackage{tikz}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Datos del proyecto
+
+\cdtOrganizacion[CBR]{Club de Bio-Robóticoa de ESCOM}
+
+\cdtAutor{Coordinación de Desarrollo Tecnológico, IPN}
+
+\cdtSistema[PAG]{Página del Club de Bio-Robótica}
+
+\cdtProyecto[RED]{Rediseño de la página}
+
+\cdtDocumento{PT}{Propuesta técnica}{\DRAFT{\today}} %\RELEASE{1.0}
+
+\cdtEntregable{E1}{Entregable 1}
+
+% Descomentar y establecer la fecha cuando se desee congelar la fecha del documento.
+%\cdtFecha{12 de Abril de 2013}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%=========================================================
+% Portada
+\thispagestyle{empty}
+
+\maketitle
+
+%=========================================================
+% Indices del documento
+\frontmatter
+\tableofcontents
+\listoffigures
+\listoftables
+\mainmatter
+
+% Para esconder la información del documentador se descomenta el \hideControlVersion
+%\cdtHideControlVersion
+%\cdtHideInstrucciones
+
+
+%=========================================================
+\include{introduccion}
+
+%=========================================================
+\include{analisis}
+
+%=========================================================
+\include{alcance}
+
+%=========================================================
+\include{plan}
+
+%=========================================================
+\include{capitalHumano}
+
+%=========================================================
+\include{comunicacion}
+
+%==========================================================
+\clossing
+\end{document}

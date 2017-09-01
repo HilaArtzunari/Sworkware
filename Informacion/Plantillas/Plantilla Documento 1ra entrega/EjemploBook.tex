@@ -1,0 +1,193 @@
+\documentclass[10pt]{book}
+\usepackage{cdt/cdtBook}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Datos del proyecto
+
+\cdtOrganizacion[CNSNS--SENER]{Comisión Nacional de Seguridad Nuclear y Salvaguardias}
+
+\cdtAutor{Coordinación de Desarrollo Tecnológico, UmL-\TeX}
+
+\cdtSistema[REPO]{Subsistema de Repositorio de Información}
+
+\cdtProyecto[IPN--23.13--SCOR2]{Sistema de Control Radiológico Versión 2.0.}
+
+\cdtDocumento{Propuesta}{Propuesta técnica}{\DRAFT{\today}} %\RELEASE{1.0}
+
+\cdtEntregable{E1}{Entregable 1}
+
+\cdtSetImgPortada{cdtTheme/banner2}
+\cdtSetImgPleca{cdtTheme/pleca14}
+% Descomentar y establecer la fecha cuando se desee congelar la fecha del documento.
+%\cdtFecha{12 de Abril de 2013}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Datos para revisión
+\cdtElaboro[Cargo]{ Nombre completo.}   % Responsable del contenido (IPN)
+\cdtSuperviso[Responsable técnico]{Ulises Vélez Saldaña.}   % Quien recibe el documento (Contraparte)
+\cdtAprobo[Responsable jurídico]{M. en C. José Jaime López Rabadán.}  % Responsable Técnico (Contraparte)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Documentos relacionados con el documento actual
+
+% TODO: Escriba los documentos en los que esta basado este documento.
+
+\cdtAddElement{UC1}{1.0}{Login}{pendiente}
+\cdtAddElement{UC2}{1.0}{Registrar cliente}{pendiente}
+
+% TODO: Escriba los documentos en los que esta basado este documento.
+\cdtAddReference{Bases}{}{Bases de Organización y Funcionamiento del Registro Nacional de Instituciones y Empresas Científicas y Tecnológicas.}
+\cdtAddReference{Introducción BPMN}{}{Stephen A. White. Introduction to BPMN. IBM Corporation}
+\cdtAddReference{Documentación BPMN}{}{Business Process Model and Notation (BPMN), v2.0. Número de documento en OMG: dtc/2009-08-14. URL de la documentación estándar: \url{http://www.omg.org/spec/BPMN/2.0/}. Agosto 2009}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%=========================================================
+% Portada
+\thispagestyle{empty}
+
+\maketitle
+
+%=========================================================
+% Hoja de revisión
+\cdtMakeDocInfo
+\cdtMakeRelElements
+\cdtMakeRelReferences
+\cdtMakeObservaciones[2.5cm]
+\cdtMakeFirmas
+
+%=========================================================
+% Indices del documento
+\frontmatter
+\tableofcontents
+\listoffigures
+\listoftables
+\mainmatter
+
+% Para esconder la información del documentador se descomenta el \hideControlVersion
+%\hideControlVersion
+
+%=========================================================
+\chapter{Introducción}
+
+\begin{objetivos}
+	\item asdasd \cdtLabel{elemento}{Elemento} etiquetado
+\end{objetivos}
+
+\section{Antecedentes}
+
+CDT-\TeX
+
+Viñetas:
+
+\begin{itemize}
+	\item asdasd
+	\item asdasda
+	\item asdasdasd
+	\item asdasdasdasdas
+\end{itemize}
+
+
+Viñetas compactas:
+
+\begin{Citemize}
+	\item asdasd
+	\item asdasda
+    \begin{Citemize}
+    	\item asdasd
+    	\item asdasda
+        \begin{Citemize}
+        	\item asdasd
+        	\item asdasda
+        	\item asdasdasd
+        	\item asdasdasdasdas
+        \end{Citemize}
+    	\item asdasdasd
+    	\item asdasdasdasdas
+    \end{Citemize}
+	\item asdasdasd
+	\item asdasdasdasdas
+\end{Citemize}
+
+\begin{Cenumerate}
+	\item asdasd
+	\item asdasda
+    \begin{Cenumerate}
+    	\item asdasd
+    	\item asdasda
+        \begin{Cenumerate}
+        	\item asdasd
+        	\item asdasda
+        	\item asdasds 
+        	\item asdasdasdasdas
+        \end{Cenumerate}
+    	\item asdasdasd
+    	\item asdasdasdasdas
+    \end{Cenumerate}
+	\item asdasdasd
+	\item asdasdasdasdas
+\end{Cenumerate}
+
+Descripciones compactas:
+\begin{Cdescription}
+	\item[asda] asdasd referencia a \cdtRef{id}{un elemento}.
+	\item[asd] asdasda referencia a \cdtIdRef{id}{Nombre elemento}.
+    \begin{Cdescription}
+    	\item[asda] asdasd
+    	\item[asd] asdasda
+    	\item[asd] \cdtEmpty
+        \begin{Cdescription}
+        	\item[asda] asdasd
+        	\item[asd] asdasda
+        	\item[asd] asdasdasd
+        	\item[scd] asdasdasdasdas
+        \end{Cdescription}
+    	\item[scd] asdasdasdasdas
+    \end{Cdescription}
+	\item[asd] asdasdasd \refElem{UC1}
+	\item[asd] asdasdasd \refElem{UC3}
+	\item[asd] asdasdasd \refIdElem{UC1}
+	\item[asd] asdasdasd \refIdElem{UC3}
+	\item[scd] asdasdasdasdas
+\end{Cdescription}
+
+
+%=========================================================
+\chapter{Introducción}
+
+\begin{objetivos}[Otro tipo de objetivos]
+	\item asdasdas
+	\item asdasd
+\end{objetivos}
+
+
+\begin{tabular}{| l |  p{.5\textwidth} | c |}
+\hline
+	asdsad & 
+	asdasda \refElem{UC3} & 
+	asdasd\\
+\hline
+	asdsad & 
+	asdasda & 
+	asdasd\\
+\hline
+	asdsad & 
+	
+	\begin{Titemize}
+ 		\Titem asdasd asd,asd\imgInline{images/ipn}asdsadabsd.kjasd lkjashd kasjd lkajsd lkajsd laksjdlaksjdlaksjlskdjh
+ 		\Titem asdasd
+ 		\Titem asdasd
+	\end{Titemize}
+	 & 
+	asdasd\\
+\hline
+
+\end{tabular}
+
+
+%==========================================================
+\clossing
+\end{document}
