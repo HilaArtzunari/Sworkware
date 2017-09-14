@@ -1,0 +1,64 @@
+\documentclass[10pt]{book}
+\usepackage{cdt/cdtControl}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Datos del proyecto
+
+\cdtOrganizacion[CNSNS--SENER]{Comisión Nacional de Seguridad Nuclear y Salvaguardias, SENER}
+
+\cdtAutor{Coordinación de Desarrollo Tecnológico, IPN}
+
+\cdtSistema[REPO]{Subsistema de Repositorio de Información}
+
+\cdtProyecto[234412, IPN-23.13-SCOR2]{Sistema de Control Radiológico Versión 2.0.}
+
+\cdtDocumento{Propuesta}{Propuesta técnica}{\DRAFT{\today}} %\RELEASE{1.0}
+
+\cdtEntregable{E1}{Entregable 1}
+
+% Descomentar y establecer la fecha cuando se desee congelar la fecha del documento.
+%\cdtFecha{12 de Abril de 2013}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%=========================================================
+% Portada
+\thispagestyle{empty}
+
+\maketitle
+
+%=========================================================
+% Indices del documento
+\frontmatter
+\tableofcontents
+\listoffigures
+\listoftables
+\mainmatter
+
+% Para esconder la información del documentador se descomenta el \hideControlVersion
+%\cdtHideControlVersion
+%\cdtHideInstrucciones
+
+%=========================================================
+\chapter{Introducción}
+
+\cdtInstrucciones{Se pueden colocar instrucciones para indicar lo que se debe escribir dentro de los formatos.}
+
+\begin{techCard}[version=1.0, author=Edgar, status=\cdtStAccepted, revisor=Juan]
+	\cItem{Actualizado el}{12/10/2016}
+\end{techCard}
+
+\refElem{UC1}
+
+\begin{revCard}{0.1}{Juan Carlos}{12 de abril, 2013}
+	\rItem{PC1}{Verificar y corregir ortografía.}{\TODO[1 días].}
+	\rItem{PC2}{Actualizar el diagrama de la BD.}{\TOCHK[15/04/2013].}
+	\rItem{PC3}{Agregar las definiciones para los términos del negocio.}{\DONE[20/04/2013].}
+\end{revCard}
+
+
+%==========================================================
+\clossing
+\end{document}

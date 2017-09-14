@@ -1,0 +1,107 @@
+\documentclass[10pt]{book}
+
+\usepackage{cdt/cdtTheme}
+\usepackage{colortbl}
+
+\cdtSetMainColor{red}
+\cdtSetImgPortada{cdtTheme/baner}
+\cdtSetImgPleca{cdtTheme/pleca9}
+\cdtSetImgHeader{cdtTheme/ipn}{cdtTheme/ipn}
+\cdtSetImgLogo{cdtTheme/umlTex.png}{cdtTheme/umlTex4.png}
+
+\cdtSetDireccion{Escuela Superior de Cómputo, Ciudad de México}
+\cdtSetTelefono{+521 57296000 ext 52004}
+\cdtSetCorreo{info@cdtlatex.org}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Datos del proyecto
+
+\title{Documento de ejemplo del uso de {\tt cdtTheme}\\[20pt]
+\fbox{\includegraphics[width=5cm]{cdtTheme/umlTex4.png}}}
+\author{Ulises Vélez Saldaña\\{\em Coordinación de Desarrollo Tecnológico, IPN}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\maketitle
+
+\frontmatter
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+\mainmatter
+
+%=========================================================
+\part{Primera parte}
+
+%=========================================================
+\chapter{Introducción}
+
+%\lipsum
+
+\section{Antecedentes}
+
+Viñetas:
+
+\begin{itemize}
+	\item asdasd
+	\item asdasda
+	\begin{itemize}
+		\item asdasd
+		\item asdasda
+        \begin{itemize}
+        	\item asdasd
+        	\item asdasda
+        	\item asdasdasd
+        	\item asdasdasdasdas
+        \end{itemize}
+		\item asdasdasd
+		\item asdasdasdasdas
+	\end{itemize}
+	\item asdasdasd
+	\item asdasdasdasdas
+\end{itemize}
+
+
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width=.5\textwidth]{cdtTheme/cdtLaTeX.png}
+		\caption{Logo de cdt\LaTeX.}
+		\label{fig:cdtLaTeX}
+	\end{center}
+\end{figure}
+
+
+\begin{table}[htbp]
+\caption{default}
+\begin{center}
+\begin{tabular}{|c|c|}
+	\hline
+	\rowcolor{colorAgua}asdaskdj & asdasd\\
+	\hline
+	asdaskdj & asdasd\\
+	\hline
+	asdaskdj & asdasd\\
+	\hline
+\end{tabular}
+\end{center}
+\label{default}
+\end{table}%
+
+
+\begin{enumerate}
+	\item asdasd
+	\item asdasda
+	\item asdasdasd
+	\item asdasdasdasdas
+\end{enumerate}
+
+
+%=========================================================
+\chapter{Introducción}
+
+%==========================================================
+\end{document}
