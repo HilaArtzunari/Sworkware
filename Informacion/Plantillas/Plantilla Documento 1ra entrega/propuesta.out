@@ -1,28 +1,48 @@
-\BOOKMARK [0][-]{chapter.1}{Introducci\363n}{}% 1
-\BOOKMARK [1][-]{section.1.1}{Presentaci\363n}{chapter.1}% 2
-\BOOKMARK [1][-]{section.1.2}{Organizaci\363n del contenido}{chapter.1}% 3
-\BOOKMARK [1][-]{section.1.3}{Notaci\363n, s\355mbolos y convenciones utilizadas}{chapter.1}% 4
-\BOOKMARK [0][-]{chapter.2}{An\341lisis del problema}{}% 5
-\BOOKMARK [1][-]{section.2.1}{T\351rminos del negocio}{chapter.2}% 6
-\BOOKMARK [1][-]{section.2.2}{Descripci\363n del contexto}{chapter.2}% 7
-\BOOKMARK [1][-]{section.2.3}{Descomposici\363n del problema}{chapter.2}% 8
-\BOOKMARK [1][-]{section.2.4}{An\341lisis de causas y consecuencias}{chapter.2}% 9
-\BOOKMARK [1][-]{section.2.5}{S\355ntesis y propuesta de soluci\363n}{chapter.2}% 10
-\BOOKMARK [2][-]{subsection.2.5.1}{Propuesta de soluci\363n}{section.2.5}% 11
-\BOOKMARK [0][-]{chapter.3}{Planeaci\363n del Alcance}{}% 12
-\BOOKMARK [1][-]{section.3.1}{Objetivo general}{chapter.3}% 13
-\BOOKMARK [1][-]{section.3.2}{Objetivos espec\355ficos}{chapter.3}% 14
-\BOOKMARK [1][-]{section.3.3}{Identificaci\363n de requerimientos}{chapter.3}% 15
-\BOOKMARK [1][-]{section.3.4}{Arquitectura propuesta}{chapter.3}% 16
-\BOOKMARK [0][-]{chapter.4}{Planeaci\363n del Tiempo}{}% 17
-\BOOKMARK [1][-]{section.4.1}{Metodolog\355a de desarrollo}{chapter.4}% 18
-\BOOKMARK [1][-]{section.4.2}{Descomposici\363n de tareas}{chapter.4}% 19
-\BOOKMARK [1][-]{section.4.3}{Diagrama de Gantt}{chapter.4}% 20
-\BOOKMARK [0][-]{chapter.5}{Planeaci\363n de Capital Humano}{}% 21
-\BOOKMARK [1][-]{section.5.1}{Organigrama}{chapter.5}% 22
-\BOOKMARK [1][-]{section.5.2}{Responsabilidades}{chapter.5}% 23
-\BOOKMARK [2][-]{subsection.5.2.1}{Project Manager}{section.5.2}% 24
-\BOOKMARK [1][-]{section.5.3}{Staff}{chapter.5}% 25
-\BOOKMARK [0][-]{chapter.6}{Planeaci\363n de la Comunicaci\363n}{}% 26
-\BOOKMARK [1][-]{section.6.1}{Plan de comunicaci\363n interna}{chapter.6}% 27
-\BOOKMARK [1][-]{section.6.2}{Plan de comunicaci\363n externa}{chapter.6}% 28
+\BOOKMARK [0][-]{chapter.1}{EI - C3 Project Charter}{}% 1
+\BOOKMARK [1][-]{section.1.1}{T\355tulo del proyecto}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Fecha de inicio}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{Fecha de fin}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.4}{Main milestones}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.5}{Proveedores y clientes}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.6}{Statement of Work}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.7}{Objetivo}{chapter.1}% 8
+\BOOKMARK [1][-]{section.1.8}{Entregables}{chapter.1}% 9
+\BOOKMARK [1][-]{section.1.9}{Staff}{chapter.1}% 10
+\BOOKMARK [1][-]{section.1.10}{Ubicaci\363n del repositorio}{chapter.1}% 11
+\BOOKMARK [0][-]{chapter.2}{Introducci\363n}{}% 12
+\BOOKMARK [1][-]{section.2.1}{Presentaci\363n}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.2}{Alcance}{chapter.2}% 14
+\BOOKMARK [1][-]{section.2.3}{Organizaci\363n del contenido}{chapter.2}% 15
+\BOOKMARK [1][-]{section.2.4}{Notaci\363n, s\355mbolos y convenciones utilizadas}{chapter.2}% 16
+\BOOKMARK [0][-]{chapter.3}{An\341lisis del problema}{}% 17
+\BOOKMARK [1][-]{section.3.1}{T\351rminos del negocio}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.2}{Descripci\363n del contexto}{chapter.3}% 19
+\BOOKMARK [1][-]{section.3.3}{Descomposici\363n del problema}{chapter.3}% 20
+\BOOKMARK [1][-]{section.3.4}{An\341lisis del problema}{chapter.3}% 21
+\BOOKMARK [2][-]{subsection.3.4.1}{Problem\341tica}{section.3.4}% 22
+\BOOKMARK [2][-]{subsection.3.4.2}{Descomposici\363n}{section.3.4}% 23
+\BOOKMARK [2][-]{subsection.3.4.3}{Identificaci\363n de causas.}{section.3.4}% 24
+\BOOKMARK [2][-]{subsection.3.4.4}{Estimaci\363n de consecuencias}{section.3.4}% 25
+\BOOKMARK [1][-]{section.3.5}{S\355ntesis y propuesta de soluci\363n}{chapter.3}% 26
+\BOOKMARK [2][-]{subsection.3.5.1}{Soluciones existentes}{section.3.5}% 27
+\BOOKMARK [2][-]{subsection.3.5.2}{Propuesta de soluci\363n}{section.3.5}% 28
+\BOOKMARK [0][-]{chapter.4}{Planeaci\363n del Alcance}{}% 29
+\BOOKMARK [1][-]{section.4.1}{Objetivo general}{chapter.4}% 30
+\BOOKMARK [1][-]{section.4.2}{Objetivos espec\355ficos}{chapter.4}% 31
+\BOOKMARK [1][-]{section.4.3}{Stakeholders}{chapter.4}% 32
+\BOOKMARK [1][-]{section.4.4}{Identificaci\363n de requerimientos}{chapter.4}% 33
+\BOOKMARK [2][-]{subsection.4.4.1}{Requerimientos de usuario}{section.4.4}% 34
+\BOOKMARK [2][-]{subsection.4.4.2}{Requerimientos de sistema}{section.4.4}% 35
+\BOOKMARK [1][-]{section.4.5}{Arquitectura propuesta}{chapter.4}% 36
+\BOOKMARK [0][-]{chapter.5}{Planeaci\363n del Tiempo}{}% 37
+\BOOKMARK [1][-]{section.5.1}{Metodolog\355a de desarrollo}{chapter.5}% 38
+\BOOKMARK [1][-]{section.5.2}{Descomposici\363n de tareas}{chapter.5}% 39
+\BOOKMARK [1][-]{section.5.3}{Diagrama de Gantt}{chapter.5}% 40
+\BOOKMARK [0][-]{chapter.6}{Planeaci\363n de Capital Humano}{}% 41
+\BOOKMARK [1][-]{section.6.1}{Organigrama}{chapter.6}% 42
+\BOOKMARK [1][-]{section.6.2}{Responsabilidades}{chapter.6}% 43
+\BOOKMARK [2][-]{subsection.6.2.1}{Project Manager}{section.6.2}% 44
+\BOOKMARK [1][-]{section.6.3}{Staff}{chapter.6}% 45
+\BOOKMARK [0][-]{chapter.7}{Planeaci\363n de la Comunicaci\363n}{}% 46
+\BOOKMARK [1][-]{section.7.1}{Plan de comunicaci\363n interna}{chapter.7}% 47
+\BOOKMARK [1][-]{section.7.2}{Plan de comunicaci\363n externa}{chapter.7}% 48
