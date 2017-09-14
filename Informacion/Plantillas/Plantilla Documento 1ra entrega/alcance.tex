@@ -7,7 +7,7 @@
 %---------------------------------------------------------
 \section{Objetivo general}	
 
-Desarrollar un Sistema Web que permita a los estudiantes de escuelas superiores del IPN en Zacatengo facilitar la venta y compra de materiales de electrónica para su uso en las diversas Unidades de Aprendizaje.
+Desarrollar un Sistema Web que permita a los estudiantes de escuelas superiores del IPN en Zacatengo facilitar la venta y compra de materiales electrónicos para su uso en las diversas Unidades de Aprendizaje.
 
 %---------------------------------------------------------
 \section{Objetivos específicos}	
@@ -32,9 +32,41 @@ Desarrollar un Sistema Web que permita a los estudiantes de escuelas superiores 
 %---------------------------------------------------------
 \section{Identificación de requerimientos}	
 
-\cdtInstrucciones{
-	Lista de requerimientos del sistema, describa lo que va a hacer el sistema para el primer departamental.\\
+\cdtSetKey{
+	author=Roberto Mendoza Saavedra, 
 }
+
+\subsection{Requerimientos funcionales}
+
+\begin{cdtRequirements}
+	\RFitem{RF1}{Control de acceso}
+		{El sistema debe implementar un sistema de control de acceso a los usuarios mediante un nombre de usuario y contraseña teniendo en cuenta los roles de usuario definidos.}
+	\RFitem{RF2}{Creación de perfil de usuario}
+		{El sistema debe permitir la creación de un perfil de usuario para realizar la publicación y/o consulta de componentes electrónicos.}
+	\RFitem{RF3}{Edición de perfil de usuario}
+		{El sistema debe permitir la edición del perfil de usuario para actualizar la información del mismo, esto es, escuela de procedencia, correo electrónico, redes sociales, nombre de usuario y contraseña.}
+	\RFitem{RF4}{Baja del perfil de usuario}
+		{El sistema debe permitir la baja del perfil de usuario en el momento que éste lo decida.}
+	\RFitem{RF5}{Publicación de componentes electrónicos}
+		{Se requiere que el sistema permita la publicación de nuevos componentes electrónicos para la venta o donación con la siguiente información: nombre del componente, cantidad, descripción, unidad de aprendizaje en donde utilizó dicho componente, escuela de procedencia, datasheet del componente electrónico (opcional), correo electrónico del vendedor, link de perfil de Facebook e imagen.}
+	\RFitem{RF6}{Eliminar publicación de componentes electrónicos}
+	    {El sistema debe permitir la eliminación de publicaciones de componentes electrónicos, puede ser solo una o varias.}
+	\RFitem{RF7}{Consulta de publicaciones de componentes electrónicos}
+	    {El sistema debe permitir la consulta de los componentes electrónicos que se han publicado para la venta o donación.}
+    \RFitem{RF8}{Actualización de publicaciones de componentes electrónicos}
+	    {Se requiere que el sistema permita la actualización de la información de los componentes electrónicos que se han publicado para la venta o donación, esto incluye la cantidad, descripción o imagen.}
+    \RFitem{RF9}{Imágenes del componente electrónico}
+	    {El sistema debe permitir la adición de una o más imágenes del componente electrónico, los formatos permitidos para la imágenes serán: jpg, png y gif.}
+    \RFitem{RF10}{Selección de rol de usuario}
+	    {Se requiere que el sistema brinde la opción al usuario de elegir su rol en el sistema, es decir, si éste será comprador o vendedor.}
+    \RFitem{RF11}{Datasheet del componente electrónico}
+	    {Se requiere que el sistema permita adjuntar la datasheet del componente electrónico que desee publicar. Esto puede ser opcional..}
+    \RFitem{RF12}{Información de contacto}
+	    {El sistema debe mostrar la información de contacto del vendedor como parte de la publicación del componente electrónico, esto es, correo electrónico y link de perfil de Facebook.}
+	\RFitem{RF13}{Reporte de contenido indebido}
+	    {Se requiere que el sistema permita reportar contenido indebido, a los administradores del sistema.}
+	
+\end{cdtRequirements}
 
 \subsection{Requerimientos de usuario}
 
