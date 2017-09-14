@@ -1,0 +1,204 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Componente: cdtTheme.sty                                               
+%  Autor: Ulises Vélez Saldaña
+%  Fecha: 23 de Octubre, 2016
+%  Versión: 1.1
+%  Biblioteca: cdt
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{cdt/cdtTheme}[2016/10/23, v1.1 CDT-ESCOM-IPN Plantilla para definir el estilo de la documentación de CDT]
+%=====================================================
+\RequirePackage[utf8]{inputenc}                      % Codificación de caracteres en UTF-8.
+\RequirePackage[spanish]{babel}                      % Cambia las variables del documento a español.
+\RequirePackage{wasysym}
+\RequirePackage{marvosym}                            % Algunos símbolos.
+\RequirePackage{txfonts}                  
+\RequirePackage{cmbright}                            % Fuente de letras, otras opciones: arev, cmbright, pxfonts.
+\RequirePackage{graphicx}	                         % Manejo de imágenes.
+\RequirePackage[usenames,dvipsnames]{xcolor}         % Para usar y definir colores.
+\RequirePackage{wallpaper}                           % Colocar imágenes en el fondo del documento.
+\RequirePackage{fancyhdr}                            % Manejo de encabezados.
+\RequirePackage{lastpage}
+\RequirePackage[hmargin=3cm,vmargin=3.5cm]{geometry} % Manejo de márgenes del documento.
+\RequirePackage[Sonny]{fncychap}                     % Manejo de capítulos: Sonny, Lenny, Glenn, Conny, Rejne and Bjarne.
+\RequirePackage{url}
+\RequirePackage[pdftex, bookmarks, colorlinks]{hyperref}
+
+
+%=====================================================
+% Resumen de comandos
+% \cdtSetMainColor{Color principal}
+%   % uso alternativo de:
+%	\colorlet{colorPrincipal}{color}
+%	\colorlet{colorSecundario}{color}
+%	\colorlet{colorAgua}{color}
+%	\colorlet{colorGris}{color}
+% \cdtSetImgPortada{imagen}
+% \cdtSetImgPleca{imagen}
+% \cdtSetImgHeader{imagen}{imagen}  
+% \cdtSetImgLogo{imagen}{imagen}
+% \cdtSetDireccion{direccion}
+% \cdtSetTelefono{número de teléfono}
+% \cdtSetCorreo{correo}
+%=====================================================
+
+%=====================================================
+% Definición de colores.
+\definecolor{cdtThemeColor}{rgb}{0,.5, 1}
+
+\newcommand{\cdtSetMainColor}[1]{%
+	\colorlet{colorPrincipal}{#1!50!black} % 50% color, 50% negro
+	\colorlet{colorSecundario}{#1!75!black} % 75% color, 25% negro
+	\colorlet{colorAgua}{#1!75!black!15} % (75% color, 25% negro) al 25% y 75% blanco
+	\colorlet{colorGris}{gray!80} % (75% color, 25% negro) al 25% y 75% blanco
+	\hypersetup{linkcolor=colorPrincipal}
+	\hypersetup{urlcolor=colorSecundario}
+	\hypersetup{filecolor=colorSecundario}
+	\hypersetup{citecolor=colorGris}
+}
+
+\cdtSetMainColor{cdtThemeColor}
+
+
+%=====================================================
+% Definición de imagenes.
+\newcommand{\varImgPortadaPercent}{1}
+\newcommand{\varImgPortada}{cdtTheme/agua.png}
+\newcommand{\cdtSetImgPortada}[2][1]{%
+	\renewcommand{\varImgPortadaPercent}{#1}%
+	\renewcommand{\varImgPortada}{#2}%
+}
+
+\newcommand{\varImgPlecaPercent}{1}
+\newcommand{\varImgPleca}{cdtTheme/pleca.png}
+\newcommand{\cdtSetImgPleca}[2][1]{%
+	\renewcommand{\varImgPlecaPercent}{#1}%
+	\renewcommand{\varImgPleca}{#2}%
+}
+
+\newcommand{\varImgHeaderHeight}{35pt}
+\newcommand{\varImgHeaderPar}{cdtTheme/headerPar}
+\newcommand{\varImgHeaderInp}{cdtTheme/headerInp}
+\newcommand{\cdtSetImgHeader}[3][35pt]{%
+	\renewcommand{\varImgHeaderHeight}{#1}%
+	\renewcommand{\varImgHeaderPar}{#2}%
+	\renewcommand{\varImgHeaderInp}{#3}%
+	\fancyhead[LE]{\includegraphics[height=\varImgHeaderHeight]{\varImgHeaderPar}} %
+	\fancyhead[RO]{\includegraphics[height=\varImgHeaderHeight]{\varImgHeaderInp}} %
+}
+
+\newcommand{\varImgLogoHeight}{35pt}
+\newcommand{\varImgLogoPar}{cdtTheme/logoPar}
+\newcommand{\varImgLogoInp}{cdtTheme/logoInp}
+\newcommand{\cdtSetImgLogo}[3][35pt]{%
+	\renewcommand{\varImgLogoHeight}{#1}%
+	\renewcommand{\varImgLogoPar}{#2}%
+	\renewcommand{\varImgLogoInp}{#3}%
+	\fancyhead[RE]{\includegraphics[height=#1]{#2}} %
+	\fancyhead[LO]{\includegraphics[height=#1]{#3}} %
+}
+
+
+%=====================================================
+% Encabezados y pie de página.
+\pagestyle{fancy}
+\fancyhead[LE]{\includegraphics[height=35pt]{cdtTheme/headerPar}} 
+\fancyhead[RO]{\includegraphics[height=35pt]{cdtTheme/headerInp}} 
+\fancyhead[RE]{\includegraphics[height=35pt]{cdtTheme/logoPar}} 
+\fancyhead[LO]{\includegraphics[height=35pt]{cdtTheme/logoInp}} 
+
+\setlength{\headheight}{39pt}
+\fancyfoot{}
+
+
+\newcommand{\varDireccion}{Av. Juan de Dios Bátiz esq. Miguel Othón de Mendizabal S/N Col. Lindavista, GAM, D. F.}
+
+\newcommand{\varTelefono}{57296000 Ext. 52004}
+
+\newcommand{\varCorreo}{ulises.velez@gmail.com}
+
+
+%=====================================================
+% Comando: \cdtSetDireccion{Direccion}
+% Propósito: Definir la dirección de la organización
+% Ejemplo: \cdtSetDireccion{Av. Juan de Dios Bátiz esq. Miguel Othón de Mendizabal S/N Col. Lindavista, GAM, D. F.}
+%=====================================================
+\newcommand{\cdtSetDireccion}[1]{%
+	\renewcommand{\varDireccion}{{#1}}%
+}
+
+%=====================================================
+% Comando: \cdtSetCorreo{direccion-de-correo}
+% Propósito: Definir la dirección de correo de la organización
+% Ejemplo: \cdtSetCorreo{ulises.velez@gmail.com}
+%=====================================================
+\newcommand{\cdtSetCorreo}[1]{%
+	\renewcommand{\varCorreo}{{#1}}%
+}
+
+%=====================================================
+% Comando: \cdtSetTelefono{numero-telefonico}
+% Propósito: Definir la dirección de correo de la organización
+% Ejemplo: \cdtSetTelefono{5536506147}
+%=====================================================
+\newcommand{\cdtSetTelefono}[1]{%
+	\renewcommand{\varTelefono}{{#1}}%
+}
+
+
+\fancyfoot[CO,CE]{{\footnotesize\em\varDireccion\\ {\color{colorPrincipal}\Telefon}\varTelefono~{}{\color{colorPrincipal}\Letter} \varCorreo}}
+\fancyfoot[RO,LE]{\hspace{.5cm}\footnotesize\thepage~{}}
+
+%%=====================================================
+%% Estilo para los Capítulos y secciones
+\ChTitleVar{\Large\sf\color{colorPrincipal}}
+\ChNameVar{\Large\sf\color{colorGris}}
+
+\let\LaTeX@startsection\@startsection
+\renewcommand{\@startsection}[6]{\LaTeX@startsection%
+{#1}{#2}{#3}{#4}{#5}{\color{colorPrincipal}\raggedright #6}} 
+
+
+%%=====================================================
+%% Estilo para Parte
+\newcommand{\varPart}[1]{}
+\let\varPart=\part
+\renewcommand{\part}[1]{%
+	{\ClearWallPaper%
+	\ThisLRCornerWallPaper{\varImgPortadaPercent}{\varImgPortada}%
+	\color{colorPrincipal}\varPart{#1}%
+	\LRCornerWallPaper{\varImgPlecaPercent}{\varImgPleca}%
+}}
+
+%=====================================================
+% Estilo para las viñetas
+\renewcommand{\labelitemi}{\color{colorPrincipal}\textbullet}
+\renewcommand{\labelitemii}{\color{colorSecundario}\textbullet}
+\renewcommand{\labelitemiii}{\color{colorSecundario}$\circ$}
+\renewcommand{\labelitemiv}{\color{colorSecundario}\textbullet}
+
+
+%=====================================================
+% Texto para el índice y los pies de las tablas.
+\AtBeginDocument{%
+	\ThisLRCornerWallPaper{\varImgPortadaPercent}{\varImgPortada}%
+	\renewcommand{\tablename}{Tabla}
+	\renewcommand{\listtablename}{Índice de tablas}
+}
+
+%=====================================================
+% Coloca una pleca en cada hoja
+\newcommand{\varFrontmatter}{}
+\let\varFrontmatter=\frontmatter
+\renewcommand{\frontmatter}{%
+	\LRCornerWallPaper{\varImgPlecaPercent}{\varImgPleca}
+	\varFrontmatter%
+}
+
+\newcommand{\varMainmatter}{}
+\let\varMainmatter=\mainmatter
+\renewcommand{\mainmatter}{%
+	\LRCornerWallPaper{\varImgPlecaPercent}{\varImgPleca}
+	\varMainmatter%
+}
+

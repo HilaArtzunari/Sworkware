@@ -1,0 +1,338 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Componente: cdtBusiness.sty
+%  Autor: Ulises Vélez Saldaña
+%  Fecha: 23 de Abril, 2013
+%  Versión: 1.0
+%  Biblioteca: cdt
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{cdt/cdtBusiness}[2013/04/23, v1.0 CDT-ESCOM-IPN Paquete para escribir reglas de negocio]
+\RequirePackage{cdt/cdtControl}
+\RequirePackage{clock}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Comandos en esta versión:
+%
+% \begin{brGlosario}[key=value,...]
+%	\brTermType{tId}{Término} Definición
+%	\brTermLiteral{tId}{Término}{idTerminoType}{Término Type} Definición
+%	\brTermSensor{tId}{Término}{Valor}{Unidad de medida}{frecuencia}
+%	\brTermClock{tId}{Término}{Atributo}{Frecuencia}
+% \end{brGlosario}
+%
+% \dataType{tipo primitivo de dato}
+% \dataLiteral{literal de un tipo de dato}
+% \addDataType{dtId}{Nombre}{estructura}
+% 
+% \begin{brCombinedType}[key = value,...]{dtId}{Nombrea}
+%	\brAttr{id}{Nombre}{dtId}{Descripción}{requerido: si, no}
+% \end{brCombinedType}
+%
+% \begin{brEntity}[key = value,...]{id}{Nombre}
+%	\brAttr{id}{Nombre}{dtId}{Descripción}{requerido: si, no}
+%	\brEntityRelSection
+%	\brRel{tipo}{Entidad asociada}{descripción}
+% \end{bEntidad}
+% 
+% \brRelComposition
+% \brRelAgregation
+% \brRelGeneralization
+% 
+% \begin{bRule}[vey=value,...]{id}{nombre}{tipo}{clase}{nivel}
+%	\brItem{atributo}{descripcion}
+%	\brItem[\brCompilanceColor]{Ejemplo positivo}{Casos que cumplen la regla}
+%	\brItem[\brNotCompilanceColor]{Ejemplo negativo}{Casos que NO cumplen la regla}
+% \end{bRule}
+% \brtIntegrity
+% \brtOperation
+% \brtInference
+%
+% \brcAssertion
+% \brcTimed
+% \brcEjecutive
+%
+% \brnControl
+% \brnInfluence
+
+%=====================================================================
+% Comando: glosario
+% Propósito: Definir el glosario de términos del negocio.
+%
+%No olvide que un glosario de términos en el modelado de Reglas de Negocio se refiere a términos del negocio y no términos comunes.
+%
+%Todos los términos del Negocio pertenecen a un contesto en cual debe establecerse de preferencia inmediatamente antes del glosario de términos.
+%
+%Generalmente el Id de un término de negocio sigue las reglas para nombrar Clases en java con el uso de CamelCase iniciando con mayúscula, sin guiones bajos, eliminando caracteres especiales y anteponiendo una ``t''. por ejemplo:
+%
+%\begin{brGlosario}{}
+%	\brTermType{tAlumno}{Alumno} Descripción
+%	\brTermType{tTipoCliente}{Tipo de cliente} Definition.
+%	\brTermType{tDireccion}{Dirección} Definition.
+%	\brTermType{tTipoCliente}{Tipo de cliente} Definition.
+%	\brTermType{tAnioLectivo}{Año lectivo} Definition.
+%\end{bGlosario}
+%
+% Contexto: El ambiente en el que los Términos de Negocio son usados con un ``significado acordado''
+% Término: Palabra o frase que tiene un significado específico para un negocio dado por un contexto designado.
+%
+% Existen cuatro tipos de términos de negocio:
+%
+%\begin{description}
+%	\item[Type:] Es un tipo de término que es el nombre de una abstracción de un conjunto de instancias o valores.
+%	\item[Literal:] Tipo de término que refleja un valor específico o instancia de un Type.
+%	\item[Sensor:] Tipo especial de Término Type, cuyo valor es determinado por algún mecanismo o dispositivo cuyo trabajo interno es desconocido (o de poco interés para el contexto identificado). Su valor no puede ser alterado directamente. Un Sensor detecta y reporta constantemente los cambios de valores de el mundo exterior, tal como: el paso del tiempo, lectura de temperatura, paso del tiempo, etc.
+%	\item[Clock:] Es un tipo especial de Sensor cuyo valor es el ``Tiempo del mundo real''. Un reloj debe tener exactamente un valor, el cual es el tiempo actual.
+%\end{description}
+% De esta manera en un glosario es posible definir cualqueira de los tres tipos:
+%
+%\begin{brGlosario}
+%	\brTermType{id}{Término} Definición
+%	\brTermType{tEmpleado}{Empleado} Se refiere a cualquier persona que labore en la empresa.
+%	
+%	\brTermLiteral{id}{Término}{idTerminoType}{Término Type} Definición
+%	\brTermLiteral{tDirector}{Director}{Empleado} Es el empleado que tiene mayor rango de todos y no tiene superior, a diferencia de los demás.
+%	
+%	\brTermSensor{id}{Término}{Valor que el dispositivo determina}{Unidad de medida}{frecuencia, tiempo que tarda o periodo en el que el dispositivo puede reportar los valores y sus cambios}
+%	\brTermSensor{tVelocimetro}{Velocímetro}{Velocidad de un Vehículo}{Kilometros/hora}{Constantemente siempre que el vehículo esté encendido}
+%	
+%	\brTermClock{id}{Término}{Atributo con el que está asociado el tiempo}{Frecuencia con la que se obtiene o actualiza el tiempo}
+%	\brTermClock{tChecador}{Checador}{Hora de entrada y salida de un empleado}{Una vez al día para la entrada y otra para la salida durante los días laborales}
+%\end{brGlosario}
+
+
+%=====================================================================
+\newenvironment{brGlosario}[1][]{
+	\begin{techCard}[#1]%
+    \end{techCard}%
+	\begin{Cdescription}%
+}{%
+	\end{Cdescription}%
+}
+
+%=====================================================================
+% Comando:
+% Propósito:
+%=====================================================================
+\newcommand{\brTermType}[2]{\item[\bf \cdtLabel{#1}{#2}]}
+
+\newcommand{\brTermLiteral}[4]{\item[{\bf\em \cdtLabel{#1}{#2}}]({\color{gray}\em es un tipo de \cdtRef{#3}{#4}})~{}}
+
+\ClockFrametrue
+
+\newcommand{\brTermSensor}[5]{\item[\bf\cdtLabel{#1}{#2}] {\color{colorPrincipal}{$\boxright$}}~{}{\color{gray}\em Valor que determina:} {#3} {\color{gray}\em Unidad de medida:} {#4} {\color{gray}\em Frecuencia de lectura:} {#5}}
+
+\newcommand{\brTermClock}[4]{\item[{\bf \cdtLabel{#1}{#2}}]{\footnotesize\color{colorPrincipal}{\clocktime}}{\color{gray}\em Atributo asociado:} {#3} {\color{gray}\em Frecuencia de lectura:} {#4}}
+
+\def \varBusinessEntityId {}
+
+%=====================================================================
+% Definir una entidad con sus atributos
+% Use:
+%
+% \begin{bEntidad}{id}{Nombre}
+% 	 \bAttr{id}{Nombre}{Tipo}
+%		{Descripción}
+%		{\requerido} % \opcional
+%	 \bAttr{activo}{Activo}{Booleano}
+%		{Es el estado en el que se encuentra el Ciclo Escolar}
+%		{\requerido}
+% \end{bEntidad}
+% - id:  identificador de la entidad (camelCase con mayúscula al principio), por ejemplo: Alumno, Cliente, TipoDeVehiculo, etc.
+% - Nombre: Nombre de la Entidad, puede ser con espacios y acentos.
+%
+% Cada Entidad es un TermType y viceversa.
+%=====================================================================
+\newenvironment{brEntity}[3][]{%
+	\cdtAddElement{#2}{\pgfkeysvalueof{/local/version}}{#3}{\pgfkeysvalueof{/local/status}}%
+	\def \varBusinessEntityId{#2}%
+	\hypertarget{#2}{\hspace{1pt}}%
+	\newline%
+	%\vspace{0pt}%
+	\noindent{\hypertarget{#2}{\includegraphics[width=\textwidth]{cdt/uc/rules/classRule}}}%
+	\vspace{-25pt}%
+	\subsection{Entidad: #3}%
+	\begin{techCard}[#1]%
+    \end{techCard}%
+	\noindent\begin{longtable}{|p{.2\textwidth}| p{.15\textwidth} | p{.46\textwidth} |p{.08\textwidth} |}%
+	\hline%
+	\multicolumn{4}{|c|}{{\cellcolor{colorSecundario}\color{white}Atributos}}\\ \hline%
+	{\cellcolor{colorAgua}Nombre} &%
+	{\cellcolor{colorAgua}Tipo} &%
+	{\cellcolor{colorAgua}Descripción} &%
+	{\cellcolor{colorAgua}Reqerido}%
+	\\ \hline%
+	\endhead%
+%	\subsubsection{Atributos}%
+%	\begin{description}%
+}{%
+	\end{longtable}%
+%	\end{description}%
+}
+
+\DTLnewdb{cdtTexDBDataType}
+
+\newenvironment{brCombinedType}[3][]
+{%
+	\cdtAddElement{#2}{\pgfkeysvalueof{/local/version}}{#3}{\pgfkeysvalueof{/local/status}}%
+	\DTLnewrow{cdtTexDBDataType}%
+	\DTLnewdbentry{cdtTexDBDataType}{Id}{{#2}}%
+	\DTLnewdbentry{cdtTexDBDataType}{Nombre}{{#3}}%
+	\DTLnewdbentry{cdtTexDBDataType}{Descripcion}{{#3}}%
+	\DTLnewdbentry{cdtTexDBDataType}{Estructura}{{Dato compuesto}}%
+	\def\varBusinessEntityId{#2}%
+	\hypertarget{#2}{\vspace{1pt}}%
+	\begin{techCard}[#1]%
+    \end{techCard}%
+	\begin{longtable}{|p{.2\textwidth}| p{.15\textwidth} | p{.46\textwidth} |p{.08\textwidth} |}%
+	\hline%
+	\multicolumn{4}{|c|}{{\cellcolor{gray}\color{white}{\bf Tipo compuesto:} #3}}\\ \hline%
+	{\cellcolor{lightgray}Nombre} &%
+	{\cellcolor{lightgray}Tipo} &%
+	{\cellcolor{lightgray}Descripción} &%
+	{\cellcolor{lightgray}Opcional}%
+	\\ \hline%
+	\endhead%
+}%
+{%
+	\end{longtable}%
+}
+
+%----------------------------------------------------------------------
+% Definir un atributo de una Entidad de Negocio.
+% Use:
+%     \bAttr{id}{nombre}{tipo}{Descripción}{requerido/opcional}
+\newcommand{\brAttr}[5]{%
+	{\bf\cdtLabel{\varBusinessEntityId:#1}{#2}} & {\em{\getType{#3}}} & {#4} & #5 \\\hline
+}
+
+\newcommand{\brEntityRelSection}{%
+	\multicolumn{4}{|c|}{{\cellcolor{colorSecundario}\color{white}Relaciones}}\\ \hline%
+	{\cellcolor{colorAgua}Tipo de relación} &%
+	{\cellcolor{colorAgua}Entidad} &%
+	\multicolumn{2}{|c|}{{\cellcolor{colorAgua}Rol}}
+	\\ \hline%
+}
+
+\newcommand{\brRelComposition}{{\color{colorPrincipal}$\Diamondblack$\hspace{-1pt}---Composición}}
+\newcommand{\brRelAgregation}{{\color{colorPrincipal}$\Diamond$\hspace{-1pt}---Agregación}}
+\newcommand{\brRelGeneralization}{{\color{colorPrincipal}$\lhd$\hspace{-1pt}---Generalización}}
+
+\newcommand{\brRel}[3]{%
+	{\em{#1}} & {\bf{#2}} & \multicolumn{2}{|l|}{#3}\\\hline
+}
+
+
+\newcommand{\dataType}[1]{{\tt\color{orange}\{#1\}}}
+\newcommand{\dataLiteral}[1]{{\tt\color{PineGreen}[{#1}]}}
+\newcommand{\dataString}[1]{{\color{Red}``{\tt{#1}}''}}
+
+
+
+\newcommand{\addDataType}[4]{%
+	\DTLnewrow{cdtTexDBDataType}%
+	\DTLnewdbentry{cdtTexDBDataType}{Id}{{#1}}%
+	\DTLnewdbentry{cdtTexDBDataType}{Nombre}{{#2}}%
+	\DTLnewdbentry{cdtTexDBDataType}{Descripcion}{{#3}}%
+	\DTLnewdbentry{cdtTexDBDataType}{Estructura}{{#4}}%
+	\item[{\bf \cdtLabel{#1}{#2}:}] {#3}\\{\bf\color{colorPrincipal}Estructura:} {#4}}
+
+\newcommand{\getType}[1]{%
+	\DTLgetvalueforkey{\umltexTipo}{Nombre}{cdtTexDBDataType}{Id}{#1}%
+	\DTLifnull{\umltexTipo}%
+		{{\color{red}#1 (broken)}}%
+		{\cdtRef{#1}{\umltexTipo}}%
+}
+
+
+%----------------------------------------------------------------------
+% Comando para colocar una descripción de una regla de negocio
+% use:
+% \begin{BusinessRule}{id}{nombre}{clase y/o tipo}{fortaleza}
+%	\BRitem{Descripción}{Descripcion textual de la regla.}
+%	\BRitem{Caso correcto}{Un ejemplo en el que se cumple la regla.}
+%	\BRitem{Caso incorecto}{Un ejemplo en el que se cumple la regla.}
+%	\BRitem{Sentencia}{Expresion formal de la regla.}
+% \end{BusinessRule}
+% Clase: Condición, Restricción, Autorización, Inferencia.
+% Tipo(solo para las tres primeras clases): Habilitador, Cronometrado,  Ejecutivo
+% Fortaleza: Controla / Influye el comportamiento.
+% Como describir una regla:
+% CONDICION:
+% Regla Condicion-Habilitador: si M(OBJ) entonces Habilita/permite RN
+% Regla Condicion-Cronómetro: si M(OBJ) REL LIMITE entonces Habilita/Ejecuta RN
+% Regla Condicion-Ejecución:  si M(OBJ) entonces Ejecuta/Crea RN
+% RESTRICCION DE INTEGRIDAD
+% Regla Restriccion de Integridad-Habilitador:
+%	M(OBJ) Debe/Puede RN
+% Regla Restriccion de Integridad-Cronómetro:
+%	M(OBJ) Debe/Puede REL LIMITE RN
+% Regla Restriccion de Integridad-Ejecución:
+% 	M(OBJ) Debe Ejecuta/Crea RN
+%
+%Ejemplos:
+%----------------------------------------------------------------------
+%\begin{BussinesRule}{BR7}{Edad actual}
+%	{Cálculo}
+%	{Controla.}
+%	\BRccitem{Versión}{0.1}
+%	\BRccitem{Autor}{Jessica Ramos.}
+%	\BRccitem{Evaluador}{Ulises Vélez Saldaña.}
+%	\BRccitem{Estado}{Terminada: 20 de Junio, 2012, Aprobada: 23 de Junio del 2012.}
+%	\BRitem{Descripción}{La ``Edad actual'' de una personal se presenta como números de años y meses, contando los años y meses completos transcurridos desde la Fecha de Nacimeinto de la persona hasta la Fecha Actual.}
+%	\BRitem{Sentencia}{$\forall p \in Persona \Rightarrow p.edadActual = fechaActual - p.fechaDeNacimiento$}
+%	\BRitem{Ejemplo}{Para la persona: Juan Pérez García, nacida en el Distrito Federal el 12 de Mayo del 2001 la ``Edad Actual'' al 15 de Abril del 2012 sería: {\bf 10 años y 11 meses}.}
+%	\BRitem{Referenciado por}{\refUC{CUCE3.1}, \refUC{CUCE3.2}, \refUC{CUCE3.4}, \refUC{CUCE5.1}, \refBR{BR9}{Edad al 31 de Diciembre}, \refUC{CUCE5}}
+%\end{BussinesRule}
+%
+%\begin{bRegla}{BR8}{Fecha de Nacimiento correcta}{Integridad/Operación/Inferencia}{Controla/Dirige}
+%	\bItem{Versión}{0.1}
+%	\bItem{Estado}{Aprobada, 29 de Junio del 2012}
+%	\bItem{Descripción}{
+%	Las Fechas de Nacimiento que se registrarn en el SINACEM para cualquier Persona debe ser mayores al día Primero de Enero del año 1900 y menor a la Fecha Actual.}
+%	\bItem{Sentencia}{$\forall p \in Persona \Rightarrow 01-Enero-1900~<~p.fechaDeNacimiento~<~fechaActual$}
+%	\bItem{Referenciado por}{\refUC{CUCE3.2}, \refUC{CUCE3.3}, \refUC{CUCE3.4}, \refUC{CUCE5.1}}
+%\end{bRegla}
+\newenvironment{bRule}[6][]
+{%
+	\cdtAddElement{#2}{\pgfkeysvalueof{/local/version}}{#3}{\pgfkeysvalueof{/local/status}}%
+	\vspace{-10pt}%
+	\noindent{\hypertarget{#2}{\includegraphics[width=\textwidth]{cdt/uc/rules/BRRule}}}%
+	\vspace{-17pt}%
+	\begin{description}\addtolength{\itemsep}{-0.5\baselineskip}%
+    \brItem{{Regla}}{{\color{colorPrincipal}{#2}} {#3}}%
+	\begin{techCard}[#1]
+    \end{techCard}%
+	\brItem{Tipo}{#4}%
+	\brItem{Clase}{#5}%
+	\brItem{Nivel}{#6}%
+}%
+{%
+	\end{description}%
+}
+
+\newcommand{\brtIntegrity}{{\color{colorPrincipal}Regla de integridad referencial o estructural}}
+\newcommand{\brtOperation}{{\color{colorPrincipal}Regla de operación} %
+	 ({\em\color{gray}calcular o determinar un valor.})}
+\newcommand{\brtInference}{{\color{colorPrincipal}Regla de inferencia de un hecho}}
+
+\newcommand{\brcAssertion}{{\color{colorPrincipal}Habilitadora} %
+	 ({\em\color{gray}Indica cuando se habilita o restringe una acción o indica como tomar una decisión en un escenario específico.})}
+\newcommand{\brcTimed}{{\color{colorPrincipal}Cronometrada} %
+	 ({\em\color{gray}Especifica una forma de medir hasta dónde se puede permitir o restringir una acción.})}
+\newcommand{\brcEjecutive}{{\color{colorPrincipal}Ejecutiva} %
+	 ({\em\color{gray}Especifica que para habilitar o restringir una acción se requiere la autorización de un superior.})}
+
+\newcommand{\brnControl}{{\color{colorPrincipal}Controla la operación}}
+
+\newcommand{\brnInfluence}{{\color{colorPrincipal}Dirige el comportamiento}}
+
+
+%----------------------------------------------------------------------
+% Para colocar un elemento dentro de una regla de negocio.
+% use: \BRitem{Elemento}{Descripción}
+\newcommand{\brItem}[3][black]{%
+	\item[{\color{#1}#2}:]  {#3}%
+}
+
+\colorlet{brCompilanceColor}{PineGreen}
+\colorlet{brNotCompilanceColor}{red!70}

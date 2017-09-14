@@ -1,0 +1,65 @@
+\documentclass[10pt]{book}
+\usepackage{cdt/cdtAnalisis}
+\usepackage{tikz}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Datos del proyecto
+
+\cdtOrganizacion[CBR]{SWORKWARE CONSULTORY}
+
+\cdtAutor{Equipo Alpha de SWORKWARE, ESCOM - IPN}
+
+\cdtSistema[PAG]{SWORKWARE CONSULTORY}
+
+\cdtProyecto[RED]{Rediseño de la página}
+
+\cdtDocumento{PT}{Propuesta ejecutiva}{\DRAFT{\today}} %\RELEASE{1.0}
+
+\cdtEntregable{E1}{Versión 1}
+
+% Descomentar y establecer la fecha cuando se desee congelar la fecha del documento.
+%\cdtFecha{12 de Abril de 2013}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%=========================================================
+% Portada
+\thispagestyle{empty}
+
+\maketitle
+
+%=========================================================
+% Indices del documento
+\frontmatter
+\tableofcontents
+\listoffigures
+\listoftables
+\mainmatter
+
+% Para esconder la información del documentador se descomenta el \hideControlVersion
+%\cdtHideControlVersion
+%\cdtHideInstrucciones
+
+
+%=========================================================
+\include{introduccion}
+
+%=========================================================
+\include{analisis}
+
+%=========================================================
+\include{alcance}
+
+%=========================================================
+\include{plan}
+
+%=========================================================
+\include{capitalHumano}
+
+%=========================================================
+\include{comunicacion}
+
+%==========================================================
+\clossing
+\end{document}

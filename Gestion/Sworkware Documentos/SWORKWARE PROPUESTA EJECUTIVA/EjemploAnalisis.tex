@@ -1,0 +1,201 @@
+\documentclass[10pt]{book}
+\usepackage{cdt/cdtAnalisis}
+\usepackage{tikz}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Datos del proyecto
+
+\cdtOrganizacion[C-BR]{Club de Bio-Robóticoa de ESCOM}
+
+\cdtAutor{Coordinación de Desarrollo Tecnológico, IPN}
+
+\cdtSistema[PAG-CBR]{Página del Club de Bio- Robótica}
+
+\cdtProyecto[1]{Rediseño de la página}
+
+\cdtDocumento{Propuesta}{Propuesta técnica}{\DRAFT{\today}} %\RELEASE{1.0}
+
+\cdtEntregable{E1}{Entregable 1}
+
+% Descomentar y establecer la fecha cuando se desee congelar la fecha del documento.
+%\cdtFecha{12 de Abril de 2013}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%=========================================================
+% Portada
+\thispagestyle{empty}
+
+\maketitle
+
+%=========================================================
+% Indices del documento
+\frontmatter
+\tableofcontents
+\listoffigures
+\listoftables
+\mainmatter
+
+% Para esconder la información del documentador se descomenta el \hideControlVersion
+%\cdtHideControlVersion
+%\cdtHideInstrucciones
+
+%=========================================================
+\chapter{Identificación de requerimientos}
+
+\cdtSetKey{
+	author=Ulises Vélez Saldaña, 
+}
+
+\section{Requerimientos funcionales}
+
+\refElem{UC1}
+
+\begin{cdtRequirements}[version=0.1, status=\cdtStEdition]
+	\RFitem{RF1}{Control de acceso}
+		{El sistema debe implementar un sistema de control de acceso a los usuarios vía nombre de usuario y contraseña con políticas de seguridad y roles de usuario definidos.}
+	\RFitem{RF2}{Gestión de material}
+		{El sistema debe apoyar en el registro y control del material disponible en la organización considerando el registro, modificación, consulta y eliminación de materiales perecederos y no perecederos.}
+	\RFitem{RF3}{Gestión de clientes}
+		{El sistema debe llevar el registro de todos los clientes que compren productos o consuman servicios ya sean personas físicas o morales.}
+	\RFitem{RF4}{Registro de ventas y servicios adquiridos}
+		{El sistema debe registrar las ventas y servicios adquiridos por los clientes y aquellos que se realicen ``al mostrador''.}
+	\RFitem{RF5}{Reporte mensual de ventas}
+		{Se requiere que el sistema genere el reporte de todas las ventas realizadas cada mes, totalizando cantidades de productos y servicios vendidos así como el monto total ingresado.}
+\end{cdtRequirements}
+
+\section{Propiedades de software}
+
+%
+\begin{cdtSoftwareProperty}[version=0.1, status=\cdtStEdition]
+	{RNF1}{Control de acceso.}{Seguridad}
+	\item[Descripción:] Implementar un mecanismo robusto para el control de acceso mediante usuario y contraseña.
+	\item[Estrategias propuestas:] Adopción de un mecanismo de CAPTCHA y definición de políticas para la creación y gestión de contraseñas. Verificación de correo electrónico.
+	\item[Motivación:] La información que maneja el sistema (clientes, ingresos y proveedores) pueden dañar al negocio y a los clientes en caso de verse comprometidos.
+	\item[Restricciones adicionales:] Las contraseñas de acceso jamás deben almacenarse en el sistema.
+	\item[Métricas recomendadas:] 
+\end{cdtSoftwareProperty}
+
+\section{Actores}
+
+\begin{cdtActor}[version=0.1, status=\cdtStEdition]
+	{cliente}{Cliente}{Persona que consume productos o servicios de la organización.}
+	\item[Área:] Publico en general e cualquier parte de la república.
+	\item[Responsabilidades:] \cdtEmpty 	
+    \begin{itemize}
+    	\item Recordar su usuario y contraseña.
+		\item Revisar su correo electrónico.
+    \end{itemize}
+	\item[Perfil:] Ser mayor de edad.
+ 	\item[Cantidad aproximada:] de 1000 a 100,000.
+\end{cdtActor}
+
+\begin{cdtActor}[version=0.1, status=\cdtStRevision]
+	{gerenteDeVentas}{Gerente de ventas}{Persona que supervisa a los vendedores y autoriza las operaciones excepcionales.}
+	\item[Área:] Ventas.
+	\item[Responsabilidades:] \cdtEmpty 	
+    \begin{itemize}
+    	\item Supervisar el trabajo de los vendedores.
+		\item Resolver los problemas y dudas de los vendedores.
+		\item Promover acciones que propicien el incremento de las ventas.
+		\item Asesorar y atender a los clientes que tengan dudas o se encuentren inconformes.
+    \end{itemize}
+    
+	\item[Perfil:] \cdtEmpty	
+    \begin{itemize}
+       	\item Licenciado en Mercadotecnia o carrera afin.
+		\item Conocimientos básicos de tecnologías de información y uso de internet.
+		\item Capacitación en atención a clientes.
+		\item Actitud de servicio.
+    \end{itemize}
+ 
+ 	\item[Cantidad aproximada:] de 1000 a 100,000.
+\end{cdtActor}
+
+
+%=========================================================
+\chapter{Introducción}
+ \begin{UseCase}[version=1.1]{UC1}{Rentar Vehículo}
+	{
+		Cuando un \refElem{cliente} desea rentar un vehículo, mediante este caso de uso podrá seleccionar el vehículo y los pormenores del servicio a fin de que conozca los precios asociados y pueda concluir con la compra del servicio de Renta.
+	}
+	\UCsection{Administración de Requerimientos}
+	\UCitem{Operación}{Operación del negocio.}
+	\UCitem{Prioridad}{\isHigh}% \isVeryHigh, \isHigh, \isMedium, \isLow, \isVeryLow, \isNull
+	\UCitem{Complejidad}{\isMedium}
+	\UCitem{Volatilidad}{\isMedium}
+	\UCitem{Madurez}{\isVeryHigh}
+	\UCsection{Atributos}
+	%\UCitem{Hereda de}{Ofrecer servicio}
+	\UCitem{Actor}{\refElem{Vendedor}}
+	\UCitem{Propósito}{Razón o motivación del actor para realizar el Use Case}
+	\UCitem{Entradas}{
+        \begin{Titemize}
+        	\Titem Nombre: \cdtInEscribir%\isInput{Nombre}{\ioMetodo}
+        	\Titem Apellido: \cdtInEscribir%\isInput{Nombre}{\ioMetodo}
+        	\Titem Sexo: \cdtInRadioButton[\cdtOpc{Masculino}, \cdtOpc{Femenino}]%\isInput{Nombre}{\ioMetodo}
+        	\Titem Municipio: \cdtInSeleccionar%\isInput{Nombre}{\ioMetodo}
+        	\Titem No Tarjeta: \cdtInEscanear[Qr]%\isInput{Nombre}{\ioMetodo}
+        	\Titem Fecha de nacimiento: \cdtInCalendario%\isInput{Nombre}{\ioMetodo}
+        	\Titem Activo: \cdtInCheckBox%\isInput{Nombre}{\ioMetodo}
+        	\Titem Apellido: \cdtInEscribir%\isInput{Nombre}{\ioMetodo}
+        \end{Titemize}		
+	}
+	\UCitem{Origen}{Teclado y mouse}
+	\UCitem{Salidas}{
+        \begin{Titemize}
+        	\Titem Fecha actual: \cdtOutObtener{Reloj}
+        	\Titem Entidades: \cdtOutObtener{Servicio web de INEGI}
+        	\Titem Total: \cdtOutCalcular{BR5}
+        	\Titem Entidades: \cdtOutListado{Nombres de Entidades federativas en dónde hay sucursales}
+        	\Titem Materias: \cdtOutTabla{clave, nombre, horario, grupo y cupo disponible}{Grupos y materias impartidos en el semestre actual}
+        \end{Titemize}	
+	}
+	\UCitem{Destino}{Pantalla}
+	\UCitem{Precondiciones}{Estado inicial necesario para ejecutar el Use Case (especifique el }
+	\UCitem{Postcondiciones}{Estado final del sistema después de ejecutar el Use Case. Efectos colaterales}
+	\UCitem{Errores}{Especifique los posibles errores (casos excepcionales: falla de algún sistema, del la BD; etc.):
+		\UCerr{1}{Falta un dato requerido}
+			{el sistema notifica mediante el mensaje MSG32 y continúa en el paso 3.}
+		\UCerr{2}{La fecha no es válida}
+			{el sistema notifica mediante el mensaje MSG31 y continúa en el paso 3.}
+	}
+	\UCitem{Tipo}{Primario o secundario (viene de un PE o una Inclusión). En caso de ser secundario especifique el CU del cual Extiende o se Incluye: Secundario, extiende/incluye de \cdtIdRef{id}{Nombre}.}
+	\UCitem{Req. funcional}{}
+	\UCitem{No funcionales}{}
+	\UCitem{Suposiciones}{}
+	\UCitem{Issues}{}
+	\UCitem{Fuente}{Documentos, personas o especificaciones que proporcionaron información para la especificación de este UseCase}
+	\UCitem{Observaciones}{Especifique cualquier aspecto que considere relevante a considerar para la interpretación e implementación del CU.}
+ \end{UseCase}
+
+ \begin{UCtrayectoria}
+    \UCpaso[\UCactor] Oprime el botón \IUbutton{Buscar} de la \IUref{IU1}{Login}
+    \UCpaso[\UCsist] Verifica que el usuario tenga permisos \refErr{1}
+    \includeUC{id}{Nombre}
+    \UCpaso[\UCsist] Verifica que el usuario tenga permisos \refTray{A}
+    \UCpaso El sistema ...
+ \end{UCtrayectoria}
+
+ \begin{UCalternativa}[Fin del caso de uso]{A}{El valor proporcionado está fuera de rango}
+    \UCpaso[\UCactor] Oprime el botón buscar
+    \UCpaso[\UCsist] Verifica que el usuario tenga permisos 
+    \UCpaso[\UCsist] Verifica que el usuario tenga permisos \refTray{B}
+    \UCpaso[] El sistema ...
+ \end{UCalternativa}
+
+ \begin{UCalternativa}{B}{El rango es tolerable}
+    \UCpaso[\UCactor] Oprime el botón buscar
+    \UCpaso[\UCsist] Verifica que el usuario tenga permisos \refErr{1}
+    \UCpaso[] Continúa en el paso 5.
+ \end{UCalternativa}
+
+\subsection{Puntos de extensión}
+\UCExtensionPoint{EP1}{El cliente solicita factura}{Del paso 3 al paso 8 y durante los pasos 12 y 15}{\refElem{UC3}}
+
+\UCExtensionPoint{EP2}{El cliente no está registrado}{Del paso 2 al paso 10}{\refElem{UC5}}
+
+%==========================================================
+\clossing
+\end{document}
