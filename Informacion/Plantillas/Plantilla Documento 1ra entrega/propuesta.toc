@@ -52,5 +52,3 @@
 \contentsline {subsection}{\numberline {6.2.9}Tester}{22}{subsection.6.2.9}
 \contentsline {section}{\numberline {6.3}Staff}{22}{section.6.3}
 \contentsline {chapter}{\numberline {7}Planeaci\IeC {\'o}n de la Comunicaci\IeC {\'o}n}{23}{chapter.7}
-\contentsline {section}{\numberline {7.1}Plan de comunicaci\IeC {\'o}n interna}{23}{section.7.1}
-\contentsline {section}{\numberline {7.2}Plan de comunicaci\IeC {\'o}n externa}{23}{section.7.2}

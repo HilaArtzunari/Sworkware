@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  14 SEP 2017 19:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  14 SEP 2017 19:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1500,7 +1500,7 @@ LaTeX Font Info:    Try loading font information for U+txexa on input line 31.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/txfonts/utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-<cdtTheme/agua.png, id=231, 1154.3125pt x 625.33624pt>
+<cdtTheme/agua.png, id=223, 1154.3125pt x 625.33624pt>
 File: cdtTheme/agua.png Graphic file (type png)
  <use cdtTheme/agua.png>
 Package pdftex.def Info: cdtTheme/agua.png used on input line 31.
@@ -1534,14 +1534,14 @@ Package babel Info: Redefining spanish shorthand "?
 
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./cdtTh
-eme/agua.png>] <cdtTheme/headerPar.png, id=243, 604.2575pt x 459.7175pt>
+eme/agua.png>] <cdtTheme/headerPar.png, id=235, 604.2575pt x 459.7175pt>
 File: cdtTheme/headerPar.png Graphic file (type png)
 
 <use cdtTheme/headerPar.png>
 Package pdftex.def Info: cdtTheme/headerPar.png used on input line 34.
 (pdftex.def)             Requested size: 45.99965pt x 35.0pt.
 
-<cdtTheme/logoPar.png, id=244, 524.96124pt x 100.375pt>
+<cdtTheme/logoPar.png, id=236, 524.96124pt x 100.375pt>
 File: cdtTheme/logoPar.png Graphic file (type png)
 
 <use cdtTheme/logoPar.png>
@@ -1552,7 +1552,7 @@ LaTeX Font Info:    Font shape `OT1/cmbr/m/it' in size <8> not available
 LaTeX Font Info:    Try loading font information for U+mvs on input line 34.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/marvosym/umvs.fd)
-<cdtTheme/pleca.png, id=245, 1706.375pt x 371.3875pt>
+<cdtTheme/pleca.png, id=237, 1706.375pt x 371.3875pt>
 File: cdtTheme/pleca.png Graphic file (type png)
  <use cdtTheme/pleca.png>
 Package pdftex.def Info: cdtTheme/pleca.png used on input line 34.
@@ -2225,14 +2225,14 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 67.
  [4])
-<cdtTheme/logoInp.png, id=399, 604.2575pt x 459.7175pt>
+<cdtTheme/logoInp.png, id=387, 604.2575pt x 459.7175pt>
 File: cdtTheme/logoInp.png Graphic file (type png)
 
 <use cdtTheme/logoInp.png>
 Package pdftex.def Info: cdtTheme/logoInp.png used on input line 48.
 (pdftex.def)             Requested size: 45.99965pt x 35.0pt.
 
-<cdtTheme/headerInp.png, id=400, 524.96124pt x 100.375pt>
+<cdtTheme/headerInp.png, id=388, 524.96124pt x 100.375pt>
 File: cdtTheme/headerInp.png Graphic file (type png)
 
 <use cdtTheme/headerInp.png>
@@ -2932,7 +2932,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 163--163
 
  []
 
-<images/servidor1.png, id=507, 702.625pt x 417.56pt>
+<images/servidor1.png, id=495, 702.625pt x 417.56pt>
 File: images/servidor1.png Graphic file (type png)
 
 <use images/servidor1.png>
@@ -3010,7 +3010,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 8.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 8.
-<images/plan.png, id=518, 364.06012pt x 520.70535pt>
+<images/plan.png, id=506, 364.06012pt x 520.70535pt>
 File: images/plan.png Graphic file (type png)
  <use images/plan.png>
 Package pdftex.def Info: images/plan.png used on input line 12.
@@ -3138,7 +3138,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 9.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 9.
-<images/Organigrama1.png, id=535, 607.26875pt x 390.45876pt>
+<images/Organigrama1.png, id=523, 607.26875pt x 390.45876pt>
 File: images/Organigrama1.png Graphic file (type png)
 
 <use images/Organigrama1.png>
@@ -3564,51 +3564,42 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 2.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 2.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 6.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 6.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 6.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 6.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 6.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 6.
-LaTeX Font Info:    Try loading font information for OT1+cmtl on input line 21.
+LaTeX Font Info:    Try loading font information for OT1+cmtl on input line 18.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/cmbright/ot1cmtl.fd
 File: ot1cmtl.fd 2005/04/13 v8.1 (WaS)
 )
-Underfull \hbox (badness 2781) in paragraph at lines 21--22
-\OT1/cmbr/m/sc/10 to-rio [][]$\OT1/cmtl/m/n/10 http : / / servidor . com /
+Underfull \hbox (badness 1406) in paragraph at lines 18--19
+\OT1/cmbr/m/sc/10 si-to-rio [][]$\OT1/cmtl/m/n/10 https : / / github . com /
  []
 
 
-Overfull \hbox (5.63939pt too wide) in paragraph at lines 11--26
-[] 
- []
-
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 32.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 32.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 32.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 32.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 32.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 32.
-
-Underfull \hbox (badness 2582) in paragraph at lines 41--41
-[]|\OT1/cmbr/m/sc/10 Project Ma-na-
+Underfull \hbox (badness 1406) in paragraph at lines 26--27
+\OT1/cmbr/m/sc/10 si-to-rio [][]$\OT1/cmtl/m/n/10 https : / / github . com /
  []
 
 
-Overfull \hbox (5.63939pt too wide) in paragraph at lines 37--51
+Underfull \hbox (badness 1406) in paragraph at lines 33--34
+\OT1/cmbr/m/sc/10 si-to-rio [][]$\OT1/cmtl/m/n/10 https : / / github . com /
+ []
+
+
+Underfull \hbox (badness 1406) in paragraph at lines 40--41
+\OT1/cmbr/m/sc/10 si-to-rio [][]$\OT1/cmtl/m/n/10 https : / / github . com /
+ []
+
+
+Underfull \hbox (badness 1406) in paragraph at lines 47--48
+\OT1/cmbr/m/sc/10 si-to-rio [][]$\OT1/cmtl/m/n/10 https : / / github . com /
+ []
+
+
+Underfull \hbox (badness 1406) in paragraph at lines 55--56
+\OT1/cmbr/m/sc/10 si-to-rio [][]$\OT1/cmtl/m/n/10 https : / / github . com /
+ []
+
+
+Overfull \hbox (5.63939pt too wide) in paragraph at lines 8--57
 [] 
  []
 
@@ -3754,17 +3745,20 @@ LaTeX Info: Redefining \% on input line 23.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 67.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 67.
 Package rerunfilecheck Info: File `propuesta.out' has not changed.
-(rerunfilecheck)             Checksum: 5AFAF1AC6850A858A7873EB23444445E;3769.
+(rerunfilecheck)             Checksum: 92E230E0529270CFD6131AFFEFA98FCD;3613.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 21988 strings out of 493014
- 376625 string characters out of 6133351
- 521536 words of memory out of 5000000
- 24769 multiletter control sequences out of 15000+600000
+ 21982 strings out of 493014
+ 376543 string characters out of 6133351
+ 521481 words of memory out of 5000000
+ 24766 multiletter control sequences out of 15000+600000
  26750 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  74i,16n,76p,946b,689s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3779,10 +3773,10 @@ e/2016/texmf-dist/fonts/type1/public/hfbright/hfbrsl10.pfb></usr/local/texlive/
 exmf-dist/fonts/type1/public/hfbright/hfbrsy10.pfb></usr/local/texlive/2016/tex
 mf-dist/fonts/type1/public/hfbright/hftl10.pfb></usr/local/texlive/2016/texmf-d
 ist/fonts/type1/public/marvosym/marvosym.pfb>
-Output written on propuesta.pdf (33 pages, 1058170 bytes).
+Output written on propuesta.pdf (33 pages, 1046828 bytes).
 PDF statistics:
- 659 PDF objects out of 1000 (max. 8388607)
- 586 compressed objects within 6 object streams
- 191 named destinations out of 1000 (max. 500000)
- 513 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 657 PDF objects out of 1000 (max. 8388607)
+ 584 compressed objects within 6 object streams
+ 188 named destinations out of 1000 (max. 500000)
+ 497 words of extra memory for PDF output out of 10000 (max. 10000000)
 
