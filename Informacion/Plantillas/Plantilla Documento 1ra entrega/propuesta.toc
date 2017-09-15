@@ -34,16 +34,23 @@
 \contentsline {section}{\numberline {4.4}Identificaci\IeC {\'o}n de requerimientos}{12}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}Requerimientos de usuario}{12}{subsection.4.4.1}
 \contentsline {subsection}{\numberline {4.4.2}Requerimientos de sistema}{12}{subsection.4.4.2}
-\contentsline {section}{\numberline {4.5}Arquitectura propuesta}{12}{section.4.5}
-\contentsline {chapter}{\numberline {5}Planeaci\IeC {\'o}n del Tiempo}{13}{chapter.5}
-\contentsline {section}{\numberline {5.1}Metodolog\IeC {\'\i }a de desarrollo}{13}{section.5.1}
-\contentsline {section}{\numberline {5.2}Descomposici\IeC {\'o}n de tareas}{13}{section.5.2}
-\contentsline {section}{\numberline {5.3}Diagrama de Gantt}{13}{section.5.3}
-\contentsline {chapter}{\numberline {6}Planeaci\IeC {\'o}n de Capital Humano}{15}{chapter.6}
-\contentsline {section}{\numberline {6.1}Organigrama}{15}{section.6.1}
-\contentsline {section}{\numberline {6.2}Responsabilidades}{16}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Project Manager}{16}{subsection.6.2.1}
-\contentsline {section}{\numberline {6.3}Staff}{16}{section.6.3}
-\contentsline {chapter}{\numberline {7}Planeaci\IeC {\'o}n de la Comunicaci\IeC {\'o}n}{17}{chapter.7}
-\contentsline {section}{\numberline {7.1}Plan de comunicaci\IeC {\'o}n interna}{17}{section.7.1}
-\contentsline {section}{\numberline {7.2}Plan de comunicaci\IeC {\'o}n externa}{17}{section.7.2}
+\contentsline {section}{\numberline {4.5}Descripci\IeC {\'o}n de la plataforma}{14}{section.4.5}
+\contentsline {chapter}{\numberline {5}Planeaci\IeC {\'o}n del Tiempo}{15}{chapter.5}
+\contentsline {section}{\numberline {5.1}Diagrama de Gantt}{15}{section.5.1}
+\contentsline {section}{\numberline {5.2}Entregables}{15}{section.5.2}
+\contentsline {chapter}{\numberline {6}Planeaci\IeC {\'o}n de Capital Humano}{17}{chapter.6}
+\contentsline {section}{\numberline {6.1}Organigrama}{17}{section.6.1}
+\contentsline {section}{\numberline {6.2}Responsabilidades}{17}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Project Manager}{17}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Coordinador de An\IeC {\'a}lisis}{18}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Analista}{19}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}Coordinador de dise\IeC {\~n}o}{19}{subsection.6.2.4}
+\contentsline {subsection}{\numberline {6.2.5}Dise\IeC {\~n}ador}{20}{subsection.6.2.5}
+\contentsline {subsection}{\numberline {6.2.6}Coordinador de desarrollo}{20}{subsection.6.2.6}
+\contentsline {subsection}{\numberline {6.2.7}Programador}{21}{subsection.6.2.7}
+\contentsline {subsection}{\numberline {6.2.8}Coordinador de pruebas}{21}{subsection.6.2.8}
+\contentsline {subsection}{\numberline {6.2.9}Tester}{22}{subsection.6.2.9}
+\contentsline {section}{\numberline {6.3}Staff}{22}{section.6.3}
+\contentsline {chapter}{\numberline {7}Planeaci\IeC {\'o}n de la Comunicaci\IeC {\'o}n}{23}{chapter.7}
+\contentsline {section}{\numberline {7.1}Plan de comunicaci\IeC {\'o}n interna}{23}{section.7.1}
+\contentsline {section}{\numberline {7.2}Plan de comunicaci\IeC {\'o}n externa}{23}{section.7.2}

@@ -36,7 +36,36 @@ Desarrollar un Sistema Web que permita a los estudiantes de escuelas superiores 
 	author=Roberto Mendoza Saavedra, 
 }
 
-\subsection{Requerimientos funcionales}
+\subsection{Requerimientos de usuario}
+
+\begin{enumerate}
+	\item El usuario necesita poder logearse
+	\item El usuario necesita poder crear un cuenta 
+	\item El usuario necesita podría editar su perfil
+	\item El usuario necesita comunicarse con otros usuarios. Podrá tener interacción con usuarios por medio de comentarios en la oferta
+	\item El usuario necesita subir un articulo para vender o donar 
+	\item El usuario necesita poder subir una imagen del articulo
+	\item El usuario necesita conocer el estado del articulo
+	\item El usuario necesita calificar al vendedor comprador
+	\item El usuario necesita elegir su rol
+	\item El usuario necesita eliminar un articulo. Solo uno quitar
+	\item El usuario necesita poder subir el datasheet de un articulo (opcional)
+	\item El usuario necesita poder agregar más articulos
+	\item El usuario necesita poder eliminar varios artículos. Solo uno quitar
+	\item El usuario necesita poder consultar artículos siendo vendedor o comprador. Quitar
+	\item El usuario necesita poder generar una lista de favoritos
+	\item El usuario necesita poder dar de alta, baja y actualización y consulta de componente 
+	\item El usuario podrá reportar contenido indebido
+	\item El administrador podrá bloquear al perfil del usuario reportado
+	\item El usuario podrá filtrar la búsqueda de componentes (nombre, escuela, unidad de aprendizaje, precio)
+	\item El usuario podrá dar de baja el perfil
+	\item El vendedor podrá tener varios interesados en un mismo componente
+	\item El usuario podrá agregar, editar o eliminar comentarios
+	\item El usuario podrá incluir nombre, cantidad, descripción, ua, escuela
+	\item El usuario podrá contactar al vendedor por medio de fb
+\end{enumerate}
+
+\subsection{Requerimientos de sistema}
 
 \begin{cdtRequirements}
 	\RFitem{RF1}{Control de acceso}
@@ -67,10 +96,6 @@ Desarrollar un Sistema Web que permita a los estudiantes de escuelas superiores 
 	    {Se requiere que el sistema permita reportar contenido indebido, a los administradores del sistema.}
 	
 \end{cdtRequirements}
-
-\subsection{Requerimientos de usuario}
-
-\subsection{Requerimientos de sistema}
 
 %	El alcance funcional del sistema se describe en esta sección especificando la prioridad como:
 %	
@@ -109,7 +134,18 @@ Desarrollar un Sistema Web que permita a los estudiantes de escuelas superiores 
 %\end{table}
 
 %---------------------------------------------------------
-\section{Arquitectura propuesta}
+\section{Descripción de la plataforma}
+
+Las características del sistema son:
+
+\begin{enumerate}
+	\item  El sistema será un sitio web.
+	\item  Se empleará PHP 5.
+	\item Se emplearán hojas de estilo CSS y HTML5
+	\item Se empleará BootStrap para su compatibilidad con dispositivos móviles
+\end{enumerate}
+
+Por lo que el navegador con el que se consulte el sitio web requiere ser compatible con las tecnologías antes mencionadas, así como nuestro servidor.
 
 \cdtInstrucciones{
 	Coloque un diagrama y su descripción para aclarar el tipo de solución propuesta. \\
@@ -128,7 +164,7 @@ Desarrollar un Sistema Web que permita a los estudiantes de escuelas superiores 
 
 \begin{figure}[htbp!]
 	\begin{center}
-		\fbox{\includegraphics[width=.7\textwidth]{images/arquitectura}}
+		\fbox{\includegraphics[width=.7\textwidth]{images/servidor1}}
 		\caption{Arquitectura del sistema.}
 		\label{fig:arquitectura}
 	\end{center}
