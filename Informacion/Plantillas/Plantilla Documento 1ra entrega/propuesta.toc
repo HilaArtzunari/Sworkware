@@ -37,7 +37,7 @@
 \contentsline {section}{\numberline {4.5}Descripci\IeC {\'o}n de la plataforma}{14}{section.4.5}
 \contentsline {chapter}{\numberline {5}Planeaci\IeC {\'o}n del Tiempo}{15}{chapter.5}
 \contentsline {section}{\numberline {5.1}Diagrama de Gantt}{15}{section.5.1}
-\contentsline {section}{\numberline {5.2}Entregables}{15}{section.5.2}
+\contentsline {section}{\numberline {5.2}Entregables}{16}{section.5.2}
 \contentsline {chapter}{\numberline {6}Planeaci\IeC {\'o}n de Capital Humano}{17}{chapter.6}
 \contentsline {section}{\numberline {6.1}Organigrama}{17}{section.6.1}
 \contentsline {section}{\numberline {6.2}Responsabilidades}{17}{section.6.2}

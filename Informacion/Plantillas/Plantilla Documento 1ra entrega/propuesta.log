@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  14 SEP 2017 19:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  15 SEP 2017 11:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -3010,11 +3010,11 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 8.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 8.
-<images/plan.png, id=506, 364.06012pt x 520.70535pt>
+<images/plan.png, id=506, 969.6225pt x 528.97626pt>
 File: images/plan.png Graphic file (type png)
  <use images/plan.png>
 Package pdftex.def Info: images/plan.png used on input line 12.
-(pdftex.def)             Requested size: 354.86412pt x 507.58636pt.
+(pdftex.def)             Requested size: 354.86412pt x 193.59534pt.
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 19.
 Package babel Info: Redefining spanish shorthand >>
@@ -3027,45 +3027,44 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 19.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 19.
-)
 File: cdtTheme/pleca.png Graphic file (type png)
 
 <use cdtTheme/pleca.png>
-Package pdftex.def Info: cdtTheme/pleca.png used on input line 57.
+Package pdftex.def Info: cdtTheme/pleca.png used on input line 24.
 (pdftex.def)             Requested size: 614.29454pt x 133.69939pt.
 File: cdtTheme/pleca.png Graphic file (type png)
  <use cdtTheme/pleca.png>
-Package pdftex.def Info: cdtTheme/pleca.png used on input line 57.
+Package pdftex.def Info: cdtTheme/pleca.png used on input line 24.
 (pdftex.def)             Requested size: 614.29454pt x 133.69939pt.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 57.
+(babel)             in language  on input line 24.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 57.
+(babel)             in language  on input line 24.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 57.
+(babel)             in language  on input line 24.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 57.
+(babel)             in language  on input line 24.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 57.
+(babel)             in language  on input line 24.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 57.
+(babel)             in language  on input line 24.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 57.
+(babel)             in language  on input line 24.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 57.
+(babel)             in language  on input line 24.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 57.
+(babel)             in language  on input line 24.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 57.
+(babel)             in language  on input line 24.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 57.
+(babel)             in language  on input line 24.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 57.
+(babel)             in language  on input line 24.
  [15
 
 
 
-]
+ <./images/plan.png>])
 File: cdtTheme/headerPar.png Graphic file (type png)
 
 <use cdtTheme/headerPar.png>
@@ -3108,11 +3107,10 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 57.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 57.
- [16 <./images/plan.png>]
+ [16]
 \openout2 = `capitalHumano.aux'.
 
-
-(./capitalHumano.tex
+ (./capitalHumano.tex
 Cap\'{\i }tulo 6.
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 3.
@@ -3773,7 +3771,7 @@ e/2016/texmf-dist/fonts/type1/public/hfbright/hfbrsl10.pfb></usr/local/texlive/
 exmf-dist/fonts/type1/public/hfbright/hfbrsy10.pfb></usr/local/texlive/2016/tex
 mf-dist/fonts/type1/public/hfbright/hftl10.pfb></usr/local/texlive/2016/texmf-d
 ist/fonts/type1/public/marvosym/marvosym.pfb>
-Output written on propuesta.pdf (33 pages, 1046828 bytes).
+Output written on propuesta.pdf (33 pages, 794030 bytes).
 PDF statistics:
  657 PDF objects out of 1000 (max. 8388607)
  584 compressed objects within 6 object streams
