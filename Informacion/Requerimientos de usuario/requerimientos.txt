@@ -1,0 +1,24 @@
+El usuario necesita poder logearse
+El usuario necesita poder crear un cuenta 
+El usuario necesita podría editar su perfil
+El usuario necesita comunicarse con otros usuarios. Podrá tener interacción con usuarios por medio de comentarios en la oferta
+El usuario necesita subir un articulo para vender o donar 
+El usuario necesita poder subir una imagen del articulo
+El usuario necesita conocer el estado del articulo
+El usuario necesita calificar al vendedor comprador
+El usuario necesita elegir su rol
+El usuario necesita eliminar un articulo. Solo uno quitar
+El usuario necesita poder subir el datasheet de un articulo (opcional)
+El usuario necesita poder agregar más articulos
+El usuario necesita poder eliminar varios artículos. Solo uno quitar
+El usuario necesita poder consultar artículos siendo vendedor o comprador. Quitar
+El usuario necesita poder generar una lista de favoritos
+El usuario necesita poder dar de alta, baja y actualización y consulta de componente 
+El usuario podrá reportar contenido indebido
+Se podrá bloquear al perfil del usuario reportado
+El usuario podrá filtrar la búsqueda de componentes (nombre, escuela, unidad de aprendizaje, precio)
+El usuario podrá dar de baja el perfil
+Podrá tener varios interesados en un mismo componente
+El usuario podrá agregar, editar o eliminar comentarios
+El usuario podrá incluir nombre, cantidad, descripción, ua, escuela
+El usuario podrá contactar al vendedor por medio de fb
