@@ -52,3 +52,6 @@
 \contentsline {subsection}{\numberline {6.2.9}Tester}{22}{subsection.6.2.9}
 \contentsline {section}{\numberline {6.3}Staff}{22}{section.6.3}
 \contentsline {chapter}{\numberline {7}Planeaci\IeC {\'o}n de la Comunicaci\IeC {\'o}n}{23}{chapter.7}
+\contentsline {chapter}{\numberline {8}Planificaci\IeC {\'o}n de la gesti\IeC {\'o}n de riesgos}{25}{chapter.8}
+\contentsline {section}{\numberline {8.1}Gesti\IeC {\'o}n de riesgos}{25}{section.8.1}
+\contentsline {section}{\numberline {8.2}An\IeC {\'a}lisis de riesgos}{26}{section.8.2}
