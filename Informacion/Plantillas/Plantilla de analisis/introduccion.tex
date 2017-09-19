@@ -1,19 +1,132 @@
+En este documento se presentará el análisis, diseño, construcción y las pruebas de nuestro SCVME, así como la metodología usada y las etapas que harán que el sistema vaya creciendo y permita resolver las problemáticas que actualmente enfrentan los estudiantes del IPN.
+	
+El presente documento se encuentra divido por 7 bloques: Introducción, Análisis de problema, Propuesta de solución, Modelo de Negocios, Modelo de despliegue del sistema, Modelo de comportamiento y modelo de la iteración.
 
-Presentación del documento, su contenido, organización, a quien va dirigido, por quien para quien cuando y donde se realizó, organización 
+En la introducción que en este momento lee se da una pequeña reseña del trabajo, así como los acrónimos, abreviaturas y referencias bibliográficas que se han consultado con el fin de diseñar este documento de la forma más amigable y entendible para el lector.
+En la sección de Análisis del problema se tratará el contexto del sistema, el cual define cómo se mueve la empresa actualmente; los procesos actuales, que describe quiénes y cuál es su puesto dentro del sistema; los problema identificados, que son las razones que lleva a la empresa a solicitar un sistema y que no permiten que funcione de manera eficaz; y, finalmente, las propuestas de solución, que son las alternativas que se podrían aplicar para resolver los problemas identificados, de esas alternativas de solución se seleccionará la que mejor resuelva el problema y cumpla los requisitos que la empresa solicita.
+
+La propuesta de solución se desglosará planteando primeramente los objetivos: un objetivo general y varios partículares, que serán las metas que queremos lograr con nuestro sistema; y se tratará el modelo de despliegue abarcando los requerimientos no funcionales, el modelado de dicho despliegue y las especificaciones de la plataforma.
+
+El modelo de negocios nos permitirá definir cómo trabaja la empresa actualmente y si en algún punto el software que se planea implementar podría llegar a cambiar la forma en la que se mueve la empresa. Primeramente se creará un glosario de términos para entender la jerga de los empleados, se tratarán los procesos ajustados, así como los procesos actuales, la descripción de atributos y finalmente las reglas del negocio, que son las principales y son las que rigen todo sistema.
+
+El modelo de despliegue del sistema en una sección encargada de mostrar cómo nuestro sistema se va desarrollando a través del tiempo y cómo está estructurado.
+
+El modelo de comportamiento describe qué funcionalidades tiene el sistema y cómo debe reaccionar ante diversos eventos que genere el usuario, describiendo sus atributos y cómo se va a mover el sistema en caso de entradas no esperadas.
+
+El modelo de iteraciones presentará la descripción completa de las interfaces de usuario y cómo éste puede manipularlas e interactuar con ellas para obtener un resultado definido.
+	
+Este documento va dirigido al profesor Ulises Vélez Saldaña, profesor de la Escuela Superior de Cómputo del Instituto Politécnico Nacional como un proyecto de desarrollo de software para la U.A. Ingeniería de Software realizado en el semestre 2017-2018-1.
+	
+Este documento será realizado por ’Sworkware Consultory. Designing Sales’, conformado por: 
+\begin{enumerate}
+	\item Mendoza Saavedra Roberto.
+	\item Mejía Mendoza Diana Laura.
+	\item Ferreira Osorno Ángel.
+	\item Corona Elizalde Luis Ángel.
+	\item Moreno González Gabriela.
+\end{enumerate}
+
+Realizado en la Escuela Superior de Cómputo del Instituto Politécnico Nacional, mediante una organización secuencial de las partes que se irán cubriendo del documento y de la presentación final.
 
 %--------------------------------------------------
 \section{Propósito}
-
+El propósito de nuestro sistema es resolver las problemáticas que presenta la forma en la que se trata la compra y venta del material electrónico dentro de escuelas superiores del IPN en Zacatenco.
 
 %--------------------------------------------------
 \section{Alcance}
-
+Nuestro proyecto planea cubrir todos los requerimientos funcionales y no funcionales que serán planteados y analizados a lo largo del proyecto para resolver las problemáticas principales. Se espera que los problemas secundarios sean tratados en tiempo posterior a la entrega de este proyecto.
 
 %--------------------------------------------------
 \section{Definiciones, acrónimos y abreviaturas}
+En este documento se utiliza un diagrama de Gantt para presentar el calendario de actividades.
+	
+Los requerimientos del sistema se enumeran utilizando la notación RS1, RS2, RS3, etc.
+	
+Se utilizan letras en {\em cursivas} para indicar palabras de otro idioma o que requieren una atención específica. 
+	
+La mayoría de las aclaraciones sobre un elemento se colocan como notas al pie.
+	
+\begin{description}
+	\item[Servidor:] Como el manejo será local, un servidor se entiende como el software que configura un PC como servidor para facilitar el acceso a la red y sus recursos.
+\end{description}
+
+\begin{description}
+	\item[UML:] Unified Modeling Language (Lenguaje de Modelado Unificado), es un lenguaje estándar utilizado para modelar diagramas de clases, de secuencias, etc.
+\end{description}
+
+\begin{description}
+	\item[Scrum:] Es una metodología de desarrollo de software.
+\end{description}
+
+\begin{description}
+	\item[Diagrama de Ishiwaka:] Son diagramas empleados para profundizar de una manera gráfica al menos 6 aspectos dentro de una problemática global.
+\end{description}
+
+\begin{description}
+	\item[Requerimientos funcionales:] Son todas aquellas acciones que requiere hacer el sistema y que necesita el usuario.
+\end{description}
+
+\begin{description}
+	\item[requerimientos no funcionales:] Son todas aquellas acciones o aspectos que deben cumplir las acciones que se realizan 'detrás' de los requerimientos funcionales para su correcta implementación.
+\end{description}
+
+\begin{description}
+	\item[Business Motivation Model:] Provee un esquema o estructura para desarrollar, comunicar, y gestionar los planes de negocio de una manera organizada.
+\end{description}
+
+\begin{description}
+	\item[Business Process Modeling Notation:] Es una notación utlizada para modelar procesos dentro de una empresa mediante el conocimiento de las reglas del negocio y de los procesos actuales.
+\end{description}
+
+\begin{description}
+	\item[Caso de uso:] Es una descriptiva de una acción que debe realizar el sistema, especificando los valores de entrada, las salidas y las pantallas en las que se llevará a cabo dicha acción.
+\end{description}
+
+\begin{description}
+	\item[Botón:] Es un componente de java swing que permite la realización de determinadas acciones al presionarse.
+\end{description}
+
+\begin{description}
+	\item[Campo de texto:] Es un componente de java swing que permite al usuario ingresar una cadena de texto.
+\end{description}
+
+\begin{description}
+	\item[Reglas del negocio:] Son todas aquellas sentencias que definen la operación del negocio y permiten a los participantes tomar decisiones.
+\end{description}
+
+\begin{description}
+	\item[Package:] Es una agrupación de clases afines.
+\end{description}
+
+\begin{description}
+	\item[Diagrama de despliegue:] Son los diagramas que muestran las clases que contiene un package.
+\end{description}
 
 %--------------------------------------------------
 \section{Referencias}
+* Bruegge, Bernd, y Allen H. Dutoit. Object-Oriented Software Engineering Conquering Complex and Changing Systems. 1 ed. Pittsburgh, USA: Prentice Hall, 1999. Impreso. \\
+
+* Docherty, Mike O'. Object-Oriented Analysis and Design Understanding System Development with UML 2.0. 1 ed. England: Joh Willey and Sons, Ltd, 2005. Impreso. \\
+
+* Booch, Grady, Robert A. Maksimchuk, Michael W. Engle, Bobbi J. Young, Jim Conallen, y Kelli A.  Houston. Object-Oriented Analysis and Design with Applications. 3 ed. Mexico City: Series Editors, 2000. Impreso. \\
+
+* Bruegge, Bernd, y Allen H. Dutoit. Object-Oriented Software Engineering Using UML, Patterns, and Java™. 3 ed. Pittsburgh, PA, United States: Prentice Hall, 2010. Impreso.
 
 %--------------------------------------------------
 \section{Contenido y organización}
+
+Nuestro documento se organiza en 2 secciones principales: análisis y diseño. La sección de análisis está organizada de la siguiente manera: \\
+
+1. Introducción: En esta sección abordaremos los aspecto generales para introducir al lector a la estructura de nuestro proyecto y cómo se fue elaborando tanto el análisis como el diseño etapa por etapa. \\
+
+2. Análisis del problema: El análisis describirá todo lo que hace el sistema mediante una metodología que tomamos llamada Scrum. Se abarcará el contexto que engloba actualmente a la empresa y las problemáticas que tiene y el porqué son problemáticas. Usaremos diagramas de Ishikawa para desglozar de manera profunda cada uno de los problemas identificados para así justificar el porqué es necesario este sistema. Mostraremos los requerimientos tanto funcionales como no funcionales y el análisis que les dará a cada uno de ellos de acuerdo a lo aprendido en clase. \\
+
+3. Propuesta de solución: La propuesta de solución son las alternativas que se encontraron durante el análisis que mejor resuelven la problemática especificada en el capítulo 2. En esta sección especificaremos el objetivo general de nuestro sistema, así como los objetivos específicos y el alcance que tendrá para resolver la mayoría de las situaciones que se han detectado como ineficientes, usando el 'Business Motivation Model'(BMM). En esta sección se desglosarán más a fondo los requerimientos no funcionales, así como el modelo que va a seguir el sistema y los requerimientos mínimos de instalación. \\
+
+4. Modelo de negocio: En esta sección se abordarán las reglas del negocio que rigen actualmente a la empresa y cómo se verían modificados los procesos que llevan a cabo para la generación, la consulta o el cambio de una cita, los pagos tanto de citas como de medicamentos, así como el manejo de los expedientes mediante el uso del 'Business Process Modeling Notation' (BPMN) para los diagramas de procesos y sus cambios. \\
+
+5. Modelo de despliegue del sistema: En esta sección se desglosará la forma en la que interactúan los servidores, computadoras, redes, hardware, etc. Se usará un diagrama de despliegue estandarizado por UML 2.0. En él se observarán gráficamente la forma en que interactúan los ordenadores disponibles con la red y como interactúan entre sí para el paso de información. \\
+
+6. Modelo del comportamiento: En este capítulo se desglosarán de manera concisa y profesional todos los casos de uso identificados en la sección 2 y 3, para que se observe qué campos se pedirán en cada uno de los procesos y acciones que podrá realizar el usuario y qué salidas o requisitos se necesitan para que esas entradas sean procesadas de la mejor forma posible y se harán referencia a las pantallas que se describirán en la sección 7 para una clara explicación de dichos casos. \\
+
+7. Modelo de la iteración: Finalmente, para concretar el análisis se desglosarán las pantallas en las cuales trabajará cada caso de uso, mostrando los botones, campos de texto y la forma en la que se mostrarán para la empresa para su consulta posterior con nuestro cliente y así saber si la pantalla es de su agrado y cumple con las reglas de negocio definidas en el capítulo 4. 
