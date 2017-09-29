@@ -37,18 +37,18 @@
 \contentsline {section}{\numberline {4.6}Reglas de Negocio}{13}{section.4.6}
 \contentsline {chapter}{\numberline {5}Modelo del despliegue del sistema}{15}{chapter.5}
 \contentsline {chapter}{\numberline {6}Modelo de comportamiento}{16}{chapter.6}
-\contentsline {section}{\numberline {6.1}CU12 Enviar comentario en la oferta de venta.}{17}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Descripci\IeC {\'o}n completa}{17}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Atributos importantes}{17}{subsection.6.1.2}
-\contentsline {subsection}{\numberline {6.1.3}Trayectorias del Caso de Uso}{17}{subsection.6.1.3}
-\contentsline {section}{\numberline {6.2}CU13 Editar comentario en la oferta de venta.}{19}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Descripci\IeC {\'o}n completa}{19}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Atributos importantes}{19}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Trayectorias del Caso de Uso}{19}{subsection.6.2.3}
-\contentsline {chapter}{\numberline {7}Modelo de la Interacci\IeC {\'o}n}{21}{chapter.7}
-\contentsline {subsection}{\numberline {7.0.1}IU5 Oferta de Venta}{21}{subsection.7.0.1}
-\contentsline {subsubsection}{Objetivo}{21}{section*.2}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{21}{section*.3}
-\contentsline {subsubsection}{Salidas}{21}{section*.4}
-\contentsline {subsubsection}{Entradas}{21}{section*.5}
-\contentsline {subsubsection}{Comandos}{21}{section*.6}
+\contentsline {section}{\numberline {6.1}CU12 Enviar comentario en la oferta de venta.}{19}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Descripci\IeC {\'o}n completa}{19}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Atributos importantes}{19}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}Trayectorias del Caso de Uso}{19}{subsection.6.1.3}
+\contentsline {section}{\numberline {6.2}CU13 Editar comentario en la oferta de venta.}{21}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Descripci\IeC {\'o}n completa}{21}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Atributos importantes}{21}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Trayectorias del Caso de Uso}{21}{subsection.6.2.3}
+\contentsline {chapter}{\numberline {7}Modelo de la Interacci\IeC {\'o}n}{23}{chapter.7}
+\contentsline {subsection}{\numberline {7.0.1}IU5 Oferta de Venta}{23}{subsection.7.0.1}
+\contentsline {subsubsection}{Objetivo}{23}{section*.2}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{23}{section*.3}
+\contentsline {subsubsection}{Salidas}{23}{section*.4}
+\contentsline {subsubsection}{Entradas}{23}{section*.5}
+\contentsline {subsubsection}{Comandos}{23}{section*.6}
