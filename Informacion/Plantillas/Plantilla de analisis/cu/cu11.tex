@@ -1,0 +1,42 @@
+\begin{UseCase}{CU11}{Denunciar usuario.}{
+		Permite denunciar a un usuario por comportamiento ofensivo y/o fraudolento para otros usuarios.
+	}
+		\UCitem{Versión}{1.0}
+		\UCitem{Actor}{Usuario.}
+		\UCitem{Propósito}{Identificar a usuarios que cometan actos fraudolentos y/o ofensivos.}
+		\UCitem{Entradas}{Opciones en un checkbox.}
+		\UCitem{Origen}{Mouse.}
+		\UCitem{Salidas}{Mensaje con la leyenda de que la denuncia fue recibida.}
+		\UCitem{Destino}{Pantalla.}
+		\UCitem{Precondiciones}{Estar registrado como usuario del sitio.}
+		\UCitem{Postcondiciones}{El historial de denuncias sera actualizado.}
+		\UCitem{Errores}{{\bf E1:} ``Error de conexión al servidor.'' -- El sistema muestra el Mensaje {\bf MSG1-}``Tú denuncia no puede ser enviado en este momento. Inténtalo más tarde.'' y continua al paso 3.}
+		
+		\UCitem{Tipo}{Caso de uso primario}
+		\UCitem{Observaciones}{}
+		\UCitem{Autor}{Angel Ferreira Osorno.}
+		\UCitem{Revisor}{Gabriela Moreno González}
+	\end{UseCase}
+
+	\begin{UCtrayectoria}{Principal}
+		\UCpaso[\UCactor] Selecciona la opción de "Denunciar'' en el comentario visible en la \IUref{IU3}{Perfil de proveedor}.
+		\UCpaso abre una ventana con checbox.
+		\UCpaso[\UCactor] selecciona la opción que considera seleccionando en el checkbox \Trayref{A}.
+		\UCpaso Habilita el botón \IUbutton{Enviar}
+		\UCpaso[\UCactor] realiza la denuncia presionando el botón \IUbutton{Enviar} \Trayref{B}.
+		\UCpaso Muestra una ventana con la leyenda de recepción de denuncia exitosa.
+	\end{UCtrayectoria}
+
+		\begin{UCtrayectoriaA}{A}{No hay selección en el checkbox.}
+			\UCpaso Deshabilita el botón \IUbutton{Enviar}.
+			\UCpaso Continua en el paso 3.
+		\end{UCtrayectoriaA}
+		
+		\begin{UCtrayectoriaA}{B}{Falla en la conexión con el servidor.}
+			\UCpaso Muestra el Mensaje {\bf MSG1-}``Tú denuncia no puede ser enviada en este momento. Inténtalo más tarde.''.
+			\UCpaso Continúa en el paso 3 del \UCref{CU11}.
+		\end{UCtrayectoriaA}
+		
+		
+		
+%-------------------------------------- TERMINA descripción del caso de uso.

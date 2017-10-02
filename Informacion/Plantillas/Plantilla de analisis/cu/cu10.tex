@@ -1,0 +1,41 @@
+
+	\begin{UseCase}{CU10}{Editar informacion de perfil.}{
+		Permite editar la informacion de un perfil como la escuela de procedencia, nombre de perfil y cambiar la imagen de perfil.
+	}
+		\UCitem{Versión}{1.0}
+		\UCitem{Actor}{Usuario}
+		\UCitem{Propósito}{Editar la información y/o imagen del perfil.}
+		\UCitem{Entradas}{Imagen,escuela de procedencia, nombre de perfil.}
+		\UCitem{Origen}{Teclado,mouse.}
+		\UCitem{Salidas}{Ventana con un mesaje de modificación exitosa.}
+		\UCitem{Destino}{Pantalla.}
+		\UCitem{Precondiciones}{Estar registrado como usuario del sitio,no estar bloqueado.}
+		\UCitem{Postcondiciones}{Los datos como escuela de procedencia, nombre de perfil y/o imagen cambian en el perfil.}
+		\UCitem{Errores}{{\bf E1:} ``Error de conexión al servidor.'' -- El sistema muestra el Mensaje {\bf MSG1-}``Inténtalo más tarde.'' y continua al paso 3.}
+		
+		\UCitem{Tipo}{Caso de uso primario}
+		\UCitem{Observaciones}{}
+		\UCitem{Autor}{Angel Ferreira Osorno.}
+		\UCitem{Revisor}{Gabriela Moreno González}
+	\end{UseCase}
+
+	\begin{UCtrayectoria}{Principal}
+		\UCpaso[\UCactor] da click con el cursor en el boton con la leyenda "Editar" en la \IUref{IU4}{Perfil de usuario}.
+		\UCpaso Habilita la insercción de texto en la \IUbutton{Enviar} de la \IUref{IU4}{Perfil de usuario} \Trayref{B}.
+		\UCpaso Habilita dos botones "guardar/cancelar" en la \IUbutton{Enviar} de la \IUref{IU4}{Perfil de usuario}.
+		\UCpaso[\UCactor] modifica la información de su perfil en la \IUref{IU4}{Perfil de usuario}.
+		\UCpaso[\UCactor] solicita la midificación dando click en el botón \IUbutton{Guardar} de la \IUref{IU4}{Perfil de usuario} \Trayref{A}.
+		\UCpaso Actualiza la información de la \IUref{IU4}{Perfil de usuario} con los nuevos valores ingresados.
+		
+	\end{UCtrayectoria}
+		\begin{UCtrayectoriaA}{A}{Falla en la conexión con el servidor.}
+			\UCpaso Muestra el Mensaje {\bf MSG1-}``Tú información no puede ser actualizada en este momento. Inténtalo más tarde.''.
+			\UCpaso Continúa en el paso 3 del \UCref{CU12}.
+		\end{UCtrayectoriaA}
+
+		\begin{UCtrayectoriaA}{B}{No hay contenido en la caja de texto de los datos del perfil.}
+			\UCpaso Deshabilita el botón \IUbutton{Guardar} de la \IUref{IU4}{Perfil de usuario}.
+			\UCpaso Continúa en el paso 2 del \UCref{CU10}.
+		\end{UCtrayectoriaA}
+		
+%-------------------------------------- TERMINA descripción del caso de uso.
