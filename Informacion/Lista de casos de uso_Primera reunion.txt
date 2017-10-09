@@ -14,7 +14,8 @@ Gabriela
 +Buscar Componente
 
 Angel
-+Ver perfil de usuario
++Ver perfil de usuario propio
++Ver perfil de proveedor
 +Modificar Perfil de usuario
 +Bloquear perfil de usuario
 +Eliminar perfil de usuario
