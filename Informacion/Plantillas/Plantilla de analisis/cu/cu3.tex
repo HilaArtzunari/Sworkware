@@ -1,0 +1,87 @@
+% \IUref{IUAdmPS}{Administrar Planta de Selección}
+% \IUref{IUModPS}{Modificar Planta de Selección}
+% \IUref{IUEliPS}{Eliminar Planta de Selección}
+
+% 
+
+
+% Copie este bloque por cada caso de uso:
+%-------------------------------------- COMIENZA descripción del caso de uso.
+
+%\begin{UseCase}[archivo de imágen]{UCX}{Nombre del Caso de uso}{
+	\begin{UseCase}{CU3}{Agregar componente}{
+		Permite al usuario poder agregar un nuevo componente para su venta o donaci\'on.
+	}
+		\UCitem{Versión}{0.1}
+		\UCitem{Actor}{Ususario}
+		\UCitem{Propósito}{Agregar nuevo componente para su venta o donaci\'on.}
+		\UCitem{Resumen}{El usuario podr\'a agregar nuevos componentes en su perfil que podr\'an ser vistos por otros usuarios para su adquisici\'on.}
+		
+		\UCitem{Entradas}{El usuario podr\'a insertar nombre, modelo, identificador, unidad de aprendizaje, escuela del producto a ofertar el cual ser\'a caracteristico por ser una cadena de caracteres alfanumericos con tama\~no m\'aximo de 70 caracteres.}
+
+		\UCitem{Origen}{Teclado.}		
+		
+		\UCitem{Salidas}{MSG1 ''Componente agregado con exito''.}
+		
+		\UCitem{Destino}{Pantalla del usuario.}
+
+		\UCitem{Precondiciones}{El usuario debe tener un componente para agregar as\'i como la informaci\'on solicitada para describirlo.}
+
+		\UCitem{Postcondiciones}{El sistema realizar\'n el registro al sistema.}
+		
+		\UCitem{Tipo}{Primario.}
+
+		\UCitem{Observaciones}{:).}
+						
+				
+		\UCitem{Autor}{Luis \'Angel Corona Elizalde.}
+
+		\UCitem{Revisor}{Gaby.}
+		
+	\end{UseCase}		
+
+	\begin{UCtrayectoria}{Principal}
+		\UCpaso[\UCactor] El usuario ingresa a la secci\'on de agregar componente. \label{CU2alta}.
+		\UCpaso[\UCactor] El usuario presiona el boton de agregar nuevo componente.%\Trayref{B}\label{CU1login} %\BRref{BR129}{Determinar si un Estudiante puede inscribir Seminario.} \Trayref{A}.
+		\UCpaso Dirige al usuario al formulario para agregar el nuevo componente.% Despliega la \IUref{UI32}{Pantalla de Selección de Seminario} con la lista de Seminarios Disponibles.
+		%\UCpaso Muestra el formulario%.\Trayref{A}\Trayref{B}%%Selecciona el Seminario en el que desea inscribirse \Trayref{B}\label{CU17SeleccionarSeminario}.
+		\UCpaso[\UCactor] Llena los campos solicitados por el sistema.
+		\UCpaso Revisa que los campos hayan sido escritos. \Trayref{A}\label{CU2altadeusuario}
+	%	\UCpaso Realiza la validación de contraseña valida	\Trayref{B}\label{CU2altadeusuario}
+		\UCpaso[\UCactor] Termina de llenar los datos del formulario y presiona el boton de aceptar. 
+		\UCpaso Muestra el {\bf MSG1-} ''Nuevo componente agregado al perfil''%% \BRref{BR130}{Determinar si un Estudiante puede inscribirse en un Seminario} \Trayref{C}.
+		\UCpaso Muestra al usuario una ventana para preguntar si desea agregar otro componente o regresar al pagina principal \Trayref{B} \Trayref{C}
+		
+%%		\UCpaso Direcciona al usuario a la pantalla principal 
+			
+	\end{UCtrayectoria}
+		
+		\begin{UCtrayectoriaA}{A}{El usuario no escribe en todos los campos}
+			\UCpaso Muestra el Mensaje {\bf MSG2-}``El campo [{\em nombre del campo a llenar}] no puede quedar vacio.''.
+			\UCpaso[\UCactor] Oprime el botón \IUbutton{Aceptar}.
+			\UCpaso Solicita llenar el campo requerido. 
+			\UCpaso Continua en el paso \ref{CU2altadeusuario} del \UCref{CU3}.
+			\UCpaso[] Termina el caso de uso.
+		\end{UCtrayectoriaA}
+		
+		\begin{UCtrayectoriaA}{B}{El usuario desea agregar otro componente}
+			\UCpaso[\UCactor] Presiona el boton de agregar otro componente \IUbutton{Salir}.
+			\UCpaso Se regresa al formulario de agregar componente.\ref{CU2alta} del \UCref{CU3}.
+			%\UCpaso  Muestra el Mensaje {\bf MSG4-}''La contrase\~na insertada es invalida.''.
+			%\UCpaso[\UCactor] Oprime el botón \IUbutton{Salir}.
+			%\UCpaso Solicita una nueva contrase\~na. 
+			%\UCpaso Continua en el paso \ref{CU2altadeusuario} del \UCref{CU2}.
+			\UCpaso[] Termina el caso de uso.
+		\end{UCtrayectoriaA}
+
+		\begin{UCtrayectoriaA}{B}{El usuario no desea agregar otro componente}
+			\UCpaso[\UCactor] Presiona el boton de regresar a la pagina principal \IUbutton{Salir}.
+			\UCpaso Regresa a la pagina principal.			
+%			\UCpaso  Muestra el Mensaje {\bf MSG4-}''La contrase\~na insertada es invalida.''.
+%			\UCpaso[\UCactor] Oprime el botón \IUbutton{Salir}.
+%			\UCpaso Solicita una nueva contrase\~na. 
+			\UCpaso Continua en el paso \ref{CU2altadeusuario} del \UCref{CU2}.
+			\UCpaso[] Termina el caso de uso.
+		\end{UCtrayectoriaA}
+		
+%-------------------------------------- TERMINA descripción del caso de uso.

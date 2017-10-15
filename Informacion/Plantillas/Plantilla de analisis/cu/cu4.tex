@@ -1,0 +1,91 @@
+% \IUref{IUAdmPS}{Administrar Planta de Selección}
+% \IUref{IUModPS}{Modificar Planta de Selección}
+% \IUref{IUEliPS}{Eliminar Planta de Selección}
+
+% 
+
+
+% Copie este bloque por cada caso de uso:
+%-------------------------------------- COMIENZA descripción del caso de uso.
+
+%\begin{UseCase}[archivo de imágen]{UCX}{Nombre del Caso de uso}{
+	\begin{UseCase}{CU4}{Eliminar componente}{
+		Permite al usuario poder eliminar un componente de su perfil.
+	}
+		\UCitem{Versión}{0.1}
+		\UCitem{Actor}{Administrado, usuario}
+		\UCitem{Propósito}{Eliminar un componente de la base de datos de acuerdo a un perfil en especifico.}
+		\UCitem{Resumen}{El sistema solicitara al usuario seleccionar un componente que desee eliminar de su perfil.}
+
+		\UCitem{Entradas}{Cuadro de selección con el cual el usuario identifique el componente que desea eliminar.}
+		
+		\UCitem{Origen}{Un clic por el mouse.}		
+		
+		\UCitem{Salidas}{MSG1 ''El componente se ha eliminado satisfactoriamente''.}
+		
+		\UCitem{Destino}{Pantalla del usuario.}
+
+		\UCitem{Precondiciones}{Debe existir un componente dato de alta en la base de datos para que pueda ser eliminado .}
+
+		\UCitem{Postcondiciones}{Ya no existir\'a el elemento en la base de datos.}
+		
+		\UCitem{Tipo}{Primario.}
+
+		\UCitem{Observaciones}{:).}
+						
+				
+		\UCitem{Autor}{Luis \'Angel Corona Elizalde.}
+
+		\UCitem{Revisor}{Gaby.}
+		
+	\end{UseCase}		
+
+	\begin{UCtrayectoria}{Principal}
+		\UCpaso[\UCactor] El usuario ingresa al sistema.  \IUref{UI23}{Pantalla principal del sistema}\label{CU17Login}.
+		\UCpaso[\UCactor] Ingresa a su catalogo de componentes.
+		\UCpaso[\UCactor] Selecciona el compontente que eliminará.
+		\UCpaso El sistema realiza la busqueda del componente en la base de datos.\Trayref{A}.
+		\UCpaso Al encontrar el componente realiza la eliminación de este de la base de datos.\Trayref{B}.
+		\UCpaso Muestra el Mensaje {\bf MSG1-}``El componente [{\em nombre del componente}] ha sido eliminado.''.
+		\UCpaso Regresa al usuario al catalogo \label{CU4eliminar}
+		%\UCpaso Direcciona al usuario a la pantalla principal %% \BRref{BR143}{Validar el horario del estudiante} \Trayref{D}.
+%		\UCpaso Calcula el costo del Seminario basado en el costo publicado en el catálogo de cursos, los costos aplicables al alumno y los impuestos aplicables, con base en las reglas \BRref{BR180}{Calcular costos del Estudiante} y \BRref{BR45}{Calcular impuestos por seminario}.
+		
+%		\UCpaso Despliega el desglose de costos en la \IUref{UI33}{Pantalla Mostrar costos por seminario}.
+%		\UCpaso Pide al Estudiante que confirme la inscripción alSeminario.
+%		\UCpaso[\UCactor] Confirma la inscripción al Seminario.
+%		\UCpaso Inscribe al Estudiante en el Seminario seleccionado.
+%		\UCpaso Informa que la inscripción se realizó exitosamente vía la \IUref{UI88}{Pantalla de resumen de inscripción al Seminario}. 
+%		\UCpaso Imprime el recibo de pago con base en la regla \BRref{BR100}{Recibo del Estudiante por inscripción a Seminario.}.
+%		\UCpaso Pregunta al estudiante si desea imprimir un comprobante de la inscripción.
+%		\UCpaso[\UCactor] Indica que desea imprimir el comprobante de la inscripción.
+%		\UCpaso Imprime el comprobante de la inscripción \IUref{UI189}{Reporte de inscripción a Seminario}.		
+	\end{UCtrayectoria}
+		
+		\begin{UCtrayectoriaA}{A}{No se encuentra componente en la base de datos}
+			\UCpaso Muestra el Mensaje {\bf MSG2-}``El componente [{\em nombre del componente}] no se encuentra.''.
+			\UCpaso[\UCactor] Oprime el botón \IUbutton{Aceptar}.
+			\UCpaso Regresa a la pantalla de inicio. 
+			\UCpaso Continua en el paso \ref{CU4eliminar}del \UCref{CU4}.
+			\UCpaso[] Termina el caso de uso.
+		\end{UCtrayectoriaA}
+		
+		\begin{UCtrayectoriaA}{B}{No realiza la eliminación del componente}
+			\UCpaso  Muestra el Mensaje {\bf MSG3-}``El componente [{\em nombre del componente}] no fue eliminado.''.
+			\UCpaso[\UCactor] Oprime el botón \IUbutton{Salir}.
+			\UCpaso Regresa a la pantalla de inicio. 
+			\UCpaso Continua en el paso \ref{CU4eliminar} del \UCref{CU4}.
+		\end{UCtrayectoriaA}
+
+%		\begin{UCtrayectoriaA}{C}{El estudiante no cumple con los prerrequicitos}
+%			\UCpaso Muestra el Mensaje {\bf MSG2-}``El Estudiante [{\em Número de Boleta}] no cumple con los requisitos para inscribirse al Seminario [{\em Nombre del Seminario seleccionado}].''.
+%			\UCpaso Muestra los requisitos que el Seminario seleccionado solicita.
+%			\UCpaso Continúa en el paso \ref{CU17SeleccionarSeminario} del \UCref{CU17}.
+%		\end{UCtrayectoriaA}
+
+%		\begin{UCtrayectoriaA}{D}{El horario es incompatible.}
+%			\UCpaso Muestra el Mensaje {\bf MSG3-}``El horario del [{\em Nombre del Seminario seleccionado}] no es compatible con el horario del curso [{\em Nombre de la materia y grupo del curso con el que choca el horario}].''.
+%			\UCpaso Continúa en el paso \ref{CU17SeleccionarSeminario} del \UCref{CU17}.
+%		\end{UCtrayectoriaA}
+		
+%-------------------------------------- TERMINA descripción del caso de uso.

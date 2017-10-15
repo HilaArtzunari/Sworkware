@@ -1,0 +1,73 @@
+% \IUref{IUAdmPS}{Administrar Planta de Selección}
+% \IUref{IUModPS}{Modificar Planta de Selección}
+% \IUref{IUEliPS}{Eliminar Planta de Selección}
+
+% 
+
+
+% Copie este bloque por cada caso de uso:
+%-------------------------------------- COMIENZA descripción del caso de uso.
+
+%\begin{UseCase}[archivo de imágen]{UCX}{Nombre del Caso de uso}{
+	\begin{UseCase}{CU2}{Alta de usuario}{
+		Permite al usuario poder darse de alta en el sistema.
+	}
+		\UCitem{Versión}{0.1}
+		\UCitem{Actor}{Ususario}
+		\UCitem{Propósito}{Agregar usuario al sistema.}
+		\UCitem{Resumen}{El sistema solicitara al usuario que ingrese los datos necesarios para poder realizar un registro en el sistema.}
+		\UCitem{Entradas}{usuario: Cadena de caracteres con el siguiente formato xxxxxxx donde x equivale a los caracteres del nombre del usuario puede ser de m\'aximo 15 letras. E-mail: Cadena de caracteres con el siquiente formato xxxx@dominio.com
+		Donde xxxx equivale al nombre de usuario, @dominio.com equivale al proveedor de la cuenta. password: Cadena de caracteres con un minimo de 8 letras, como m\'aximo 15 letras, entre ellas debe haber al menos un n\'umero. Nombre o iniciales de alguna escuela del IPN o establecimiento: Cadena de caracteres con el siguiente formato xxxxxxx donde x equivale a los caracteres del nombre del usuario puede ser de m\'aximo 100 letras. Nombre o nombres de la o las unidades de aprendizaje:  Cadena de caracteres con el siguiente formato xxxxxxx donde x equivale a los caracteres del nombre del usuario puede ser de m\'aximo 100 letras.}
+		\UCitem{Origen}{Teclado.}		
+		
+		\UCitem{Salidas}{MSG1 Bienvenido a la pagina.}
+		
+		\UCitem{Destino}{Pantalla del usuario.}
+
+		\UCitem{Precondiciones}{El usuario debe tener los datos necesarios para que puedan ser ingresados al sistema.}
+
+		\UCitem{Postcondiciones}{El sistema realizar\'n el registro al sistema.}
+		
+		\UCitem{Tipo}{Primario.}
+
+		\UCitem{Observaciones}{:).}
+						
+				
+		\UCitem{Autor}{Luis \'Angel Corona Elizalde.}
+
+		\UCitem{Revisor}{Gaby.}
+		
+	\end{UseCase}		
+
+	\begin{UCtrayectoria}{Principal}
+		\UCpaso[\UCactor] El usuario ingresa al sistema.  \IUref{UI23}{Pantalla principal del sistema}\label{CU17Login}.
+		\UCpaso[\UCactor] El usuario presiona el boton de registrar nuevo usuario.%\Trayref{B}\label{CU1login} %\BRref{BR129}{Determinar si un Estudiante puede inscribir Seminario.} \Trayref{A}.
+		\UCpaso Dirige al usuario al formulario de registro.% Despliega la \IUref{UI32}{Pantalla de Selección de Seminario} con la lista de Seminarios Disponibles.
+		\UCpaso Muestra el formulario%.\Trayref{A}\Trayref{B}%%Selecciona el Seminario en el que desea inscribirse \Trayref{B}\label{CU17SeleccionarSeminario}.
+		\UCpaso[\UCactor] Llena los campos solicitados por el sistema.
+		\UCpaso Realiza la validación de usuario disponible. \Trayref{A}\label{CU2altadeusuario}
+		\UCpaso Realiza la validación de contraseña valida	\Trayref{B}\label{CU2altadeusuario}
+		\UCpaso[\UCactor] Termina de llenar los datos del formulario y presiona el boton de aceptar.0 
+		\UCpaso Muestra el {\bf MSG1-} ''Bienvenido''%% \BRref{BR130}{Determinar si un Estudiante puede inscribirse en un Seminario} \Trayref{C}.
+		\UCpaso Direcciona al usuario a la pantalla principal 
+			
+	\end{UCtrayectoria}
+		
+		\begin{UCtrayectoriaA}{A}{El usuario no es valido}
+			\UCpaso Muestra el Mensaje {\bf MSG2-}``El usuario [{\em nombre de usuario}] es incorrecta o no esta disponible.''.
+			\UCpaso[\UCactor] Oprime el botón \IUbutton{Aceptar}.
+			\UCpaso Solicita un nuevo usuario. 
+			\UCpaso Continua en el paso \ref{CU2altadeusuario} del \UCref{CU2}.
+			\UCpaso[] Termina el caso de uso.
+		\end{UCtrayectoriaA}
+		
+		\begin{UCtrayectoriaA}{B}{La contrase\~na es invalida}
+			\UCpaso  Muestra el Mensaje {\bf MSG4-}''La contrase\~na insertada es invalida.''.
+			\UCpaso[\UCactor] Oprime el botón \IUbutton{Salir}.
+			\UCpaso Solicita una nueva contrase\~na. 
+			\UCpaso Continua en el paso \ref{CU2altadeusuario} del \UCref{CU2}.
+			\UCpaso[] Termina el caso de uso.
+		\end{UCtrayectoriaA}
+
+		
+%-------------------------------------- TERMINA descripción del caso de uso.
