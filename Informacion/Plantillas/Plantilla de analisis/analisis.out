@@ -68,27 +68,36 @@
 \BOOKMARK [2][-]{subsection.6.8.1}{Descripci\363n completa}{section.6.8}% 68
 \BOOKMARK [2][-]{subsection.6.8.2}{Atributos importantes}{section.6.8}% 69
 \BOOKMARK [2][-]{subsection.6.8.3}{Trayectorias del Caso de Uso}{section.6.8}% 70
-\BOOKMARK [1][-]{section.6.9}{CU10 Editar informacion de perfil.}{chapter.6}% 71
+\BOOKMARK [1][-]{section.6.9}{CU9 Ver perfil de usuario}{chapter.6}% 71
 \BOOKMARK [2][-]{subsection.6.9.1}{Descripci\363n completa}{section.6.9}% 72
 \BOOKMARK [2][-]{subsection.6.9.2}{Atributos importantes}{section.6.9}% 73
 \BOOKMARK [2][-]{subsection.6.9.3}{Trayectorias del Caso de Uso}{section.6.9}% 74
-\BOOKMARK [1][-]{section.6.10}{CU11 Denunciar usuario.}{chapter.6}% 75
+\BOOKMARK [1][-]{section.6.10}{CU10 Editar informacion de perfil.}{chapter.6}% 75
 \BOOKMARK [2][-]{subsection.6.10.1}{Descripci\363n completa}{section.6.10}% 76
 \BOOKMARK [2][-]{subsection.6.10.2}{Atributos importantes}{section.6.10}% 77
 \BOOKMARK [2][-]{subsection.6.10.3}{Trayectorias del Caso de Uso}{section.6.10}% 78
-\BOOKMARK [1][-]{section.6.11}{CU13 Enviar comentario en la oferta de venta.}{chapter.6}% 79
+\BOOKMARK [1][-]{section.6.11}{CU11 Denunciar usuario.}{chapter.6}% 79
 \BOOKMARK [2][-]{subsection.6.11.1}{Descripci\363n completa}{section.6.11}% 80
 \BOOKMARK [2][-]{subsection.6.11.2}{Atributos importantes}{section.6.11}% 81
 \BOOKMARK [2][-]{subsection.6.11.3}{Trayectorias del Caso de Uso}{section.6.11}% 82
-\BOOKMARK [1][-]{section.6.12}{CU14 Editar comentario en la oferta de venta.}{chapter.6}% 83
+\BOOKMARK [1][-]{section.6.12}{CU12 Eliminar perfil de usuario.}{chapter.6}% 83
 \BOOKMARK [2][-]{subsection.6.12.1}{Descripci\363n completa}{section.6.12}% 84
 \BOOKMARK [2][-]{subsection.6.12.2}{Atributos importantes}{section.6.12}% 85
 \BOOKMARK [2][-]{subsection.6.12.3}{Trayectorias del Caso de Uso}{section.6.12}% 86
-\BOOKMARK [0][-]{chapter.7}{Modelo de la Interacci\363n}{}% 87
-\BOOKMARK [1][-]{subsection.7.0.1}{IU3 Perfil de proveedor}{chapter.7}% 88
-\BOOKMARK [2][-]{subsection.7.0.2}{IU4 Perfil de usuario}{subsection.7.0.1}% 89
-\BOOKMARK [2][-]{subsection.7.0.3}{IU5 Oferta de Venta}{subsection.7.0.1}% 90
-\BOOKMARK [2][-]{subsection.7.0.4}{UI19 Ver componentes disponibles}{subsection.7.0.1}% 91
-\BOOKMARK [2][-]{subsection.7.0.5}{UI20 Editar informaci\363n del componente}{subsection.7.0.1}% 92
-\BOOKMARK [2][-]{subsection.7.0.6}{UI21 Calificar usuario}{subsection.7.0.1}% 93
-\BOOKMARK [2][-]{subsection.7.0.7}{UI22 Ver todos los componentes}{subsection.7.0.1}% 94
+\BOOKMARK [1][-]{section.6.13}{CU13 Enviar comentario en la oferta de venta.}{chapter.6}% 87
+\BOOKMARK [2][-]{subsection.6.13.1}{Descripci\363n completa}{section.6.13}% 88
+\BOOKMARK [2][-]{subsection.6.13.2}{Atributos importantes}{section.6.13}% 89
+\BOOKMARK [2][-]{subsection.6.13.3}{Trayectorias del Caso de Uso}{section.6.13}% 90
+\BOOKMARK [1][-]{section.6.14}{CU14 Editar comentario en la oferta de venta.}{chapter.6}% 91
+\BOOKMARK [2][-]{subsection.6.14.1}{Descripci\363n completa}{section.6.14}% 92
+\BOOKMARK [2][-]{subsection.6.14.2}{Atributos importantes}{section.6.14}% 93
+\BOOKMARK [2][-]{subsection.6.14.3}{Trayectorias del Caso de Uso}{section.6.14}% 94
+\BOOKMARK [0][-]{chapter.7}{Modelo de la Interacci\363n}{}% 95
+\BOOKMARK [1][-]{subsection.7.0.1}{IU3 Perfil de proveedor}{chapter.7}% 96
+\BOOKMARK [2][-]{subsection.7.0.2}{IU4 Perfil de usuario}{subsection.7.0.1}% 97
+\BOOKMARK [2][-]{subsection.7.0.3}{IU5 Oferta de Venta}{subsection.7.0.1}% 98
+\BOOKMARK [2][-]{subsection.7.0.4}{UI18 Perfil de administrador}{subsection.7.0.1}% 99
+\BOOKMARK [2][-]{subsection.7.0.5}{UI19 Ver componentes disponibles}{subsection.7.0.1}% 100
+\BOOKMARK [2][-]{subsection.7.0.6}{UI20 Editar informaci\363n del componente}{subsection.7.0.1}% 101
+\BOOKMARK [2][-]{subsection.7.0.7}{UI21 Calificar usuario}{subsection.7.0.1}% 102
+\BOOKMARK [2][-]{subsection.7.0.8}{UI22 Ver todos los componentes}{subsection.7.0.1}% 103

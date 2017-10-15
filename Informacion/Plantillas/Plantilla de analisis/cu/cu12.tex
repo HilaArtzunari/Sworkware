@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 \begin{UseCase}{CU12}{Eliminar a usuaio.}{
 		Permite a un administrador eliminar a un usuario
 	}
@@ -34,6 +35,49 @@
 		\begin{UCtrayectoriaA}{B}{Falla en la conexión con el servidor.}
 			\UCpaso Muestra el Mensaje {\bf MSG1-}``Tú solicitud no puede ser enviada en este momento. Inténtalo más tarde.''.
 			\UCpaso Continúa en el paso 1 del \UCref{CU11}.
+=======
+\begin{UseCase}{CU12}{Eliminar perfil de usuario.}{
+		El administrador podrá eliminar una cuenta de usuario que se encuentre bloqueada, que lleve mucho tiempo inactiva o que haya sido denunciada al menos 10 veces con motivos justificados.
+	}
+		\UCitem{Versión}{1.0}
+		\UCitem{Actor}{Administrador}
+		\UCitem{Propósito}{Eliminar perfiles de usuario que jamás se volverán a usar o no cumplan la normatividad del sitio}
+		\UCitem{Entradas}{Correo del usuario a eliminarse: cadena de caracteres con el formato example@domain.com}
+		\UCitem{Origen}{Teclado}
+		\UCitem{Salidas}{Mensaje {\bf MSG30-}``El usuario user\_name ha sido eliminado satisfactoriamente.''}
+		\UCitem{Destino}{Pantalla.}
+		\UCitem{Precondiciones}{- Estar registrado como administrador del sitio.
+		
+		- Haber iniciado sesión.
+		
+		- Conexión a internet.}
+		\UCitem{Postcondiciones}{El usuario correspondiente al correo será eliminado de los registros.}
+		\UCitem{Errores}{{\bf E1:} ``Error de conexión al servidor.'' -- El sistema muestra el Mensaje {\bf MSG1-}``No puedes eliminar al usuario en este momento. Inténtalo más tarde.'' y continua al paso 3.}
+		
+		\UCitem{Tipo}{Caso de uso secundario. Viene de \UCref{CU1}}
+		\UCitem{Observaciones}{Ninguna}
+		\UCitem{Autor}{Gabriela Moreno González.}
+		\UCitem{Revisor}{Diana Laura Mejía Mendoza.}
+	\end{UseCase}
+
+	\begin{UCtrayectoria}{Principal}
+		\UCpaso[\UCactor] Da clic en el botón \IUbutton{Eliminar un usuario} de la pantalla \IUref{UI18}{Ver perfil de administrador}
+		\UCpaso Abre una ventana con campo de texto.
+		\UCpaso[\UCactor] Escribe el correo del usuario a ser eliminado.
+		\UCpaso[\UCactor] Presiona el botón \IUbutton{Eliminar}
+		\UCpaso Busca al usuario con el correo ingresado y lo elimina \Trayref{A} \Trayref{B}
+		\UCpaso Muestra el mensaje {\bf MSG30-}``El usuario user\_name ha sido eliminado satisfactoriamente.''
+	\end{UCtrayectoria}
+
+		\begin{UCtrayectoriaA}{A}{No hay ningún usuario con ese correo.}
+			\UCpaso Muestra el mensaje {\bf MSG31-}``No existe un usuario con esa cuenta de correo.''
+			\UCpaso Continua en el paso 1 de \UCref{CU12}.
+		\end{UCtrayectoriaA}
+		
+		\begin{UCtrayectoriaA}{B}{Falla en la conexión con el servidor.}
+			\UCpaso Muestra el Mensaje {\bf MSG1-}``Tú denuncia no puede ser enviada en este momento. Inténtalo más tarde.''
+			\UCpaso Terminal el caso de uso.
+>>>>>>> origin/master
 		\end{UCtrayectoriaA}
 		
 		
