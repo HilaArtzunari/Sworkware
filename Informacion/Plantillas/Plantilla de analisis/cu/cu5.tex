@@ -1,0 +1,68 @@
+% \IUref{IUAdmPS}{Administrar Planta de Selección}
+% \IUref{IUModPS}{Modificar Planta de Selección}
+% \IUref{IUEliPS}{Eliminar Planta de Selección}
+
+% 
+
+
+% Copie este bloque por cada caso de uso:
+%-------------------------------------- COMIENZA descripción del caso de uso.
+
+%\begin{UseCase}[archivo de imágen]{UCX}{Nombre del Caso de uso}{
+	\begin{UseCase}{CU5}{Editar componente}{
+		El estudiante podrá editar los componentes electrónicos que tenga dados de alta en su cuenta de usuario para actualizar su información.
+	}
+		\UCitem{Versión}{0.1}
+		\UCitem{Actor}{Alumno}
+		\UCitem{Propósito}{Actualizar la información del componente electrónico cuando haya cambiado}
+		\UCitem{Resumen}{
+		El sistema muestra la información actual del componente electrónico para que el estudiante pueda elegir editarla y así actualizar su contenido}
+		\UCitem{Entradas}{
+		- Foto del componente electrónico: Imagen con formato .jpg
+		
+		- Nombre: Cadena de caracteres
+		
+		- Cantidad: número entero positivo
+		
+		- Precio: número de coma flotante positivo.
+		
+		- Descripción: Cadena de caracteres acerca del componente.
+		
+		- Link a la datasheet (opcional): URL con el formato http://www.example.com
+		}
+		\UCitem{Salidas}{Mensaje {\bf MSG-19}``Se ha actualizado la información del componente correctamente''}
+		\UCitem{Precondiciones}{
+		- El componente debe estar registrado.
+		
+		- El usuario requiere tener una cuenta.
+		
+		- La cuenta de usuario no puede estar bloqueada.
+		
+		- Conexión a internet.
+		}
+		\UCitem{Postcondiciones}{El componente se actualizará.}
+		\UCitem{Autor}{Gabriela Moreno González}
+		\UCitem{Revisor}{Angel Ferreira Osorno}
+	\end{UseCase}
+
+	\begin{UCtrayectoria}{Principal}
+		\UCpaso[\UCactor] Da clic en el botón \IUbutton{Editar componente} en la \IUref{UI19}{Ver componentes disponibles}
+		\UCpaso[\UCactor] Introduce los datos del componente electrónico en la \IUref{UI20}{Editar información del componente}
+		\UCpaso[\UCactor] Da clic en el botón \IUbutton{Guardar información} \Trayref{A} \Trayref{B}
+		\UCpaso Actualiza la información del componente electrónico.
+		\UCpaso Muestra el mensaje 'Se ha actualizado la información del componente correctamente' 
+	\end{UCtrayectoria}
+		
+		\begin{UCtrayectoriaA}{A}{Uno o más datos no fueron ingresados}
+			\UCpaso Muestra el Mensaje {\bf MSG-20}``Por favor ingresa todos los campos''
+			\UCpaso[\UCactor] Oprime el botón \IUbutton{Aceptar}.
+			\UCpaso[\UCactor] Continúa en el paso 2 del \UCref{CU5}.
+		\end{UCtrayectoriaA}
+		
+		\begin{UCtrayectoriaA}{B}{Los formatos de los datos son incorrectos}
+			\UCpaso Muestra el mensaje {\bf MSG-21}``Por favor ingresa los campos correctamente''
+			\UCpaso[\UCactor] Oprime el botón \IUbutton{Aceptar}
+			\UCpaso Continua en el paso 2 del \UCref{CU5}.
+		\end{UCtrayectoriaA}
+
+%-------------------------------------- TERMINA descripción del caso de uso.

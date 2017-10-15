@@ -1,0 +1,54 @@
+% \IUref{IUAdmPS}{Administrar Planta de Selección}
+% \IUref{IUModPS}{Modificar Planta de Selección}
+% \IUref{IUEliPS}{Eliminar Planta de Selección}
+
+% 
+
+
+% Copie este bloque por cada caso de uso:
+%-------------------------------------- COMIENZA descripción del caso de uso.
+
+%\begin{UseCase}[archivo de imágen]{UCX}{Nombre del Caso de uso}{
+	\begin{UseCase}{CU6}{Calificar usuario}{
+		Permite tanto al vendedor como al comprador calificarse mutuamente de acuerdo a la experiencia que hayan tenido durante la compra y el pago del componente electrónico.
+	}
+		\UCitem{Versión}{0.1}
+		\UCitem{Actor}{Comprador y vendedor}
+		\UCitem{Propósito}{Que ambos expresen su opinión acerca de la experiencia en la compra del componente electrónico con otro usuario}
+		\UCitem{Resumen}{
+		El sistema envía un correo electrónico donde pedirá a ambos calificar la experiencia con el otro usuario mediante un Star Ranking dando ya sea de 0 a 5 estrellas y, si desea, colocando un comentario}
+		\UCitem{Entradas}{
+		- Star Ranking: número entero con valor entre 0 a 5.
+		
+		- Comentario: Cadena de caracteres.
+		}
+		\UCitem{Salidas}{Se muestra el mensaje {\bf MSG22-}``Gracias por tu opinión.''}
+		\UCitem{Precondiciones}{
+		- Se debe haber efectuado la compra.
+		
+		- Conexión a internet.
+		
+		- Requiere haber iniciado sesión en su correo electrónico.
+		}
+		\UCitem{Postcondiciones}{Se registrará tanto el puntaje como el comentario del usuario}
+		\UCitem{Autor}{Gabriela Moreno González.}
+		\UCitem{Revisor}{Roberto Mendoza Saavedra.}
+	\end{UseCase}
+
+	\begin{UCtrayectoria}{Principal}
+		\UCpaso[\UCactor] Abre el correo recibido con el asunto 'Califica tu experiencia en la compra del componente electrónico name\_component'
+		\UCpaso[\UCactor] Oprime el botón \IUbutton{Escribir opinión} \Trayref{A}
+		\UCpaso Abre una nueva pestaña con la pantalla \IUref{UI21}{Calificar usuario} 
+		\UCpaso[\UCactor] Ingresa su calificación y su comentario en la nueva pestaña.
+		\UCpaso[\UCactor] Oprime el botón \IUbutton{Enviar comentario} 
+		\UCpaso Guarda tanto la calificación como el comentario.
+		\UCpaso Muestra el mensaje {\bf MSG22-}``Gracias por tu opinión.''
+	\end{UCtrayectoria}
+		
+		\begin{UCtrayectoriaA}{A}{El usuario no ha iniciado sesión}
+			\UCpaso Muestra la pantalla \IUref{UI1}{Login}
+			\UCpaso[\UCactor] Realiza el caso de uso \UCref{CU1}
+			\UCpaso[\UCactor] Continúa en el paso 3 del \UCref{CU6}
+		\end{UCtrayectoriaA}
+		
+%-------------------------------------- TERMINA descripción del caso de uso.

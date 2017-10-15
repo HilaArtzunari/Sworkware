@@ -1,0 +1,27 @@
+\subsection{UI21 Calificar usuario}
+
+\subsubsection{Objetivo}
+	Permite al usuario escribir una opinión y asignar una calificación al otro usuario con el que realizó la compra.
+
+\subsubsection{Diseño}
+	Esta pantalla aparece cuando el usuario da clic en el botón \IUbutton{Escribir opinión} y abre una nueva pestaña con la pantalla.
+
+\IUfig[.5]{gui/UI21}{UI21}{Calificar usuario}
+
+\subsubsection{Salidas}
+
+	Mensaje {\bf MSG22-}``Gracias por tu opinión.''
+
+\subsubsection{Entradas}
+	- Star Ranking: número entero con valor entre 0 a 5.
+		
+	- Comentario: Cadena de caracteres.
+\subsubsection{Comandos}
+\begin{itemize}
+	\item \IUbutton{Enviar comentario}: Se muestra el mensaje {\bf MSG-22} y se manda a la \IUref{IU3}{Ver perfil de proveedor}
+	\item \IUbutton{Cancelar}: Cancela la operación y se muestra la \IUref{IU3}{Ver perfil de proveedor}
+\end{itemize}
+\subsubsection{Mensajes}
+	\begin{Citemize}
+		\item {\bf MSG100} Error al conectarse con el servidor, por favor intente más tarde.
+	\end{Citemize}

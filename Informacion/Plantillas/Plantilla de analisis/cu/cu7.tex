@@ -1,0 +1,36 @@
+% \IUref{IUAdmPS}{Administrar Planta de Selección}
+% \IUref{IUModPS}{Modificar Planta de Selección}
+% \IUref{IUEliPS}{Eliminar Planta de Selección}
+
+% 
+
+
+% Copie este bloque por cada caso de uso:
+%-------------------------------------- COMIENZA descripción del caso de uso.
+
+%\begin{UseCase}[archivo de imágen]{UCX}{Nombre del Caso de uso}{
+	\begin{UseCase}{CU7}{Consultar componentes}{
+		El estudiante puede consultar sus componentes electrónicos para editar, añadir o eliminar alguno.
+	}
+		\UCitem{Versión}{0.1}
+		\UCitem{Actor}{Vendedor}
+		\UCitem{Propósito}{Que el vendedor pueda actualizar la información de su stock de componentes electrónicos.}
+		\UCitem{Resumen}{
+		El sistema muestra los componentes electrónicos registrados para que el vendedor pueda actualizar su stock de ofertas}
+		\UCitem{Entradas}{Ninguna}
+		\UCitem{Salidas}{Muestra los componentes que ha registrado el vendedor}
+		\UCitem{Precondiciones}{- Requiere haber iniciado sesión.
+		
+		- Conexión a internet.
+		}
+		\UCitem{Postcondiciones}{El vendedor podrá ver sus componentes electrónicos.}
+		\UCitem{Autor}{Gabriela Moreno González.}
+		\UCitem{Revisor}{Diana Laura Mejía Mendoza.}
+	\end{UseCase}
+
+	\begin{UCtrayectoria}{Principal}
+		\UCpaso[\UCactor] Da clic en el botón  \IUbutton{Ver componentes ofertados} en la pantalla \IUref{IU3}{Ver perfil de proveedor}
+		\UCpaso Muestra los componentes en la pantalla \IUref{UI19}{Ver componentes disponibles}		
+	\end{UCtrayectoria}
+	
+%-------------------------------------- TERMINA descripción del caso de uso.

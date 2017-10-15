@@ -1,0 +1,41 @@
+% \IUref{IUAdmPS}{Administrar Planta de Selección}
+% \IUref{IUModPS}{Modificar Planta de Selección}
+% \IUref{IUEliPS}{Eliminar Planta de Selección}
+
+% 
+
+
+% Copie este bloque por cada caso de uso:
+%-------------------------------------- COMIENZA descripción del caso de uso.
+
+%\begin{UseCase}[archivo de imágen]{UCX}{Nombre del Caso de uso}{
+	\begin{UseCase}{CU8}{Buscar componentes}{
+		El comprador puede buscar componentes electrónicos que requiera para usarlos en sus prácticas y proyectos escolares.
+	}
+		\UCitem{Versión}{0.1}
+		\UCitem{Actor}{Comprador}
+		\UCitem{Propósito}{Que el comprador encuentre el componente electrónico que requiere y comprarlo.}
+		\UCitem{Resumen}{
+		El sistema muestra todos los componentes y un campo de texto donde el comprador podrá ingresar el nombre del componente electrónico para una búsqueda}
+		\UCitem{Entradas}{Nombre del componente electrónico: cadena de caracteres}
+		\UCitem{Salidas}{Todos los componentes electrónicos que poseen coincidencias con la cadena ingresada}
+		\UCitem{Precondiciones}{Conexión a internet}
+		\UCitem{Postcondiciones}{El sistema muestra los componentes}
+		\UCitem{Autor}{Gabriela Moreno González.}
+		\UCitem{Revisor}{Luis Ángel Corona Elizalde.}
+	\end{UseCase}
+
+	\begin{UCtrayectoria}{Principal}
+		\UCpaso[\UCactor] Introduce el nombre de su componente electrónico en el sistema vía la pantalla \IUref{UI22}{Ver todos los componentes}
+		\UCpaso[\UCactor] Oprime el botón \IUbutton{Buscar}
+		\UCpaso Busca todos los componentes que coincidan con el nombre ingresado \Trayref{A}.
+		\UCpaso Despliega los componentes encontrados por orden alfabético.
+	\end{UCtrayectoria}
+		
+		\begin{UCtrayectoriaA}{A}{No se encontraron coincidencias}
+			\UCpaso Muestra el Mensaje {\bf MSG23-}``No hubieron coincidencias con el nombre ingresado''
+			\UCpaso[\UCactor] Oprime el botón \IUbutton{Aceptar}.
+			\UCpaso[] Termina el caso de uso.
+		\end{UCtrayectoriaA}
+		
+%-------------------------------------- TERMINA descripción del caso de uso.

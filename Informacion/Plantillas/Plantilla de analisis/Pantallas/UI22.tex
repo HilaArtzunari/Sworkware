@@ -1,0 +1,29 @@
+\subsection{UI22 Ver todos los componentes}
+
+\subsubsection{Objetivo}
+	Permite al usuario realizar una búsqueda de componentes electrónicos independiente de si ha iniciado sesión o no.
+
+\subsubsection{Diseño}
+	Esta pantalla aparece cuando el usuario ingresa al sistema por primera vez.
+
+\IUfig[.5]{gui/UI22}{UI22}{Ver todos los componentes}
+
+\subsubsection{Salidas}
+
+	Todos los componentes electrónicos que poseen coincidencias con la cadena ingresada-
+
+\subsubsection{Entradas}
+
+	Nombre del componente electrónico: cadena de caracteres
+
+\subsubsection{Comandos}
+
+\begin{itemize}
+	\item \IUbutton{Buscar}: El sistema busca coincidencias de nombres con la cadena de entrada.
+\end{itemize}
+
+\subsubsection{Mensajes}
+	\begin{Citemize}
+		\item {\bf MSG100} Error al conectarse con el servidor, por favor intente más tarde.
+		\item {\bf MSG23-}``No hubieron coincidencias con el nombre ingresado''
+	\end{Citemize}

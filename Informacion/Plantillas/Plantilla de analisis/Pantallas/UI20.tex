@@ -1,0 +1,35 @@
+\subsection{UI20 Editar información del componente}
+
+\subsubsection{Objetivo}
+	Actualizar la información de un componente electrónico.
+
+\subsubsection{Diseño}
+	Esta pantalla aparece cuando el vendedor da clic en el botón \IUbutton{Editar} y muestra los atributos de cada componente para su edición.
+
+\IUfig[.5]{gui/UI20}{UI20}{Editar información del componente}
+
+\subsubsection{Salidas}
+
+	Mensaje {\bf MSG-19}``Se ha actualizado la información del componente correctamente''
+
+\subsubsection{Entradas}
+	- Foto del componente electrónico: Imagen con formato .jpg
+		
+	- Nombre: Cadena de caracteres
+		
+	- Cantidad: número entero positivo
+		
+	- Precio: número de coma flotante positivo.
+		
+	- Descripción: Cadena de caracteres acerca del componente.
+		
+	- Link a la datasheet (opcional): URL con el formato http://www.example.com
+\subsubsection{Comandos}
+\begin{itemize}
+	\item \IUbutton{Guardar}: Se muestra el mensaje {\bf MSG-19} y se manda a la \IUref{UI19}{Ver componentes disponibles}
+	\item \IUbutton{Cancelar}: Cancela la operación y se muestra la \IUref{IU19}{Ver componentes disponibles}
+\end{itemize}
+\subsubsection{Mensajes}
+	\begin{Citemize}
+		\item {\bf MSG100} Error al conectarse con el servidor, por favor intente más tarde.
+	\end{Citemize}
