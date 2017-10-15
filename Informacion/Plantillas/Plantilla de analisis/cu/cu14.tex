@@ -1,0 +1,42 @@
+\begin{UseCase}{CU14}{Editar comentario en la oferta de venta.}{
+		Permite editar un comentario en la oferta de venta que ya ha sido enviado por el comprador o vendedor. Sólo se podrán editar los comentarios enviados por el usuario logueado.
+	}
+		\UCitem{Versión}{1.0}
+		\UCitem{Actor}{Comprador y vendedor.}
+		\UCitem{Propósito}{Modificar el contenido del comentario en el momento que se desee.}
+		\UCitem{Entradas}{Comentario.}
+		\UCitem{Origen}{Teclado.}
+		\UCitem{Salidas}{Comentario actualizado debajo de la oferta de venta}
+		\UCitem{Destino}{Pantalla.}
+		\UCitem{Precondiciones}{Estar registrado como usuario del sitio.}
+		\UCitem{Postcondiciones}{La oferta tendrá un historial actualizado de venta.}
+		\UCitem{Errores}{{\bf E1:} ``Error de conexión al servidor.'' -- El sistema muestra el Mensaje {\bf MSG1-}``Tú comentario no puede ser enviado en este momento. Inténtalo más tarde.'' y continua al paso 3.}
+		
+		\UCitem{Tipo}{Caso de uso primario}
+		\UCitem{Observaciones}{}
+		\UCitem{Autor}{Roberto Mendoza Saavedra.}
+		\UCitem{Revisor}{Gabriela Moreno González}
+	\end{UseCase}
+
+	\begin{UCtrayectoria}{Principal}
+		\UCpaso[\UCactor] Selecciona la opción de ``Editar'' en el comentario visible en la oferta de venta.
+		\UCpaso Habilita la caja de texto del comentario  de la \IUref{IU5}{Oferta de venta}
+		\UCpaso[\UCactor] Realiza la edición del texto \Trayref{A}.
+		\UCpaso Habilita el botón \IUbutton{Enviar} de la \IUref{IU5}{Oferta de venta}
+		\UCpaso[\UCactor] Solicita la actualización del comentario presionando el botón \IUbutton{Enviar} de la \IUref{IU5}{Oferta de venta \Trayref{B}.}
+		\UCpaso Registra el comentario actualizado enviado por el comprador o vendedor.
+		\UCpaso Muestra el comentario actualizado debajo de la oferta mediante la \IUref{IU5}{Oferta de venta}
+\end{UCtrayectoria}
+		\begin{UCtrayectoriaA}{A}{No hay contenido en la caja de texto}
+			\UCpaso Deshabilita el botón \IUbutton{Enviar} de la \IUref{IU5}{Oferta de venta}
+			\UCpaso Continua en el paso 3.
+		\end{UCtrayectoriaA}
+		
+		\begin{UCtrayectoriaA}{B}{Falla en la conexión con el servidor.}
+			\UCpaso Muestra el Mensaje {\bf MSG1-}``Tú comentario no puede ser enviado en este momento. Inténtalo más tarde.''.
+			\UCpaso Continúa en el paso 3 del \UCref{CU14}.
+		\end{UCtrayectoriaA}
+		
+		
+		
+%-------------------------------------- TERMINA descripción del caso de uso.

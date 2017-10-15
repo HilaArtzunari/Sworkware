@@ -1,15 +1,31 @@
-\begin{UseCase}{CU13}{Editar comentario en la oferta de venta.}{
-		Permite editar un comentario en la oferta de venta que ya ha sido enviado por el comprador o vendedor. Sólo se podrán editar los comentarios enviados por el usuario logueado.
+% \IUref{IUAdmPS}{Administrar Planta de Selección}
+% \IUref{IUModPS}{Modificar Planta de Selección}
+% \IUref{IUEliPS}{Eliminar Planta de Selección}
+
+% 
+
+
+% Copie este bloque por cada caso de uso:
+%-------------------------------------- COMIENZA descripción del caso de uso.
+%\begin{figure}[htbp!]
+	%	\centering
+		%	\includegraphics[width=0.8\textwidth]{images/RegistrarCliente}
+		%\caption{Diagrama de Casos de Uso del sistema.}
+	%\end{figure}
+
+%\begin{UseCase}[archivo de imágen]{UCX}{Nombre del Caso de uso}{
+	\begin{UseCase}{CU13}{Enviar comentario en la oferta de venta.}{
+		Permite enviar un comentario en la oferta de venta de un componente electrónico para poder interactuar con el vendedor. Sólo se podrá enviar si el usuario se encuentra registrado.
 	}
 		\UCitem{Versión}{1.0}
 		\UCitem{Actor}{Comprador y vendedor.}
-		\UCitem{Propósito}{Modificar el contenido del comentario en el momento que se desee.}
+		\UCitem{Propósito}{Tener una interacción con el vendedor al momento de que un comprador se encuentre interesado en el componente electrónico.}
 		\UCitem{Entradas}{Comentario.}
 		\UCitem{Origen}{Teclado.}
-		\UCitem{Salidas}{Comentario actualizado debajo de la oferta de venta}
+		\UCitem{Salidas}{Comentario debajo de la oferta de venta}
 		\UCitem{Destino}{Pantalla.}
 		\UCitem{Precondiciones}{Estar registrado como usuario del sitio.}
-		\UCitem{Postcondiciones}{La oferta tendrá un historial actualizado de venta.}
+		\UCitem{Postcondiciones}{La oferta tendrá un historial de venta.}
 		\UCitem{Errores}{{\bf E1:} ``Error de conexión al servidor.'' -- El sistema muestra el Mensaje {\bf MSG1-}``Tú comentario no puede ser enviado en este momento. Inténtalo más tarde.'' y continua al paso 3.}
 		
 		\UCitem{Tipo}{Caso de uso primario}
@@ -19,24 +35,15 @@
 	\end{UseCase}
 
 	\begin{UCtrayectoria}{Principal}
-		\UCpaso[\UCactor] Selecciona la opción de ``Editar'' en el comentario visible en la oferta de venta.
-		\UCpaso Habilita la caja de texto del comentario  de la \IUref{IU5}{Oferta de venta}
-		\UCpaso[\UCactor] Realiza la edición del texto \Trayref{A}.
-		\UCpaso Habilita el botón \IUbutton{Enviar} de la \IUref{IU5}{Oferta de venta}
-		\UCpaso[\UCactor] Solicita la actualización del comentario presionando el botón \IUbutton{Enviar} de la \IUref{IU5}{Oferta de venta \Trayref{B}.}
-		\UCpaso Registra el comentario actualizado enviado por el comprador o vendedor.
-		\UCpaso Muestra el comentario actualizado debajo de la oferta mediante la \IUref{IU5}{Oferta de venta}
+		\UCpaso[\UCactor] Ingresa el comentario en la caja de texto de la \IUref{IU5}{Oferta de venta}.
+		\UCpaso Habilita el botón \IUbutton{Enviar} de la \IUref{IU5}{Oferta de venta}.
+		\UCpaso[\UCactor] Solicita el envío del comentario presionando el botón \IUbutton{Enviar} de la \IUref{IU5}{Oferta de venta} \Trayref{A}.
+		\UCpaso Registra el comentario enviado por el comprador o vendedor.
+		\UCpaso Muestra el comentario debajo de la oferta mediante la \IUref{IU5}{Oferta de venta}
 \end{UCtrayectoria}
-		\begin{UCtrayectoriaA}{A}{No hay contenido en la caja de texto}
-			\UCpaso Deshabilita el botón \IUbutton{Enviar} de la \IUref{IU5}{Oferta de venta}
-			\UCpaso Continua en el paso 3.
-		\end{UCtrayectoriaA}
-		
-		\begin{UCtrayectoriaA}{B}{Falla en la conexión con el servidor.}
+		\begin{UCtrayectoriaA}{A}{Falla en la conexión con el servidor.}
 			\UCpaso Muestra el Mensaje {\bf MSG1-}``Tú comentario no puede ser enviado en este momento. Inténtalo más tarde.''.
-			\UCpaso Continúa en el paso 3 del \UCref{CU12}.
+			\UCpaso Continúa en el paso 3 del \UCref{CU13}.
 		\end{UCtrayectoriaA}
-		
-		
 		
 %-------------------------------------- TERMINA descripción del caso de uso.

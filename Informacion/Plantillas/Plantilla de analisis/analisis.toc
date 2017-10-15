@@ -77,11 +77,11 @@
 \contentsline {subsection}{\numberline {6.10.1}Descripci\IeC {\'o}n completa}{36}{subsection.6.10.1}
 \contentsline {subsection}{\numberline {6.10.2}Atributos importantes}{36}{subsection.6.10.2}
 \contentsline {subsection}{\numberline {6.10.3}Trayectorias del Caso de Uso}{36}{subsection.6.10.3}
-\contentsline {section}{\numberline {6.11}CU12 Enviar comentario en la oferta de venta.}{38}{section.6.11}
+\contentsline {section}{\numberline {6.11}CU13 Enviar comentario en la oferta de venta.}{38}{section.6.11}
 \contentsline {subsection}{\numberline {6.11.1}Descripci\IeC {\'o}n completa}{38}{subsection.6.11.1}
 \contentsline {subsection}{\numberline {6.11.2}Atributos importantes}{38}{subsection.6.11.2}
 \contentsline {subsection}{\numberline {6.11.3}Trayectorias del Caso de Uso}{38}{subsection.6.11.3}
-\contentsline {section}{\numberline {6.12}CU13 Editar comentario en la oferta de venta.}{40}{section.6.12}
+\contentsline {section}{\numberline {6.12}CU14 Editar comentario en la oferta de venta.}{40}{section.6.12}
 \contentsline {subsection}{\numberline {6.12.1}Descripci\IeC {\'o}n completa}{40}{subsection.6.12.1}
 \contentsline {subsection}{\numberline {6.12.2}Atributos importantes}{40}{subsection.6.12.2}
 \contentsline {subsection}{\numberline {6.12.3}Trayectorias del Caso de Uso}{40}{subsection.6.12.3}
