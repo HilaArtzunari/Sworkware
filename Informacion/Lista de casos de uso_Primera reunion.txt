@@ -14,11 +14,10 @@ Gabriela
 +Buscar Componente
 
 Angel
-+Ver perfil de usuario propio
-+Ver perfil de proveedor
-+Modificar Perfil de usuario
-+Bloquear perfil de usuario
-+Eliminar perfil de usuario
+9+Ver perfil de usuario propio
+10+Modificar Perfil de usuario
+11+Bloquear perfil de usuario
+12+Eliminar perfil de usuario
 
 Roberto
 +Añadir comentario a componente
