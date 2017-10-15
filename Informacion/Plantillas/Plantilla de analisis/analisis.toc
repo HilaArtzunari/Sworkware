@@ -69,65 +69,80 @@
 \contentsline {subsection}{\numberline {6.8.1}Descripci\IeC {\'o}n completa}{33}{subsection.6.8.1}
 \contentsline {subsection}{\numberline {6.8.2}Atributos importantes}{33}{subsection.6.8.2}
 \contentsline {subsection}{\numberline {6.8.3}Trayectorias del Caso de Uso}{33}{subsection.6.8.3}
-\contentsline {section}{\numberline {6.9}CU10 Editar informacion de perfil.}{34}{section.6.9}
+\contentsline {section}{\numberline {6.9}CU9 Ver perfil de usuario}{34}{section.6.9}
 \contentsline {subsection}{\numberline {6.9.1}Descripci\IeC {\'o}n completa}{34}{subsection.6.9.1}
 \contentsline {subsection}{\numberline {6.9.2}Atributos importantes}{34}{subsection.6.9.2}
 \contentsline {subsection}{\numberline {6.9.3}Trayectorias del Caso de Uso}{34}{subsection.6.9.3}
-\contentsline {section}{\numberline {6.10}CU11 Denunciar usuario.}{36}{section.6.10}
-\contentsline {subsection}{\numberline {6.10.1}Descripci\IeC {\'o}n completa}{36}{subsection.6.10.1}
-\contentsline {subsection}{\numberline {6.10.2}Atributos importantes}{36}{subsection.6.10.2}
-\contentsline {subsection}{\numberline {6.10.3}Trayectorias del Caso de Uso}{36}{subsection.6.10.3}
-\contentsline {section}{\numberline {6.11}CU13 Enviar comentario en la oferta de venta.}{38}{section.6.11}
-\contentsline {subsection}{\numberline {6.11.1}Descripci\IeC {\'o}n completa}{38}{subsection.6.11.1}
-\contentsline {subsection}{\numberline {6.11.2}Atributos importantes}{38}{subsection.6.11.2}
-\contentsline {subsection}{\numberline {6.11.3}Trayectorias del Caso de Uso}{38}{subsection.6.11.3}
-\contentsline {section}{\numberline {6.12}CU14 Editar comentario en la oferta de venta.}{40}{section.6.12}
-\contentsline {subsection}{\numberline {6.12.1}Descripci\IeC {\'o}n completa}{40}{subsection.6.12.1}
-\contentsline {subsection}{\numberline {6.12.2}Atributos importantes}{40}{subsection.6.12.2}
-\contentsline {subsection}{\numberline {6.12.3}Trayectorias del Caso de Uso}{40}{subsection.6.12.3}
-\contentsline {chapter}{\numberline {7}Modelo de la Interacci\IeC {\'o}n}{42}{chapter.7}
-\contentsline {subsection}{\numberline {7.0.1}IU3 Perfil de proveedor}{42}{subsection.7.0.1}
-\contentsline {subsubsection}{Objetivo}{42}{section*.2}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{42}{section*.3}
-\contentsline {subsubsection}{Salidas}{42}{section*.4}
-\contentsline {subsubsection}{Entradas}{43}{section*.5}
-\contentsline {subsubsection}{Comandos}{43}{section*.6}
-\contentsline {subsection}{\numberline {7.0.2}IU4 Perfil de usuario}{43}{subsection.7.0.2}
-\contentsline {subsubsection}{Objetivo}{43}{section*.7}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{43}{section*.8}
-\contentsline {subsubsection}{Salidas}{43}{section*.9}
-\contentsline {subsubsection}{Comandos}{43}{section*.10}
-\contentsline {subsection}{\numberline {7.0.3}IU5 Oferta de Venta}{43}{subsection.7.0.3}
-\contentsline {subsubsection}{Objetivo}{43}{section*.11}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{44}{section*.12}
-\contentsline {subsubsection}{Salidas}{44}{section*.13}
-\contentsline {subsubsection}{Entradas}{44}{section*.14}
-\contentsline {subsubsection}{Comandos}{44}{section*.15}
-\contentsline {subsection}{\numberline {7.0.4}UI19 Ver componentes disponibles}{44}{subsection.7.0.4}
-\contentsline {subsubsection}{Objetivo}{45}{section*.16}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{45}{section*.17}
-\contentsline {subsubsection}{Salidas}{45}{section*.18}
-\contentsline {subsubsection}{Entradas}{45}{section*.19}
-\contentsline {subsubsection}{Comandos}{45}{section*.20}
-\contentsline {subsubsection}{Mensajes}{46}{section*.21}
-\contentsline {subsection}{\numberline {7.0.5}UI20 Editar informaci\IeC {\'o}n del componente}{46}{subsection.7.0.5}
-\contentsline {subsubsection}{Objetivo}{46}{section*.22}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{46}{section*.23}
-\contentsline {subsubsection}{Salidas}{46}{section*.24}
-\contentsline {subsubsection}{Entradas}{47}{section*.25}
-\contentsline {subsubsection}{Comandos}{47}{section*.26}
-\contentsline {subsubsection}{Mensajes}{47}{section*.27}
-\contentsline {subsection}{\numberline {7.0.6}UI21 Calificar usuario}{47}{subsection.7.0.6}
-\contentsline {subsubsection}{Objetivo}{47}{section*.28}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{47}{section*.29}
-\contentsline {subsubsection}{Salidas}{47}{section*.30}
-\contentsline {subsubsection}{Entradas}{47}{section*.31}
-\contentsline {subsubsection}{Comandos}{47}{section*.32}
-\contentsline {subsubsection}{Mensajes}{47}{section*.33}
-\contentsline {subsection}{\numberline {7.0.7}UI22 Ver todos los componentes}{48}{subsection.7.0.7}
-\contentsline {subsubsection}{Objetivo}{48}{section*.34}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{48}{section*.35}
-\contentsline {subsubsection}{Salidas}{48}{section*.36}
-\contentsline {subsubsection}{Entradas}{48}{section*.37}
-\contentsline {subsubsection}{Comandos}{48}{section*.38}
-\contentsline {subsubsection}{Mensajes}{49}{section*.39}
+\contentsline {section}{\numberline {6.10}CU10 Editar informacion de perfil.}{35}{section.6.10}
+\contentsline {subsection}{\numberline {6.10.1}Descripci\IeC {\'o}n completa}{35}{subsection.6.10.1}
+\contentsline {subsection}{\numberline {6.10.2}Atributos importantes}{35}{subsection.6.10.2}
+\contentsline {subsection}{\numberline {6.10.3}Trayectorias del Caso de Uso}{35}{subsection.6.10.3}
+\contentsline {section}{\numberline {6.11}CU11 Denunciar usuario.}{37}{section.6.11}
+\contentsline {subsection}{\numberline {6.11.1}Descripci\IeC {\'o}n completa}{37}{subsection.6.11.1}
+\contentsline {subsection}{\numberline {6.11.2}Atributos importantes}{37}{subsection.6.11.2}
+\contentsline {subsection}{\numberline {6.11.3}Trayectorias del Caso de Uso}{37}{subsection.6.11.3}
+\contentsline {section}{\numberline {6.12}CU12 Eliminar perfil de usuario.}{39}{section.6.12}
+\contentsline {subsection}{\numberline {6.12.1}Descripci\IeC {\'o}n completa}{39}{subsection.6.12.1}
+\contentsline {subsection}{\numberline {6.12.2}Atributos importantes}{39}{subsection.6.12.2}
+\contentsline {subsection}{\numberline {6.12.3}Trayectorias del Caso de Uso}{39}{subsection.6.12.3}
+\contentsline {section}{\numberline {6.13}CU13 Enviar comentario en la oferta de venta.}{41}{section.6.13}
+\contentsline {subsection}{\numberline {6.13.1}Descripci\IeC {\'o}n completa}{41}{subsection.6.13.1}
+\contentsline {subsection}{\numberline {6.13.2}Atributos importantes}{41}{subsection.6.13.2}
+\contentsline {subsection}{\numberline {6.13.3}Trayectorias del Caso de Uso}{41}{subsection.6.13.3}
+\contentsline {section}{\numberline {6.14}CU14 Editar comentario en la oferta de venta.}{43}{section.6.14}
+\contentsline {subsection}{\numberline {6.14.1}Descripci\IeC {\'o}n completa}{43}{subsection.6.14.1}
+\contentsline {subsection}{\numberline {6.14.2}Atributos importantes}{43}{subsection.6.14.2}
+\contentsline {subsection}{\numberline {6.14.3}Trayectorias del Caso de Uso}{43}{subsection.6.14.3}
+\contentsline {chapter}{\numberline {7}Modelo de la Interacci\IeC {\'o}n}{45}{chapter.7}
+\contentsline {subsection}{\numberline {7.0.1}IU3 Perfil de proveedor}{45}{subsection.7.0.1}
+\contentsline {subsubsection}{Objetivo}{45}{section*.2}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{45}{section*.3}
+\contentsline {subsubsection}{Salidas}{45}{section*.4}
+\contentsline {subsubsection}{Entradas}{46}{section*.5}
+\contentsline {subsubsection}{Comandos}{46}{section*.6}
+\contentsline {subsection}{\numberline {7.0.2}IU4 Perfil de usuario}{46}{subsection.7.0.2}
+\contentsline {subsubsection}{Objetivo}{46}{section*.7}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{46}{section*.8}
+\contentsline {subsubsection}{Salidas}{46}{section*.9}
+\contentsline {subsubsection}{Comandos}{46}{section*.10}
+\contentsline {subsection}{\numberline {7.0.3}IU5 Oferta de Venta}{46}{subsection.7.0.3}
+\contentsline {subsubsection}{Objetivo}{46}{section*.11}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{47}{section*.12}
+\contentsline {subsubsection}{Salidas}{47}{section*.13}
+\contentsline {subsubsection}{Entradas}{47}{section*.14}
+\contentsline {subsubsection}{Comandos}{47}{section*.15}
+\contentsline {subsection}{\numberline {7.0.4}UI18 Perfil de administrador}{47}{subsection.7.0.4}
+\contentsline {subsubsection}{Objetivo}{48}{section*.16}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{48}{section*.17}
+\contentsline {subsubsection}{Salidas}{48}{section*.18}
+\contentsline {subsubsection}{Entradas}{48}{section*.19}
+\contentsline {subsubsection}{Comandos}{48}{section*.20}
+\contentsline {subsubsection}{Mensajes}{49}{section*.21}
+\contentsline {subsection}{\numberline {7.0.5}UI19 Ver componentes disponibles}{49}{subsection.7.0.5}
+\contentsline {subsubsection}{Objetivo}{49}{section*.22}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{49}{section*.23}
+\contentsline {subsubsection}{Salidas}{50}{section*.24}
+\contentsline {subsubsection}{Entradas}{50}{section*.25}
+\contentsline {subsubsection}{Comandos}{50}{section*.26}
+\contentsline {subsubsection}{Mensajes}{50}{section*.27}
+\contentsline {subsection}{\numberline {7.0.6}UI20 Editar informaci\IeC {\'o}n del componente}{50}{subsection.7.0.6}
+\contentsline {subsubsection}{Objetivo}{50}{section*.28}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{50}{section*.29}
+\contentsline {subsubsection}{Salidas}{50}{section*.30}
+\contentsline {subsubsection}{Entradas}{50}{section*.31}
+\contentsline {subsubsection}{Comandos}{50}{section*.32}
+\contentsline {subsubsection}{Mensajes}{51}{section*.33}
+\contentsline {subsection}{\numberline {7.0.7}UI21 Calificar usuario}{51}{subsection.7.0.7}
+\contentsline {subsubsection}{Objetivo}{51}{section*.34}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{51}{section*.35}
+\contentsline {subsubsection}{Salidas}{51}{section*.36}
+\contentsline {subsubsection}{Entradas}{51}{section*.37}
+\contentsline {subsubsection}{Comandos}{52}{section*.38}
+\contentsline {subsubsection}{Mensajes}{52}{section*.39}
+\contentsline {subsection}{\numberline {7.0.8}UI22 Ver todos los componentes}{52}{subsection.7.0.8}
+\contentsline {subsubsection}{Objetivo}{52}{section*.40}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{52}{section*.41}
+\contentsline {subsubsection}{Salidas}{52}{section*.42}
+\contentsline {subsubsection}{Entradas}{53}{section*.43}
+\contentsline {subsubsection}{Comandos}{53}{section*.44}
+\contentsline {subsubsection}{Mensajes}{53}{section*.45}

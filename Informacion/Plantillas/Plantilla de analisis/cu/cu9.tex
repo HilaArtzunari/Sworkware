@@ -1,0 +1,36 @@
+\begin{UseCase}{CU9}{Ver perfil de usuario}{
+		Permite visualizar la información de la cuenta de usuario para su edición en caso de que la información actual no sea la correcta.
+	}
+		\UCitem{Versión}{0.1}
+		\UCitem{Actor}{Usuario}
+		\UCitem{Propósito}{Visualizar la información del perfil y permitir su edición}
+		\UCitem{Entradas}{Ninguna}
+		\UCitem{Origen}{Ninguno}
+		\UCitem{Salidas}{Ventana con los datos actuales del perfil}
+		\UCitem{Destino}{Pantalla.}
+		\UCitem{Precondiciones}{- Estar registrado como usuario del sitio.
+		
+		- No estar bloqueado.
+		
+		- Requiere haber iniciado sesión.}
+		\UCitem{Postcondiciones}{Se muestran los datos del perfil}
+		\UCitem{Errores}{{\bf E1:} ``Error de conexión al servidor.'' -- El sistema muestra el Mensaje {\bf MSG1-}``Inténtalo más tarde.'' y continua al paso 3.}
+		
+		\UCitem{Tipo}{Caso de uso secundario. Viene de \UCref{CU1}}
+		\UCitem{Observaciones}{Ninguna}
+		\UCitem{Autor}{Gabriela Moreno González}
+		\UCitem{Revisor}{Luis Ángel Corona Elizalde}
+	\end{UseCase}
+
+	\begin{UCtrayectoria}{Principal}
+		\UCpaso[\UCactor] Da click con el cursor en el botón \IUbutton{Usuario} en la pantalla \IUref{UI22}{Ver todos los componentes}.
+		\UCpaso Busca los datos del usuario \Trayref{A}.
+		\UCpaso Muestra la pantalla \IUref{IU4}{Perfil de usuario}
+	\end{UCtrayectoria}
+	
+		\begin{UCtrayectoriaA}{A}{Falla en la conexión con el servidor.}
+			\UCpaso Muestra el Mensaje {\bf MSG1-}``No se puede mostrar el perfil en este momento. Inténtalo más tarde.''
+			\UCpaso Continúa en el paso 1 del \UCref{CU9}.
+		\end{UCtrayectoriaA}
+
+%-------------------------------------- TERMINA descripción del caso de uso.
