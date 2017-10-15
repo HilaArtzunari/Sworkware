@@ -5,7 +5,7 @@
 		\UCitem{Versión}{1.0}
 		\UCitem{Actor}{Usuario}
 		\UCitem{Propósito}{Editar la información y/o imagen del perfil.}
-		\UCitem{Entradas}{Imagen,escuela de procedencia, nombre de perfil.}
+		\UCitem{Entradas}{Imagen,escuela de procedencia, nombre de perfil, hypervínculos}
 		\UCitem{Origen}{Teclado,mouse.}
 		\UCitem{Salidas}{Ventana con un mesaje de modificación exitosa.}
 		\UCitem{Destino}{Pantalla.}
@@ -16,26 +16,33 @@
 		\UCitem{Tipo}{Caso de uso primario}
 		\UCitem{Observaciones}{}
 		\UCitem{Autor}{Angel Ferreira Osorno.}
-		\UCitem{Revisor}{Gabriela Moreno González}
+		\UCitem{Revisor}{Diana Laura Mejía Mendoza.}
 	\end{UseCase}
 
 	\begin{UCtrayectoria}{Principal}
-		\UCpaso[\UCactor] da click con el cursor en el boton con la leyenda "Editar" en la \IUref{IU4}{Perfil de usuario}.
-		\UCpaso Habilita la insercción de texto en la \IUbutton{Enviar} de la \IUref{IU4}{Perfil de usuario} \Trayref{B}.
-		\UCpaso Habilita dos botones "guardar/cancelar" en la \IUbutton{Enviar} de la \IUref{IU4}{Perfil de usuario}.
-		\UCpaso[\UCactor] modifica la información de su perfil en la \IUref{IU4}{Perfil de usuario}.
-		\UCpaso[\UCactor] solicita la midificación dando click en el botón \IUbutton{Guardar} de la \IUref{IU4}{Perfil de usuario} \Trayref{A}.
-		\UCpaso Actualiza la información de la \IUref{IU4}{Perfil de usuario} con los nuevos valores ingresados.
+		\UCpaso[\UCactor] da click con el cursor en el botón \IUbutton{Editar perfil} en la \IUref{IU9}{Perfil de usuario}.
+		\UCpaso abre la pantalla para editar los datos del perfil \IUref{IU10}{Editar perfil}.
+		\UCpaso[\UCactor] llena los campos requeridos en los cuadros de texto en \IUref{IU10}{Editar perfil}\Trayref{C}.
+		\UCpaso Habilita el botón \IUbutton{Guardar} de la \IUref{IU10}{Editar perfil}.
+		\UCpaso Guarda los datos en los cuadros de texto de la \IUref{IU10}{Editar} \Trayref{A} \Trayref{B}.
+		\UCpaso Muestra un mensaje que la modificaión fue exitosa.
+		\UCpaso Actualiza la información de la \IUref{IU9}{Perfil de usuario} con los nuevos valores ingresados.
 		
 	\end{UCtrayectoria}
 		\begin{UCtrayectoriaA}{A}{Falla en la conexión con el servidor.}
 			\UCpaso Muestra el Mensaje {\bf MSG1-}``Tú información no puede ser actualizada en este momento. Inténtalo más tarde.''.
-			\UCpaso Continúa en el paso 3 del \UCref{CU12}.
+			\UCpaso Continúa en el paso 3 del \UCref{CU10}.
 		\end{UCtrayectoriaA}
 
 		\begin{UCtrayectoriaA}{B}{No hay contenido en la caja de texto de los datos del perfil.}
-			\UCpaso Deshabilita el botón \IUbutton{Guardar} de la \IUref{IU4}{Perfil de usuario}.
+			\UCpaso Deshabilita el botón \IUbutton{Guardar} de la \IUref{IU10}{Editar perfil}.
 			\UCpaso Continúa en el paso 2 del \UCref{CU10}.
+		\end{UCtrayectoriaA}
+
+		
+		\begin{UCtrayectoriaA}{C}{Cancelar.}
+			\UCpaso[\UCactor]da clic al boton \IUbutton{Cancelar} en la \IUref{IU10}{Editar perfil}
+			\UCpaso Continúa en el paso 2 del \UCref{CU9}.
 		\end{UCtrayectoriaA}
 		
 %-------------------------------------- TERMINA descripción del caso de uso.

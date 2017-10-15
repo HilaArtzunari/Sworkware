@@ -1,0 +1,26 @@
+\newpage
+\subsection{IU10 Editar perfil}
+
+\subsubsection{Objetivo}
+	Cambiar los datos del perfil relacionados con el usuario.
+	
+\subsubsection{Diseño}
+	Esta pantalla aparece al dar clic en el botón \IUbutton{Editar perfil} de la \IUref{IU9}{Perfil de usuario}, consta de seis cuadros de texto donde el 
+	el usuario puede cambiar la iformación asociado a las etiquetas, un botón para cargar una imagen al perfil, otro botón para guardar los datos y otro más 			para cancelar el proceso y regresar al perfil 	\IUref{IU9}{Perfil de usuario}.
+
+\IUfig[.65]{gui/UI10}{IU10}{Editar perfil.}
+
+\subsection{Entradas}
+	el nombre de usuario, la escuela de procedencia, hypervínculo de facebook, hypervínculo de twitter, correo electrónico, imagen en formato png o jpg.
+
+\subsubsection{Salidas}
+
+	Mensaje de error/exito 
+	
+
+\subsubsection{Comandos}
+\begin{itemize}
+	\item \IUbutton{Examinar...}: Se abre un explorador de archivos donde el usuario selecione una imagen.
+	\item \IUbutton{Guardar}: Se registra la nueva información del usuario y muestra un mensaje.
+	\item \IUbutton{Cancelar}: Se abre la pantalla del perfil de usuario \IUref{IU9}{Perfil de usuario}.
+\end{itemize}

@@ -1,15 +1,15 @@
-\begin{UseCase}{CU11}{Bloquear a usuaio.}{
-		Permite a un administrador bloquear a un usuario
+\begin{UseCase}{CU12}{Eliminar a usuaio.}{
+		Permite a un administrador eliminar a un usuario
 	}
 		\UCitem{Versión}{1.0}
 		\UCitem{Actor}{Administrador.}
-		\UCitem{Propósito}{Bloquear a usuarios que cometan actos fraudolentos y/o ofensivos.}
+		\UCitem{Propósito}{Eliminar a usuarios que cometan actos fraudolentos y/o ofensivos.}
 		\UCitem{Entradas}{clic de mouse.}
 		\UCitem{Origen}{Mouse.}
-		\UCitem{Salidas}{Mensaje con la leyenda "Esta seguro de bloquear a este usuario?".}
+		\UCitem{Salidas}{Mensaje con la leyenda "Esta seguro de eliminar a este usuario?".}
 		\UCitem{Destino}{Pantalla.}
 		\UCitem{Precondiciones}{Tener el rol de administrador del sitio e ingresar al sitio con cuenta de administrador.}
-		\UCitem{Postcondiciones}{El usuario bloqueado no podrá ingresar al sitio mediante el login.}
+		\UCitem{Postcondiciones}{Un cambio en el registro de usuarios en el sitio.}
 		\UCitem{Errores}{{\bf E1:} ``Error de conexión al servidor.'' -- El sistema muestra el Mensaje {\bf MSG1-}``Tú solicitud no puede ser enviado en este momento. Inténtalo más tarde.'' y continua al paso 1.}
 		
 		\UCitem{Tipo}{Caso de uso primario}
@@ -19,16 +19,16 @@
 	\end{UseCase}
 
 	\begin{UCtrayectoria}{Principal} 
-		\UCpaso[\UCactor] Selecciona el botón \IUbutton{Bloquear} en la \IUref{IU11}{Bloquear perfil} \Trayref{B}
-		\UCpaso abre una ventana con la leyenda "Esta seguro de bloquear a este usuario?".
+		\UCpaso[\UCactor] Selecciona el botón \IUbutton{Eliminar} en la \IUref{IU12}{Eliminar perfil} \Trayref{B}
+		\UCpaso abre una ventana con la leyenda "Esta seguro de eliminar a este usuario?".
 		\UCpaso[\UCactor] Selecciona dando click al botón \IUbutton{Si} \Trayref{A}
-		\UCpaso abre una ventana con la leyenda "Bloqueado exitosamente" \Trayref{B}.
-		\UCpaso bloquea el acceso al sitio del usuario.
+		\UCpaso abre una ventana con la leyenda "Eliminado exitosamente" \Trayref{B}.
+		\UCpaso elimina el registro en el sitio del usuario.
 	\end{UCtrayectoria}
 
 		\begin{UCtrayectoriaA}{A}{Cancelar.}
 			\UCpaso[\UCactor]da clic al boton \IUbutton{Cancelar} 
-			\UCpaso Continúa en el paso 1 del \UCref{CU11}.
+			\UCpaso Continúa en el paso 1 del \UCref{CU12}.
 		\end{UCtrayectoriaA}
 		
 		\begin{UCtrayectoriaA}{B}{Falla en la conexión con el servidor.}

@@ -1,0 +1,34 @@
+\begin{UseCase}{CU9}{Ver perfil.}{
+		Permite visualizar al usuario su información.
+	}
+		\UCitem{Versión}{1.0}
+		\UCitem{Actor}{Usuario.}
+		\UCitem{Propósito}{Permitir al usuario validar la información asociada a su perfil.}
+		\UCitem{Entradas}{Botón de perfil.}
+		\UCitem{Origen}{Mouse.}
+		\UCitem{Salidas}{Una interfaza de usuario.}
+		\UCitem{Destino}{Pantalla.}
+		\UCitem{Precondiciones}{Estar registrado como usuario del sitio.}
+		\UCitem{Postcondiciones}{Los datos del perfil registrados sin cambios.}
+		\UCitem{Errores}{{\bf E1:} ``Error de conexión al servidor.'' -- El sistema muestra el Mensaje {\bf MSG1-}``Tú perfil no puede ser visualizado en este momento. Inténtalo más tarde.'' y continua al paso 3.}
+		
+		\UCitem{Tipo}{Caso de uso primario}
+		\UCitem{Observaciones}{Los datos del perfil son mínimos, hypervínculo a su perfil de facebook, escuela de procedencia}
+		\UCitem{Autor}{Angel Ferreira Osorno.}
+		\UCitem{Revisor}{Diana Laura Mejía Mendoza.}
+	\end{UseCase}
+
+	\begin{UCtrayectoria}{Principal}
+		\UCpaso[\UCactor] Selecciona la opción de "Perfil'' en el portal. 
+		\UCpaso abre una ventana con los datos del usuario \IUref{IU9}{Perfil de usuario} \Trayref{A}.
+	\end{UCtrayectoria}
+
+		
+		\begin{UCtrayectoriaA}{A}{Falla en la conexión con el servidor.}
+			\UCpaso Muestra el Mensaje {\bf MSG1-}``Tú perfil no puede ser visualizado en este momento. Inténtalo más tarde.''.
+			\UCpaso Continúa en el paso 3 del \UCref{CU9}.
+		\end{UCtrayectoriaA}
+		
+		
+		
+%-------------------------------------- TERMINA descripción del caso de uso.
