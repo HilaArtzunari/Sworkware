@@ -109,101 +109,101 @@
 \contentsline {subsection}{\numberline {7.0.1}IU1 Login}{49}{subsection.7.0.1}
 \contentsline {subsubsection}{Objetivo}{49}{section*.2}
 \contentsline {subsubsection}{Dise\IeC {\~n}o}{49}{section*.3}
-\contentsline {subsubsection}{Salidas}{49}{section*.4}
-\contentsline {subsubsection}{Entradas}{49}{section*.5}
-\contentsline {subsubsection}{Comandos}{49}{section*.6}
+\contentsline {subsubsection}{Salidas}{50}{section*.4}
+\contentsline {subsubsection}{Entradas}{50}{section*.5}
+\contentsline {subsubsection}{Comandos}{50}{section*.6}
 \contentsline {subsubsection}{Mensajes}{50}{section*.7}
 \contentsline {subsection}{\numberline {7.0.2}IU2 Alta de usuario}{50}{subsection.7.0.2}
 \contentsline {subsubsection}{Objetivo}{50}{section*.8}
 \contentsline {subsubsection}{Dise\IeC {\~n}o}{50}{section*.9}
-\contentsline {subsubsection}{Salidas}{50}{section*.10}
-\contentsline {subsubsection}{Entradas}{50}{section*.11}
-\contentsline {subsubsection}{Comandos}{50}{section*.12}
-\contentsline {subsubsection}{Mensajes}{50}{section*.13}
-\contentsline {subsection}{\numberline {7.0.3}IU3 Agregar componente}{50}{subsection.7.0.3}
-\contentsline {subsubsection}{Objetivo}{50}{section*.14}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{50}{section*.15}
-\contentsline {subsubsection}{Salidas}{51}{section*.16}
-\contentsline {subsubsection}{Entradas}{51}{section*.17}
-\contentsline {subsubsection}{Comandos}{51}{section*.18}
-\contentsline {subsubsection}{Mensajes}{51}{section*.19}
-\contentsline {subsection}{\numberline {7.0.4}IU4 Eliminar componente}{51}{subsection.7.0.4}
-\contentsline {subsubsection}{Objetivo}{51}{section*.20}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{51}{section*.21}
-\contentsline {subsubsection}{Salidas}{51}{section*.22}
-\contentsline {subsubsection}{Entradas}{51}{section*.23}
-\contentsline {subsubsection}{Comandos}{51}{section*.24}
-\contentsline {subsubsection}{Mensajes}{51}{section*.25}
-\contentsline {subsection}{\numberline {7.0.5}IU5 Oferta de Venta}{52}{subsection.7.0.5}
-\contentsline {subsubsection}{Objetivo}{52}{section*.26}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{52}{section*.27}
-\contentsline {subsubsection}{Salidas}{52}{section*.28}
-\contentsline {subsubsection}{Entradas}{52}{section*.29}
+\contentsline {subsubsection}{Salidas}{51}{section*.10}
+\contentsline {subsubsection}{Entradas}{51}{section*.11}
+\contentsline {subsubsection}{Comandos}{51}{section*.12}
+\contentsline {subsubsection}{Mensajes}{51}{section*.13}
+\contentsline {subsection}{\numberline {7.0.3}IU3 Agregar componente}{51}{subsection.7.0.3}
+\contentsline {subsubsection}{Objetivo}{51}{section*.14}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{51}{section*.15}
+\contentsline {subsubsection}{Salidas}{52}{section*.16}
+\contentsline {subsubsection}{Entradas}{52}{section*.17}
+\contentsline {subsubsection}{Comandos}{52}{section*.18}
+\contentsline {subsubsection}{Mensajes}{52}{section*.19}
+\contentsline {subsection}{\numberline {7.0.4}IU4 Eliminar componente}{52}{subsection.7.0.4}
+\contentsline {subsubsection}{Objetivo}{52}{section*.20}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{52}{section*.21}
+\contentsline {subsubsection}{Salidas}{52}{section*.22}
+\contentsline {subsubsection}{Entradas}{52}{section*.23}
+\contentsline {subsubsection}{Comandos}{52}{section*.24}
+\contentsline {subsubsection}{Mensajes}{52}{section*.25}
+\contentsline {subsection}{\numberline {7.0.5}IU5 Oferta de Venta}{53}{subsection.7.0.5}
+\contentsline {subsubsection}{Objetivo}{53}{section*.26}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{53}{section*.27}
+\contentsline {subsubsection}{Salidas}{53}{section*.28}
+\contentsline {subsubsection}{Entradas}{53}{section*.29}
 \contentsline {subsubsection}{Comandos}{53}{section*.30}
-\contentsline {subsection}{\numberline {7.0.6}IU6 Elimina comentario}{53}{subsection.7.0.6}
-\contentsline {subsubsection}{Objetivo}{53}{section*.31}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{53}{section*.32}
-\contentsline {subsubsection}{Salidas}{53}{section*.33}
-\contentsline {subsubsection}{Entradas}{53}{section*.34}
-\contentsline {subsubsection}{Comandos}{53}{section*.35}
-\contentsline {subsubsection}{Mensajes}{53}{section*.36}
-\contentsline {subsection}{\numberline {7.0.7}IU9 Perfil de usuario}{54}{subsection.7.0.7}
-\contentsline {subsubsection}{Objetivo}{54}{section*.37}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{54}{section*.38}
-\contentsline {subsubsection}{Salidas}{54}{section*.39}
-\contentsline {subsubsection}{Entradas}{54}{section*.40}
-\contentsline {subsubsection}{Comandos}{55}{section*.41}
-\contentsline {subsubsection}{Mensajes}{55}{section*.42}
-\contentsline {subsection}{\numberline {7.0.8}IU10 Editar perfil}{56}{subsection.7.0.8}
-\contentsline {subsubsection}{Objetivo}{56}{section*.43}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{56}{section*.44}
-\contentsline {subsection}{\numberline {7.0.9}Entradas}{56}{subsection.7.0.9}
-\contentsline {subsubsection}{Salidas}{56}{section*.45}
-\contentsline {subsubsection}{Comandos}{57}{section*.46}
-\contentsline {subsection}{\numberline {7.0.10}IU11 Bloquear usuario}{58}{subsection.7.0.10}
-\contentsline {subsubsection}{Objetivo}{58}{section*.47}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{58}{section*.48}
-\contentsline {subsubsection}{Entradas}{58}{section*.49}
-\contentsline {subsubsection}{Salidas}{58}{section*.50}
-\contentsline {subsubsection}{Comandos}{58}{section*.51}
-\contentsline {subsection}{\numberline {7.0.11}IU12 Eliminar usuario}{59}{subsection.7.0.11}
-\contentsline {subsubsection}{Objetivo}{59}{section*.52}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{59}{section*.53}
-\contentsline {subsubsection}{Entradas}{59}{section*.54}
-\contentsline {subsubsection}{Salidas}{59}{section*.55}
-\contentsline {subsubsection}{Comandos}{59}{section*.56}
-\contentsline {subsection}{\numberline {7.0.12}UI18 Perfil de administrador}{60}{subsection.7.0.12}
-\contentsline {subsubsection}{Objetivo}{60}{section*.57}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{60}{section*.58}
-\contentsline {subsubsection}{Salidas}{60}{section*.59}
-\contentsline {subsubsection}{Entradas}{60}{section*.60}
-\contentsline {subsubsection}{Comandos}{60}{section*.61}
-\contentsline {subsubsection}{Mensajes}{61}{section*.62}
-\contentsline {subsection}{\numberline {7.0.13}UI19 Ver componentes disponibles}{61}{subsection.7.0.13}
-\contentsline {subsubsection}{Objetivo}{61}{section*.63}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{61}{section*.64}
-\contentsline {subsubsection}{Salidas}{62}{section*.65}
-\contentsline {subsubsection}{Entradas}{62}{section*.66}
-\contentsline {subsubsection}{Comandos}{62}{section*.67}
-\contentsline {subsubsection}{Mensajes}{62}{section*.68}
-\contentsline {subsection}{\numberline {7.0.14}UI20 Editar informaci\IeC {\'o}n del componente}{62}{subsection.7.0.14}
-\contentsline {subsubsection}{Objetivo}{62}{section*.69}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{62}{section*.70}
-\contentsline {subsubsection}{Salidas}{62}{section*.71}
-\contentsline {subsubsection}{Entradas}{62}{section*.72}
-\contentsline {subsubsection}{Comandos}{62}{section*.73}
-\contentsline {subsubsection}{Mensajes}{63}{section*.74}
-\contentsline {subsection}{\numberline {7.0.15}UI21 Calificar usuario}{63}{subsection.7.0.15}
-\contentsline {subsubsection}{Objetivo}{63}{section*.75}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{63}{section*.76}
-\contentsline {subsubsection}{Salidas}{63}{section*.77}
-\contentsline {subsubsection}{Entradas}{63}{section*.78}
-\contentsline {subsubsection}{Comandos}{64}{section*.79}
-\contentsline {subsubsection}{Mensajes}{64}{section*.80}
-\contentsline {subsection}{\numberline {7.0.16}UI22 Ver todos los componentes}{64}{subsection.7.0.16}
-\contentsline {subsubsection}{Objetivo}{64}{section*.81}
-\contentsline {subsubsection}{Dise\IeC {\~n}o}{64}{section*.82}
-\contentsline {subsubsection}{Salidas}{65}{section*.83}
-\contentsline {subsubsection}{Entradas}{65}{section*.84}
-\contentsline {subsubsection}{Comandos}{65}{section*.85}
-\contentsline {subsubsection}{Mensajes}{65}{section*.86}
+\contentsline {subsection}{\numberline {7.0.6}IU6 Elimina comentario}{54}{subsection.7.0.6}
+\contentsline {subsubsection}{Objetivo}{54}{section*.31}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{54}{section*.32}
+\contentsline {subsubsection}{Salidas}{55}{section*.33}
+\contentsline {subsubsection}{Entradas}{55}{section*.34}
+\contentsline {subsubsection}{Comandos}{55}{section*.35}
+\contentsline {subsubsection}{Mensajes}{55}{section*.36}
+\contentsline {subsection}{\numberline {7.0.7}IU9 Perfil de usuario}{56}{subsection.7.0.7}
+\contentsline {subsubsection}{Objetivo}{56}{section*.37}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{56}{section*.38}
+\contentsline {subsubsection}{Salidas}{56}{section*.39}
+\contentsline {subsubsection}{Entradas}{56}{section*.40}
+\contentsline {subsubsection}{Comandos}{57}{section*.41}
+\contentsline {subsubsection}{Mensajes}{57}{section*.42}
+\contentsline {subsection}{\numberline {7.0.8}IU10 Editar perfil}{58}{subsection.7.0.8}
+\contentsline {subsubsection}{Objetivo}{58}{section*.43}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{58}{section*.44}
+\contentsline {subsection}{\numberline {7.0.9}Entradas}{58}{subsection.7.0.9}
+\contentsline {subsubsection}{Salidas}{58}{section*.45}
+\contentsline {subsubsection}{Comandos}{59}{section*.46}
+\contentsline {subsection}{\numberline {7.0.10}IU11 Bloquear usuario}{60}{subsection.7.0.10}
+\contentsline {subsubsection}{Objetivo}{60}{section*.47}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{60}{section*.48}
+\contentsline {subsubsection}{Entradas}{60}{section*.49}
+\contentsline {subsubsection}{Salidas}{60}{section*.50}
+\contentsline {subsubsection}{Comandos}{60}{section*.51}
+\contentsline {subsection}{\numberline {7.0.11}IU12 Eliminar usuario}{61}{subsection.7.0.11}
+\contentsline {subsubsection}{Objetivo}{61}{section*.52}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{61}{section*.53}
+\contentsline {subsubsection}{Entradas}{61}{section*.54}
+\contentsline {subsubsection}{Salidas}{61}{section*.55}
+\contentsline {subsubsection}{Comandos}{61}{section*.56}
+\contentsline {subsection}{\numberline {7.0.12}UI18 Perfil de administrador}{62}{subsection.7.0.12}
+\contentsline {subsubsection}{Objetivo}{62}{section*.57}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{62}{section*.58}
+\contentsline {subsubsection}{Salidas}{62}{section*.59}
+\contentsline {subsubsection}{Entradas}{62}{section*.60}
+\contentsline {subsubsection}{Comandos}{62}{section*.61}
+\contentsline {subsubsection}{Mensajes}{63}{section*.62}
+\contentsline {subsection}{\numberline {7.0.13}UI19 Ver componentes disponibles}{63}{subsection.7.0.13}
+\contentsline {subsubsection}{Objetivo}{63}{section*.63}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{63}{section*.64}
+\contentsline {subsubsection}{Salidas}{64}{section*.65}
+\contentsline {subsubsection}{Entradas}{64}{section*.66}
+\contentsline {subsubsection}{Comandos}{64}{section*.67}
+\contentsline {subsubsection}{Mensajes}{64}{section*.68}
+\contentsline {subsection}{\numberline {7.0.14}UI20 Editar informaci\IeC {\'o}n del componente}{64}{subsection.7.0.14}
+\contentsline {subsubsection}{Objetivo}{64}{section*.69}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{64}{section*.70}
+\contentsline {subsubsection}{Salidas}{64}{section*.71}
+\contentsline {subsubsection}{Entradas}{64}{section*.72}
+\contentsline {subsubsection}{Comandos}{64}{section*.73}
+\contentsline {subsubsection}{Mensajes}{65}{section*.74}
+\contentsline {subsection}{\numberline {7.0.15}UI21 Calificar usuario}{65}{subsection.7.0.15}
+\contentsline {subsubsection}{Objetivo}{65}{section*.75}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{65}{section*.76}
+\contentsline {subsubsection}{Salidas}{65}{section*.77}
+\contentsline {subsubsection}{Entradas}{65}{section*.78}
+\contentsline {subsubsection}{Comandos}{66}{section*.79}
+\contentsline {subsubsection}{Mensajes}{66}{section*.80}
+\contentsline {subsection}{\numberline {7.0.16}UI22 Ver todos los componentes}{66}{subsection.7.0.16}
+\contentsline {subsubsection}{Objetivo}{66}{section*.81}
+\contentsline {subsubsection}{Dise\IeC {\~n}o}{66}{section*.82}
+\contentsline {subsubsection}{Salidas}{67}{section*.83}
+\contentsline {subsubsection}{Entradas}{67}{section*.84}
+\contentsline {subsubsection}{Comandos}{67}{section*.85}
+\contentsline {subsubsection}{Mensajes}{67}{section*.86}
