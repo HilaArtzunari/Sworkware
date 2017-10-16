@@ -1,0 +1,41 @@
+\begin{UseCase}{CU15}{Eliminar comentario en la oferta de venta.}{
+		Permite eliminar un comentario del historial de venta de algún componente electrónico. Sólo se podrán eliminar los comentarios añadidos por el usuario logueado.
+	}
+		\UCitem{Versión}{1.0}
+		\UCitem{Actor}{Comprador y vendedor.}
+		\UCitem{Propósito}{Eliminar uno o varios comentarios del historial de venta de algún componente electrónico en el momento que el usuario logueado lo desee.}
+		\UCitem{Entradas}{Ninguna.}
+		\UCitem{Origen}{Clic del mouse.}
+		\UCitem{Salidas}{Historial de venta actualizado debajo de la oferta de venta.}
+		\UCitem{Destino}{Pantalla.}
+		\UCitem{Precondiciones}{Estar registrado como usuario del sitio.}
+		\UCitem{Postcondiciones}{La oferta tendrá un historial actualizado de venta, lo que implica tener menos comentarios que en un inicio.}
+		\UCitem{Errores}{{\bf E1:} ``Error de conexión al servidor.'' -- El sistema muestra el Mensaje {\bf MSG1-}``Tú comentario no puede ser eliminado en este momento. Inténtalo más tarde.'' y continua al paso 3.}
+		
+		\UCitem{Tipo}{Caso de uso primario}
+		\UCitem{Observaciones}{}
+		\UCitem{Autor}{Roberto Mendoza Saavedra.}
+		\UCitem{Revisor}{Ángel Ferreira Osorno.}
+	\end{UseCase}
+
+	\begin{UCtrayectoria}{Principal}
+		\UCpaso[\UCactor] Selecciona la opción de ``Elminar'' en el comentario visible en la oferta de venta.
+		\UCpaso Solicita al usuario confirmar la eliminación del comentario mediante el Mensaje {\bf MSG3-}``¿Estás seguro que quieres eliminar este comentario?'' y continua al paso 3.
+		\UCpaso[\UCactor] Confirma la eliminación del comentario presionando el botón \IUbutton{Estoy seguro} de la \IUref{IU6}{Elimina comentario} \Trayref{A} \Trayref{B}.
+		\UCpaso Elimina el comentario del historial de venta del componente electrónico.
+		\UCpaso Muestra el historial de venta actualizado debajo de la oferta mediante la \IUref{IU5}{Oferta de venta}
+\end{UCtrayectoria}
+		\begin{UCtrayectoriaA}{A}{El usuario no está seguro de la eliminación del comentario.}
+    		\UCpaso[\UCactor] No confirma la eliminación del comentario presionando el botón \IUbutton{No estoy seguro} de la \IUref{IU6}{Elimina comentario}
+			\UCpaso Regresa al historial de venta mediante la \IUref{IU5}{Oferta de venta}
+			\UCpaso Continua en el paso 1.
+		\end{UCtrayectoriaA}
+		
+		\begin{UCtrayectoriaA}{B}{Falla en la conexión con el servidor.}
+			\UCpaso Muestra el Mensaje {\bf MSG1-}``Tú comentario no puede ser eliminado en este momento. Inténtalo más tarde.''.
+			\UCpaso Continúa en el paso 1 del \UCref{CU14}.
+		\end{UCtrayectoriaA}
+		
+		
+		
+%-------------------------------------- TERMINA descripción del caso de uso.

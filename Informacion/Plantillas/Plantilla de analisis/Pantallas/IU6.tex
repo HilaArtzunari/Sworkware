@@ -1,0 +1,27 @@
+\subsection{IU6 Elimina comentario}
+
+\subsubsection{Objetivo}
+    Mostrar un mensaje para la confirmación del usuario en cuanto él decida eliminar un comentario de historial de venta.
+	
+\subsubsection{Diseño}
+	Esta pantalla aparece al dar clic en la opción ``Elminar'' de la \IUref{IU5}{Oferta de venta}. Se visualiza el Mensaje {\bf MSG3-}``¿Estás seguro que quieres eliminar este comentario?''
+
+\IUfig[.5]{gui/EliminaComentario}{IU6}{Elimina un comentario.}
+
+\subsubsection{Salidas}
+
+	Historial de venta actualizado debajo de la oferta de venta de la \IUref{IU5}{Oferta de venta}.
+
+\subsubsection{Entradas}
+Ninguna.
+
+\subsubsection{Comandos}
+\begin{itemize}
+	\item \IUbutton{Estoy seguro}: El sistema elimina el comentario del historial de venta del componente electrónico.
+	\item \IUbutton{No estoy seguro}: El sistema regresa a la \IUref{IU5}{Oferta de venta}.
+\end{itemize}
+
+\subsubsection{Mensajes}
+	\begin{Citemize}
+		\item {\bf MSG3} ¿Estás seguro que quieres eliminar este comentario?.
+	\end{Citemize}
