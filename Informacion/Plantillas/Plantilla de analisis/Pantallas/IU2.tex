@@ -1,0 +1,31 @@
+\subsection{IU2 Alta de usuario}
+
+\subsubsection{Objetivo}
+	Agregar a un nuevo usuario a los registros del sistema.
+
+\subsubsection{Diseño}
+	Esta pantalla aparece al iniciar el sistema. Para ingresar al mismo se debe escribir el Número de Boleta del estudiante y la contraseña de acceso. 
+
+\IUfig[.5]{gui/UI2}{UI23}{Pantalla de Alta de usuario.}
+
+\subsubsection{Salidas}
+
+	Ninguna.
+
+\subsubsection{Entradas}
+Nombre de usuario, e-mail, contrase\~na, escuela, unidad de prendizaje.
+
+\subsubsection{Comandos}
+\begin{itemize}
+	\item \IUbutton{Agregar usuario}: Agrega nuevo registro de usuario al sistema y lo lleva a su perfil.
+	
+	%Verifica que el Estudiante se encuentre registrado y la contraseña sea la correcta. Si la verificación es correcta, se muestra la \IUref{UI32}{Pantalla de Selección de Seminario}.
+	\item \IUbutton{Regresar}: Regresa al usuario a la pantalla de login.
+	
+	%Muestra la ayuda de esta pantalla \IUref{UI50}{Pantalla de Ayuda}.
+\end{itemize}
+
+\subsubsection{Mensajes}
+	\begin{Citemize}
+		\item {\bf MSG5} Usuario nuevo creado.
+	\end{Citemize}

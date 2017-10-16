@@ -1,0 +1,32 @@
+\subsection{IU1 Login}
+
+\subsubsection{Objetivo}
+	Controlar el acceso al sistema mediante un usuario y contraseña a fin de que cada usuario acceda solo a las operaciones permitidas para su perfil.
+
+\subsubsection{Diseño}
+	Esta pantalla aparece al iniciar el sistema. Para ingresar al mismo se debe escribir el nombre de usuario y su contrase\~na. 
+
+\IUfig[.5]{gui/UI1}{IU1}{Login.}
+
+\subsubsection{Salidas}
+
+	Ninguna.
+
+\subsubsection{Entradas}
+Nombre y Contrase\~na del usuario.
+
+\subsubsection{Comandos}
+\begin{itemize}
+	\item \IUbutton{Entrar}: Da acceso al usuario al sistema y a su perfil.
+	
+%	Verifica que el Estudiante se encuentre registrado y la contraseña sea la correcta. Si la verificación es correcta, se muestra la \IUref{UI32}{Pantalla de Selección de Seminario}.
+
+	\item \IUbutton{Nuevo usuario}: Lleva al usuario a a la pantalla de nuevo usuario.
+	
+	% Muestra la ayuda de esta pantalla \IUref{UI50}{Pantalla de Ayuda}.
+\end{itemize}
+
+\subsubsection{Mensajes}
+	\begin{Citemize}
+		\item {\bf MSG5} Error al verificar los datos de acceso, vuelva a intentarlo.
+	\end{Citemize}
