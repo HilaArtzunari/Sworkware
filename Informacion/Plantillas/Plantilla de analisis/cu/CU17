@@ -1,0 +1,122 @@
+\begin{UseCase}{CU17}{Cambiar contraseña}{
+	Permite al actor cambiar su contraseña actual por una nueva, ya que tuvo algún problema de seguridad o simplemente quiere modificarla, para realizar el cambio el sistema requiere que se ingrese su contraseña actual ya que es por motivos de seguridad y saber que si es el usuario quien lo solicite.
+}
+
+	\UCccitem{Versión}{0.1}	
+		\UCitem{Actor}{Usuario, Administrador}
+		\UCitem{Propósito}{Cambiar la contraseña por motivos de seguridad del actor.
+		}
+		\UCitem{Entradas}{ 
+			\begin{Titemize}
+				\Titem Contraseña actual.	
+				\Titem Contraseña nueva.
+				\Titem Repetir contraseña nueva.
+			\end{Titemize}
+			 }
+		\UCitem{Origen}{Mouse}
+		\UCitem{Salidas}{
+			\begin{Titemize}
+			\Titem \refIdElem{MSGX}
+			\Titem \refIdElem{MSGX}
+			\Titem \refIdElem{MSGX}
+			\end{Titemize}
+
+		}
+		\UCitem{Destino}{Pantalla}
+		\UCitem{Precondiciones}{
+			Estar registrado en el sistema.
+	
+		}
+		\UCitem{Postcondiciones}{
+		Se guardará en el sistema su nueva contraseña.
+	}
+		\UCitem{Reglas de Negocio}{
+		\begin{Titemize}
+			\Titem \refIdElem{BR-N00X}
+			\Titem \refIdElem{BR-N00X}
+			\Titem \refIdElem{BR-N00X}
+		\end{Titemize}	
+	}
+		\UCitem{Errores}{\begin{Titemize}
+			\Titem \UCerr{Uno}{{Cuando las contraseñas \textbf{Nueva} y \textbf{Repetir contraseña nueva} no coinciden,}{ muestra el mensaje \refIdElem{MSGX}, indicando que la contraseñas no coinciden.}
+			\Titem \UCerr{Dos}{Cuando el actor no ingresó su contraseña \textbf{Actual}, }{muestra la el mensaje \refIdElem{MSGX}, indicando que la contraseña no se ingresó.}
+		\end{Titemize}
+		}}
+		\UCitem{Viene de}{\refIdElem{CU1}}
+		\UCitem{Disparadores}{
+			\begin{Titemize}
+			\Titem Se requiere cambiar la contraseña.
+			\Titem Olvido su contraseña.
+			\end{Titemize}
+		}
+		\UCitem{Condiciones de Término}{
+			Se realizó el cambio de contraseña.
+		}
+		\UCitem{Efectos Colaterales}{Ninguno}
+		
+	
+\end{UseCase}
+
+\begin{UCtrayectoria}
+
+	\UCpaso [\UCactor]Solicita cambiar su contraseña presionando el botón \IUbutton{Editar} de Cambiar Contaseña, de la pantalla \refIdElem{IU17a}.
+	
+	\UCpaso Muestra la pantalla \refIdElem{IU17b}.
+	
+	\UCpaso [\UCactor] Ingresa en los campos la información solicitada.  \refTray{A} \refTray{B}
+	
+	\UCpaso Habilita el botón \IUbutton{Guardar cambios}. 
+	
+	\UCpaso [\UCactor] Presiona el botón \IUbutton{Guardar cambios}. \refTray{C}
+	
+	\UCpaso Verifica que en el campo marcado como \textbf{Actual} haya ingresado la contraseña actual  con base en la regla de negocio \refIdElem{BR-S00X}.  \refTray{D}
+	
+	\UCpaso Verifica que los datos ingresados en los campos de \textbf{Nueva} y \textbf{Repetir contraseña} nueva sean los mismos con base en la regla de negocio \refIdElem{BS-N00X}. \refTray{D}
+
+	\UCpaso  Muestra el mensaje \refIdElem{MSGX}, indicando que la operación ha finalizado con con exito.
+	
+\end{UCtrayectoria} 
+
+\begin{UCtrayectoriaA}[Fin de la trayectoria]{A}{Cuando el actor ha olvidado su contraseña.}
+	
+	\UCpaso Muestra la el mensaje \refIdElem{MSGX}, indicando que si desea continuar mandará un correo con su contraseña actual. 
+	
+	\UCpaso [\UCpaso] Presiona el botón \IUbutton{Continuar}. \refTray{C}
+	
+	\UCpaso Envía un correo electrónico a la cuenta del actor que solicita el cambio de contraseña.	
+	
+	\UCpaso [\UCpaso] Ingresa en el campo la información que recibió en su correo electrónico.
+	
+	\UCpaso Verifica que la información ingresada en el campo coincida con la que se mando en el correo electrónico. \refTray{D}
+
+	\UCpaso Presiona el botón \IUbutton{Continuar}. \refTray{C}
+
+	\UCpaso Regresa a la pantalla \refIdElem{IU17b}.
+	
+\end{UCtrayectoriaA}
+
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}[Fin de la trayectoria]{B}{Cuando el actor no ingresa información en los campos.}
+	
+	\UCpaso No habilita el botón \IUbutton{Guardar cambios}.
+	
+	\UCpaso Regresa al paso 3 de la trayectoria principal.
+	
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}[Fin de la trayectoria]{C}{Cuando el actor desea cancelar la operación.}
+	
+	\UCpaso [\UCpaso] Solicita cancelar la operación presionando el botón \IUbutton{Cancelar}.
+	
+	\UCpaso Muestra la pantalla \refElem{IU17a}.
+	
+\end{UCtrayectoriaA}
+
+\begin{UCtrayectoriaA}[Fin de la trayectoria]{D}{Cuando la información en un campo no coincide con lo que estaba establecido.}
+	
+	\UCpaso Muestra el mensaje \refIdElem{MSGX}.	
+	
+	\UCpaso Regresa al paso 3 de la pantalla principal.
+	
+\end{UCtrayectoriaA}
