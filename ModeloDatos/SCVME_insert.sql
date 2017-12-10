@@ -60,3 +60,7 @@ ALTER TABLE comentario MODIFY fechaEdicion DATE;
 ALTER TABLE comentario MODIFY fechaEliminacion DATE;
 INSERT INTO comentario(fechaAlta, fechaEdicion, fechaEliminacion, Comentario, publicacion_idPublicacion)
 VALUES ('2017/11/17', null, null, 'Estoy interesado en este sensor, necesito dos de esos.', 1);
+
+/* Tabla contactoPublicacion */
+INSERT INTO contactoPublicacion(NombreContacto, MedioContacto, Mensaje, FechaContacto, Publicacion_idPublicacion)
+VALUES ("Ivan Benitez Juarez", "5544661233", "Me interesa tu componente, pero quisiera negociar el precio", "2017/12/09", 1);
