@@ -1,37 +1,21 @@
-% \IUref{IUAdmPS}{Administrar Planta de Selección}
-% \IUref{IUModPS}{Modificar Planta de Selección}
-% \IUref{IUEliPS}{Eliminar Planta de Selección}
 
-% 
-
-
-% Copie este bloque por cada caso de uso:
-%-------------------------------------- COMIENZA descripción del caso de uso.
-
-%\begin{UseCase}[archivo de imágen]{UCX}{Nombre del Caso de uso}{
 	\begin{UseCase}{CU6}{Calificar usuario}{
-		Permite tanto al vendedor como al comprador calificarse mutuamente de acuerdo a la experiencia que hayan tenido durante la compra y el pago del componente electrónico.
+		Permite al interesado en un componente calificar al dueño de dicho componente después de contactarlo.
 	}
 		\UCitem{Versión}{0.1}
-		\UCitem{Actor}{Comprador y vendedor}
-		\UCitem{Propósito}{Que ambos expresen su opinión acerca de la experiencia en la compra del componente electrónico con otro usuario}
+		\UCitem{Actor}{Intereserado}
+		\UCitem{Propósito}{Generar una reputación en el dueño del componente.}
 		\UCitem{Resumen}{
-		El sistema envía un correo electrónico donde pedirá a ambos calificar la experiencia con el otro usuario mediante un Star Ranking dando ya sea de 0 a 5 estrellas y, si desea, colocando un comentario}
+		El sistema activará calificar un dueño despues que el interesado haya activado la opción de contactar en el sistema.}
 		\UCitem{Entradas}{
 		- Star Ranking: número entero con valor entre 0 a 5.
-		
-		- Comentario: Cadena de caracteres.
 		}
-		\UCitem{Salidas}{Se muestra el mensaje {\bf MSG22-}``Gracias por tu opinión.''}
+		\UCitem{Salidas}{El promedio en el Star Ranking con las calificaciones anteriores.}
 		\UCitem{Precondiciones}{
-		- Se debe haber efectuado la compra.
-		
-		- Conexión a internet.
-		
-		- Requiere haber iniciado sesión en su correo electrónico.
+		Estar como usuario del sistema, haber habilitado el botón de contactar en el sistema.
 		}
-		\UCitem{Postcondiciones}{Se registrará tanto el puntaje como el comentario del usuario}
-		\UCitem{Autor}{Gabriela Moreno González.}
+		\UCitem{Postcondiciones}{Se registrará el puntaje en la base de datos.}
+		\UCitem{Autor}{Angel Ferreira Osorno.}
 		\UCitem{Revisor}{Roberto Mendoza Saavedra.}
 	\end{UseCase}
 
