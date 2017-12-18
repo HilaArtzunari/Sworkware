@@ -40,13 +40,6 @@ INSERT INTO usuario(email, nombreUsuario, clave, nombre, primerApellido, segundo
 						('jamie.upiita@gmail.com', 'jamie', 'jam1234', 'Jamie', 'Botello', 'Flores', null, null, 6, 2, 1),
                         ('jose_12@hotmail.com', 'jose12', 'jos1234', 'Jose', 'Vargas', 'Gonzalez', null, null, 2, 2, 1);
 
-/* Tabla usuario_has_unidad_aprendizaje */
-INSERT INTO usuario_has_unidad_aprendizaje(Usuario_idUsuario, Unidad_Aprendizaje_idUnidad_Aprendizaje)
-VALUES (2,6),
-		(2,5),
-        (2,1),
-        (3,1),
-        (3,2);
 
 /* Tabla publicacion */
 ALTER TABLE publicacion MODIFY COLUMN Descripcion TEXT NOT NULL;
@@ -64,3 +57,6 @@ VALUES ('2017/11/17', null, null, 'Estoy interesado en este sensor, necesito dos
 /* Tabla contactoPublicacion */
 INSERT INTO contactoPublicacion(NombreContacto, MedioContacto, Mensaje, FechaContacto, Publicacion_idPublicacion)
 VALUES ("Ivan Benitez Juarez", "5544661233", "Me interesa tu componente, pero quisiera negociar el precio", "2017/12/09", 1);
+
+/* Tabla publicacion_has_unidad_aprendizaje */
+INSERT INTO publicacion_has_unidad_aprendizaje VALUES (1,6),(1,7);
